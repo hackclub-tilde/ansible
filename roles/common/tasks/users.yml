@@ -1,12 +1,52 @@
 # This creates a user on the system 
 ---
-- group: name={{ lookup('env', 'LOGNAME') }}
-- user: name={{ lookup('env', 'LOGNAME') }} group={{ lookup('env', 'LOGNAME') }}
-- file: dest=/home/{{ lookup('env', 'LOGNAME') }}/.ssh state=directory
-- copy: src=/home/{{ lookup('env', 'LOGNAME') }}/.ssh/authorized_keys dest=/home/{{ lookup('env', 'LOGNAME') }}/.ssh/authorized_keys owner={{ lookup('env', 'LOGNAME') }} group={{ lookup('env', 'LOGNAME') }} mode=0600
-  ignore_errors: yes
+- group:
+    name: tilde
+    state: present
 
-- group: name=tilde state=present
-- user: name=amcclure group=tilde state=present skeleton=/etc/skel shell=/bin/bash system=no createhome=yes home=/home/amcclure
-- user: name=nagalfar group=tilde state=present skeleton=/etc/skel shell=/bin/bash system=no createhome=yes home=/home/nagalfar
-- user: name=ubergeek group tilde state=present skeleton=/etc/skel shell=/bin/bash system=no createhome=yes home=/home/ubergeek
+- group:
+    name: sudo
+    state: present
+
+- user:
+    name: testuser
+    groups: tilde
+    state: absent
+    shell: /bin/bash       # Defaults to /bin/bash
+    system: no             # Defaults to no
+    createhome: yes        # Defaults to yes
+    home: /home/testuser
+
+- user:
+    name: amcclure
+    groups: tilde, sudo
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/amcclure
+
+- user:
+    name: naglfar
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/naglafar
+
+- user:
+    name: ubergeek
+    groups: sudo
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/ubergeek
+
+  #- user: name=amcclure group=tilde state=present skeleton=/etc/skel shell=/bin/bash system=no createhome=yes home=/home/amcclure
+  #- user: name=nagalfar group=tilde state=present skeleton=/etc/skel shell=/bin/bash system=no createhome=yes home=/home/nagalfar
+  #- user: name=ubergeek group tilde state=present skeleton=/etc/skel shell=/bin/bash system=no createhome=yes home=/home/ubergeek

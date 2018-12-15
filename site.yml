@@ -2,7 +2,8 @@
 # This is the overall site playbook.
 - name: Baseline Configuration 
   hosts: all
-  sudo: yes
+  become: yes
+  become_method: sudo
 
   roles:
     - common

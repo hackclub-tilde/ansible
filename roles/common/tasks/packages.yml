@@ -15,4 +15,5 @@
     - w3m-img
     - python-apt
     - python
-    - ansible
+    - python-pip
+    - cowsay
