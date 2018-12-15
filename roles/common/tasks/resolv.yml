@@ -1,0 +1,4 @@
+# This will set our resolvers up, to the .tilde tld name servers.
+---
+- name: Ensure localsudo in place 
+    copy: src=../files/resolv.conf dest=/etc/resolv.conf
