@@ -1,13 +1,8 @@
 ---
 # This is the overall site playbook.
-
 - name: Baseline Configuration 
   hosts: all
-#  remote_user: ubergeek
   sudo: yes
 
   roles:
     - common
-    - webserver
-    - ssh
-    - db

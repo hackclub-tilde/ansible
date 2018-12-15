@@ -1,4 +1,4 @@
-i# Install our baseline packages for all machines, irrespective of what role they might have
+# Install our baseline packages for all machines, irrespective of what role they might have
 ---
 - name: Install baseline packages
   apt: name={{ item }} state=present
@@ -13,3 +13,6 @@ i# Install our baseline packages for all machines, irrespective of what role the
     - rtv
     - lynx
     - w3m-img
+    - python-apt
+    - python
+    - ansible

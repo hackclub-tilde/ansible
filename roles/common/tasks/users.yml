@@ -7,16 +7,6 @@
   ignore_errors: yes
 
 - group: name=tilde state=present
-- user: name=amcclure group=tilde state=present shell=/bin/bash system=no createhome=yes home=/home/amcclure
-- user: name=nagalfar group=tilde state=present shell=/bin/bash system=no createhome=yes home=/home/nagalfar
-- user: name=ubergeek group tilde state=present shell=/bin/bash system=no createhome=yes home=/home/ubergeek
-
-      - name: Create Jenkins user
-        user:
-            name: jenkins
-            comment: "Jenkins slave user"
-            system: yes
-            createhome: yes
-            skeleton: /etc/skel
-            home: /data/jenkins
-            shell: /bin/bash
+- user: name=amcclure group=tilde state=present skeleton=/etc/skel shell=/bin/bash system=no createhome=yes home=/home/amcclure
+- user: name=nagalfar group=tilde state=present skeleton=/etc/skel shell=/bin/bash system=no createhome=yes home=/home/nagalfar
+- user: name=ubergeek group tilde state=present skeleton=/etc/skel shell=/bin/bash system=no createhome=yes home=/home/ubergeek
