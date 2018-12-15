@@ -1,0 +1,12 @@
+# This creates a user on the system 
+---
+- group: name={{ lookup('env', 'LOGNAME') }}
+- user: name={{ lookup('env', 'LOGNAME') }} group={{ lookup('env', 'LOGNAME') }}
+- file: dest=/home/{{ lookup('env', 'LOGNAME') }}/.ssh state=directory
+- copy: src=/home/{{ lookup('env', 'LOGNAME') }}/.ssh/authorized_keys dest=/home/{{ lookup('env', 'LOGNAME') }}/.ssh/authorized_keys owner={{ lookup('env', 'LOGNAME') }} group={{ lookup('env', 'LOGNAME') }} mode=0600
+  ignore_errors: yes
+
+- group: name=tilde state=present
+- user: name=amcclure group=tilde state=present shell=/bin/bash system=no createhome=yes home=/home/amcclure
+- user: name=nagalfar group=tilde state=present shell=/bin/bash system=no createhome=yes home=/home/nagalfar
+- user: name=ubergeek group tilde state=present shell=/bin/bash system=no createhome=yes home=/home/ubergeek
