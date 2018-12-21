@@ -1,0 +1,5 @@
+# This play deploys the www code
+# Example git checkout from Ansible Playbooks
+- git:
+    repo: 'https://tildegit.org/thunix/www.git'
+    dest: /var/www/thunix.cf
