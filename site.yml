@@ -7,3 +7,19 @@
 
   roles:
     - common
+
+- name: Shell server cofiguration
+  hosts: shell
+  become: yes
+  become_method: sudo
+
+  roles:
+    - shell
+
+- name: Web server configuration
+  hosts: webserver
+  become: yes
+  become_method: sudo
+
+  roles:
+    - webserver
