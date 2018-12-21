@@ -1,2 +1,9 @@
+[common]
+phoenix.thunix.cf
+summit.thunix.cf
+
 [shell]
-thunix.tilde
+phoenix.thunix.cf
+
+[webserver]
+summit.thunix.cf

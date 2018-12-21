@@ -3,7 +3,14 @@
 - name: Install baseline packages
   apt: name={{ item }} state=present
   with_items:
-    - aptitude
-    - git
+    - vim
+    - alpine
+    - weechat
+    - mutt
     - python
-    - man
+    - rtv
+    - lynx
+    - w3m-img
+    - python-pip
+    - cowsay
+    - byobu
