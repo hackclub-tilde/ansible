@@ -1,0 +1,4 @@
+# sshd_config module 
+---
+- name: Configure sshd
+  copy: src=../files/sshd_config dest=/etc/ssh/sshd_config mode=0644
