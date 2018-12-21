@@ -6,7 +6,7 @@
 
 - user:
     name: amcclure
-    groups: tilde, sudo
+    groups: sudo
     state: present
     skeleton: /etc/skel
     shell: /bin/bash

@@ -1,8 +1,7 @@
-    ---
-    # This playbook contains all of the www config
-    
-    - include: packages.yml
-    - include: users.yml
-    - include: apache.yml
-    - include: codedeploy.yml
+---
+# This playbook contains all of the www config
 
+- include: packages.yml
+- include: users.yml
+- include: apache.yml
+- include: codedeploy.yml

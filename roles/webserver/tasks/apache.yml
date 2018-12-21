@@ -1,70 +1,86 @@
 #This play configs apapche for us
 ---
-name: Deploy 000-default.conf
-  - copy:
+- name: Deploy 000-default.conf
+  copy:
     src: ../files/etc/apache2/sites-available/000-default.conf
-    dest: /etc/apache2/sites/available/000-default.conf
-name: Deploy default-ssl.conf
-  - copy:
+    dest: /etc/apache2/sites-available/000-default.conf
+
+- name: Deploy default-ssl.conf
+  copy:
     src: ../files/etc/apache2/sites-available/default-ssl.conf
-    dest: /etc/apache2/sites/available/default-ssl.conf
-name: Deploy ftp.summit.ttm.sh.conf
-  - copy:
+    dest: /etc/apache2/sites-available/default-ssl.conf
+
+- name: Deploy ftp.summit.ttm.sh.conf
+  copy:
     src: ../files/etc/apache2/sites-available/ftp.summit.ttm.sh.conf
-    dest: /etc/apache2/sites/available/ftp.summit.ttm.sh.conf
-name: Deploy ftp.summit.ttm.sh-le-ssl.conf
-  - copy:
+    dest: /etc/apache2/sites-available/ftp.summit.ttm.sh.conf
+
+- name: Deploy ftp.summit.ttm.sh-le-ssl.conf
+  copy:
     src: ../files/etc/apache2/sites-available/ftp.summit.ttm.sh-le-ssl.conf
-    dest: /etc/apache2/sites/available/ftp.summit.ttm.sh-le-ssl.conf
-name: Deploy mail.thunix.cf.conf
-  - copy:
+    dest: /etc/apache2/sites-available/ftp.summit.ttm.sh-le-ssl.conf
+
+- name: Deploy mail.thunix.cf.conf
+  copy:
     src: ../files/etc/apache2/sites-available/mail.thunix.cf.conf
-    dest: /etc/apache2/sites/available/mail.thunix.cf.conf
-name: Deploy mail.thunix.cf-le-ssl.conf
-  - copy:
+    dest: /etc/apache2/sites-available/mail.thunix.cf.conf
+
+- name: Deploy mail.thunix.cf-le-ssl.conf
+  copy:
     src: ../files/etc/apache2/sites-available/mail.thunix.cf-le-ssl.conf
-    dest: /etc/apache2/sites/available/mail.thunix.cf-le-ssl.conf
-name: Deploy ny.dyniform.net.conf
-  - copy:
+    dest: /etc/apache2/sites-available/mail.thunix.cf-le-ssl.conf
+
+- name: Deploy ny.dyniform.net.conf
+  copy:
     src: ../files/etc/apache2/sites-available/ny.dyniform.net.conf
-    dest: /etc/apache2/sites/available/ny.dyniform.net.conf
-name: Deploy summit-nosite.conf
-  - copy:
+    dest: /etc/apache2/sites-available/ny.dyniform.net.conf
+
+- name: Deploy summit-nosite.conf
+  copy:
     src: ../files/etc/apache2/sites-available/summit-nosite.conf
-    dest: /etc/apache2/sites/available/summit-nosite.conf
-name: Deploy summit.ttm.sh.conf
-  - copy:
+    dest: /etc/apache2/sites-available/summit-nosite.conf
+
+- name: Deploy summit.ttm.sh.conf
+  copy:
     src: ../files/etc/apache2/sites-available/summit.ttm.sh.conf
-    dest: /etc/apache2/sites/available/summit.ttm.sh.conf
-name: Deploy summit.ttm.sh-le-ssl.conf
-  - copy:
+    dest: /etc/apache2/sites-available/summit.ttm.sh.conf
+
+- name: Deploy summit.ttm.sh-le-ssl.conf
+  copy:
     src: ../files/etc/apache2/sites-available/summit.ttm.sh-le-ssl.conf
-    dest: /etc/apache2/sites/available/summit.ttm.sh-le-ssl.conf
-name: Deploy thunix.cf.conf
-  - copy:
+    dest: /etc/apache2/sites-available/summit.ttm.sh-le-ssl.conf
+
+- name: Deploy thunix.cf.conf
+  copy:
     src: ../files/etc/apache2/sites-available/thunix.cf.conf
-    dest: /etc/apache2/sites/available/thunix.cf.conf
-name: Deploy thunix.cf-le-ssl.conf
-  - copy:
+    dest: /etc/apache2/sites-available/thunix.cf.conf
+
+- name: Deploy thunix.cf-le-ssl.conf
+  copy:
     src: ../files/etc/apache2/sites-available/thunix.cf-le-ssl.conf
-    dest: /etc/apache2/sites/available/thunix.cf-le-ssl.conf
-name: Deploy thunix.tilde.chat.conf
-  - copy:
+    dest: /etc/apache2/sites-available/thunix.cf-le-ssl.conf
+
+- name: Deploy thunix.tilde.chat.conf
+  copy:
     src: ../files/etc/apache2/sites-available/thunix.tilde.chat.conf
-    dest: /etc/apache2/sites/available/thunix.tilde.chat.conf
-name: Deploy www.summit.ttm.sh.conf
-  - copy:
+    dest: /etc/apache2/sites-available/thunix.tilde.chat.conf
+
+- name: Deploy www.summit.ttm.sh.conf
+  copy:
     src: ../files/etc/apache2/sites-available/www.summit.ttm.sh.conf
-    dest: /etc/apache2/sites/available/www.summit.ttm.sh.conf
-name: Deploy www.summit.ttm.sh-le-ssl.conf
-  - copy:
+    dest: /etc/apache2/sites-available/www.summit.ttm.sh.conf
+
+- name: Deploy www.summit.ttm.sh-le-ssl.conf
+  copy:
     src: ../files/etc/apache2/sites-available/www.summit.ttm.sh-le-ssl.conf
-    dest: /etc/apache2/sites/available/www.summit.ttm.sh-le-ssl.conf
-name: Deploy www.thunix.cf.conf
-  - copy:
+    dest: /etc/apache2/sites-available/www.summit.ttm.sh-le-ssl.conf
+
+- name: Deploy www.thunix.cf.conf
+  copy:
     src: ../files/etc/apache2/sites-available/www.thunix.cf.conf
-    dest: /etc/apache2/sites/available/www.thunix.cf.conf
-name: Deploy www.thunix.cf-le-ssl.conf
-  - copy:
+    dest: /etc/apache2/sites-available/www.thunix.cf.conf
+
+- name: Deploy www.thunix.cf-le-ssl.conf
+  copy:
     src: ../files/etc/apache2/sites-available/www.thunix.cf-le-ssl.conf
-    dest: /etc/apache2/sites/available/www.thunix.cf-le-ssl.conf
+    dest: /etc/apache2/sites-available/www.thunix.cf-le-ssl.conf
