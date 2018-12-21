@@ -1,9 +1,9 @@
 [common]
-phoenix.thunix.cf
-summit.thunix.cf
+138.197.5.91
+159.203.172.211
 
 [shell]
-phoenix.thunix.cf
+138.197.5.91
 
 [webserver]
-summit.thunix.cf
+159.203.172.211
