@@ -1,0 +1,7 @@
+    ---
+    # This playbook contains all of the www config
+    
+    - include: packages.yml
+    - include: users.yml
+    - include: resolv.yml
+    - include: apache.yml
