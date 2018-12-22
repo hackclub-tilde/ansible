@@ -1,0 +1,9 @@
+# This will set our motd 
+---
+- name: Set MOTD 
+  copy:
+    src: ../files/motd
+    dest: /etc/motd
+    owner: root
+    group: root
+    mode: 0644
