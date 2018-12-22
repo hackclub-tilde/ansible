@@ -5,3 +5,4 @@
 - include: users.yml
 - include: resolv.yml
 - include: sshd.yml
+- include: motd.yml
