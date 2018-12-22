@@ -1,0 +1,21 @@
+- name: Add ansible cron job
+  copy:
+    content: |
+    #!/bin/bash
+    cd /var/thunix/ansible
+    git pull
+    ansible-playbook -i ./hosts ./site.yml -u root
+    dest: /etc/cron.hourly/ansible-pull
+    owner: root
+    
+- name: Adding ansible git repo locally
+  git: https://tildegit.org/thunix/ansible.git
+    repo: 'https://tildegit.org/thunix/www.git'
+    dest: /var/thunix/ansible
+    
+- name: adding deploy key
+- authorized_key:
+    user: root
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC2ZFqUDHL4KTkjqaNdWLGVPyHfz7uBh7j48uab1ywbOScDIvW/6Lhnxg41J48o0IGASyT0ijwBX6Se/IkKM6vHVJ5H7wEIZ1YL1351ytacZ7/zsh/LWvGi3YkMblboN6SesXwXnvih9dWWMpW/ifz10IeOw7cB5OjIomIYTre3J5f4WmqYCB4NxDHAVSszv62wZrnpb6QrQOG4YvbxvhynHEJN2OmvMPufIjICZap/fGd3BtFafWSjCL4ZbBnNK9TlwGw6LFeJrHHoL77prwl/tIFr+XQg1FnzNAbhT0QEgF/7LasrjrgjK06yHWEOw0eWDKRAAHvXJ9ESwP6NWi9CBkV2gVBDzJUyKREPQNg+LZ5xNQoP9x4bSglhnPSoE8YYLIkgApaUVhTuWbBB+vtsEgK5HI9X63jCfYUpRwOXw+S6YMI8wo+ZFMLY1uQi66/3w+nyg0jp/+3VVUK6wEv5f+7iO5KVaLM1KY9GYwZmixJgOukJzC9MT3vHF60+fZFAZMB5iTjhBGYdHpGPDpOyICYuo7uKpmSPa72GfuSE6oZ6ighJyQEONWIKF+fr0ngb1/N7f6yns1qyJ1rd9PyQ08moSsbBeVCmR963rmv+RrYA756KXxLrsH4UOtVQFO/8vwjTkigXf2Xc+85YTrXJV+w5xS6RQUwuoc+GrerJsw=="
+    
