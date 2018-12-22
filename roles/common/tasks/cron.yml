@@ -1,0 +1,10 @@
+- name: Add ansible cron job
+  copy:
+    content: |
+    #!/bin/bash
+    cd /var/thunix/ansible
+    git pull
+    ansible-playbook -i ./hosts ./site.yml -u root
+    dest: /etc/cron.hourly/ansible-pull
+    owner: root
+    
