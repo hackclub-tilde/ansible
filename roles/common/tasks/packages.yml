@@ -1,9 +1,14 @@
 # Install our baseline packages for all machines, irrespective of what role they might have
 ---
 - name: Install baseline packages
-  apt: name={{ item }} state=present
-  with_items:
-    - aptitude
-    - git
-    - python
-    - man
+  apt: 
+    name: "{{ packages }}"
+    state: present
+    update_cache: yes
+  vars:
+    packages:
+      - aptitude
+      - git
+      - python
+      - man
+

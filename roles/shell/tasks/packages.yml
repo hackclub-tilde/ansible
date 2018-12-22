@@ -1,21 +1,28 @@
 # Install our baseline packages for all machines, irrespective of what role they might have
 ---
 - name: Install baseline packages
-  apt: name={{ item }} state=present
-  with_items:
-    - vim
-    - alpine
-    - weechat
-    - mutt
-    - python
-    - rtv
-    - lynx
-    - w3m-img
-    - python-pip
-    - cowsay
-    - byobu
+  apt: 
+    name: "{{ packages }}"
+    state: present
+    update_cache: yes
+  vars:
+    packages:
+      - vim
+      - alpine
+      - weechat
+      - mutt
+      - python
+      - rtv
+      - lynx
+      - w3m-img
+      - python-pip
+      - cowsay
+      - byobu
+      - bsdgames
+      - emacs
+      - elinks
 
-# Install (Bottle) python package.
+# Install ansible python package, because it's the latest
 - name: Install ansible
   pip:
     name: ansible
