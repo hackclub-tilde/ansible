@@ -21,8 +21,3 @@
       - bsdgames
       - emacs
       - elinks
-
-# Install ansible python package, because it's the latest
-- name: Install ansible
-  pip:
-    name: ansible
