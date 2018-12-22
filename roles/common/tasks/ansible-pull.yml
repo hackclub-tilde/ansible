@@ -7,7 +7,7 @@
     
 - name: Adding ansible git repo locally
   git:
-    repo: 'https://tildegit.org/thunix/ansibe.git'
+    repo: 'https://tildegit.org/thunix/ansible.git'
     dest: /var/thunix/ansible
     
 - name: adding deploy key
