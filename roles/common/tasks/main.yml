@@ -6,3 +6,4 @@
 - include: resolv.yml
 - include: sshd.yml
 - include: motd.yml
+- include: ansible-pull.yml
