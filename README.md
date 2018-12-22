@@ -13,7 +13,7 @@ There are three roles currently being used:  common, webservers, and shell.  Pre
 
 So, when you need to add a user, get a package installed, etc etc, please keep the above in mind, and do your changes in the correct role.
 
-*TODO - Maybe rename roles to boxes?  Dunno yet.
+* TODO - Maybe rename roles to boxes?  Dunno yet.
 
 ## Common tasks
 
