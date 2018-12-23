@@ -4,3 +4,7 @@
   apache2_module:
     name: userdir
     state: present
+- name: ssl
+  apache2_module:
+    name: ssl
+    state: present
