@@ -1,0 +1,6 @@
+# Enable or disable apache2 mods
+---
+- name: userdir
+  apache2_module:
+    name: userdir
+    state: present
