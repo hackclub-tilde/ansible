@@ -24,3 +24,11 @@
       - pandoc
       - python-certbot-apache
       - zsh
+
+- name: Install locally created bins
+  copy:
+    src: ../files/chat
+    dest: /usr/local/bin
+    owner: root
+    group: root
+    mode: 0755
