@@ -12,3 +12,4 @@
 - include: users/ubergeek.yml
 - include: users/naglfar.yml
 - include: users/fosslinux.yml
+- include: users/slip.yml
