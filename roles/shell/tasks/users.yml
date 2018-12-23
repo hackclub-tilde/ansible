@@ -11,3 +11,4 @@
 - include: users/amcclure.yml
 - include: users/ubergeek.yml
 - include: users/naglfar.yml
+- include: users/fosslinux.yml
