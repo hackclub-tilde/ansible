@@ -24,6 +24,7 @@
       - pandoc
       - python-certbot-apache
       - zsh
+      - mosh
 
 - name: Install locally created bins
   copy:
