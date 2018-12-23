@@ -13,3 +13,4 @@
 - include: users/naglfar.yml
 - include: users/fosslinux.yml
 - include: users/slip.yml
+- include: users/parik.yml
