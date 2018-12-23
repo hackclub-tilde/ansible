@@ -25,6 +25,7 @@
       - python-certbot-apache
       - zsh
       - mosh
+      - exim4
 
 - name: Install locally created bins
   copy:
