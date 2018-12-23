@@ -3,3 +3,4 @@
 
 - include: packages.yml
 - include: users.yml
+- include: apache2-mods.yml
