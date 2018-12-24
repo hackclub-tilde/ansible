@@ -26,6 +26,7 @@
       - zsh
       - mosh
       - exim4
+      - analog
 
 - name: Install locally created bins
   copy:
