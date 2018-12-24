@@ -6,3 +6,4 @@
 - include: apache.yml
 - include: codedeploy.yml
 - include: apache2-mods.yml
+- include: analog.yml

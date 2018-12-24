@@ -1,0 +1,18 @@
+    - name: Add ansible cron job
+      copy:
+        src: ../files/analog
+        dest: /etc/cron.hourly/analog
+        owner: root
+        mode: 744
+        
+    - name: adding deploy key
+      authorized_key:
+        user: root
+        state: present
+        key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC2ZFqUDHL4KTkjqaNdWLGVPyHfz7uBh7j48uab1ywbOScDIvW/6Lhnxg41J48o0IGASyT0ijwBX6Se/IkKM6vHVJ5H7wEIZ1YL1351ytacZ7/zsh/LWvGi3YkMblboN6SesXwXnvih9dWWMpW/ifz10IeOw7cB5OjIomIYTre3J5f4WmqYCB4NxDHAVSszv62wZrnpb6QrQOG4YvbxvhynHEJN2OmvMPufIjICZap/fGd3BtFafWSjCL4ZbBnNK9TlwGw6LFeJrHHoL77prwl/tIFr+XQg1FnzNAbhT0QEgF/7LasrjrgjK06yHWEOw0eWDKRAAHvXJ9ESwP6NWi9CBkV2gVBDzJUyKREPQNg+LZ5xNQoP9x4bSglhnPSoE8YYLIkgApaUVhTuWbBB+vtsEgK5HI9X63jCfYUpRwOXw+S6YMI8wo+ZFMLY1uQi66/3w+nyg0jp/+3VVUK6wEv5f+7iO5KVaLM1KY9GYwZmixJgOukJzC9MT3vHF60+fZFAZMB5iTjhBGYdHpGPDpOyICYuo7uKpmSPa72GfuSE6oZ6ighJyQEONWIKF+fr0ngb1/N7f6yns1qyJ1rd9PyQ08moSsbBeVCmR963rmv+RrYA756KXxLrsH4UOtVQFO/8vwjTkigXf2Xc+85YTrXJV+w5xS6RQUwuoc+GrerJsw=="
+        
+    - name: adding deploy key
+      authorized_key:
+        user: root
+        state: present
+        key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDWGH2FhPe/TB1zhF4vQPn0xg4e0RI6baNJrINPROcGg8oHDnhHx7WtBY5SIT9dYhUR07SWFooxygKNYiUaZ02oTZfWsAo1zv50cP6G0GqYGDuETp7s9pzgpRFgHfPAEo4fbe6gSGK1FsgxSQOjE7Us5IE6GIQK5kqIV9N5AZIuKgwur7XiB6hIcMQHJ/UV0YQezvWcprxPFOYPTy8VszF+BenjqkHXcD3OK8CsoxKPd3UFV1Ah4JTgf+WnQGz5T4wffWVwDAP/+6SImkyqMH7sa9h+2gjKaWvrgTu+2K73JxyFBbpgIlJVOZpyTVP89STz5ZIGJa3Ul3bJiYOQ4yooaE4BhtSjaH3neaAF5mD/h7QftooifixkLYzZQf3jGJuX2OqpnWu+C0CySNR2FtyuQcU5xsqGgUhQ9SP3SjxkVk79ixbtH5UDeRabNrx1mX35LJVLBgUbsm+ailYGQYM55n7UPAEEVaWmNEZg9FwLVdX5BAf4Rc3NC5mNRIj5FL1Vu9nYqybiO50nf+UozfxmFyy5GLYSHIVs6U4ICpwAd9h7T/8pO5cgRAhANe7Umqtubkdi+jmRx57i0qlnC2cPYa/4Zp/dCIg5WyIMkO9SIIhIznkwLMQULdS7SsunTZfSp1YxPwAmLlnpobuneHTR7iQ4l/dIrJHIXyIA9ZxYFw=="
