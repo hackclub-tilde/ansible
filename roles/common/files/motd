@@ -6,9 +6,20 @@
     |__|     |__|  |__|  \______/  |__| \__| |__| /__/ \__\
 
                                                EST DEC 2018
+-----------------------------------------------------------
 brought to you by:
-     Ubergeek
      amcclure
+     ubergeek
 -----------------------------------------------------------
 Available commands:
 * chat - Jump into thunix chat
+-----------------------------------------------------------
+To modify the thunix.cf website, propose a PR here:
+https://tildegit.org/thunix/main_site
+
+To modify the system config, propose a PR here:
+https://tildegit.org/thunix/ansible
+-----------------------------------------------------------
+Enjoy your stay!
+*** END OF LINE.
+
