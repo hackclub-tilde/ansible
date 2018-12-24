@@ -8,7 +8,7 @@
   apache2_module:
     name: ssl
     state: present
-- name: php7.0
-  apache2_module:
-    name: php7.0
-    state: present
+#- name: php7.0
+#  apache2_module:
+#    name: php7.0
+#    state: present
