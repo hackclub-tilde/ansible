@@ -1,0 +1,10 @@
+    ---
+    - user:
+        name: quetzalcoatl
+        groups: tilde
+        state: present
+        skeleton: /etc/skel
+        shell: /bin/bash
+        system: no
+        createhome: yes
+        home: /home/quetzalcoatl
