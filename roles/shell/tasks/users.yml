@@ -14,4 +14,4 @@
 - include: users/fosslinux.yml
 - include: users/slip.yml
 - include: users/parik.yml
-- include: users/quetzalcoatl.yml
+#- include: users/quetzalcoatl.yml
