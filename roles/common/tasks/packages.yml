@@ -13,6 +13,7 @@
       - man
       - python-pip
       - letsencrypt
+      - python-certbot-apache
       
 # Install ansible python package, because it's the latest
 - name: Install ansible
