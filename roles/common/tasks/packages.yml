@@ -12,6 +12,7 @@
       - python
       - man
       - python-pip
+      - letsencrypt
       
 # Install ansible python package, because it's the latest
 - name: Install ansible
