@@ -18,3 +18,4 @@
 - include: users/redhat.yml
 - include: users/gokce.yml
 - include: users/r.yml
+- include: users/brendantcc

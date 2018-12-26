@@ -1,0 +1,15 @@
+---
+- name: Setting up brendantcc
+  user:
+    name: brendantcc
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/brendantcc
+-  authorized_key:
+    user: brendantcc
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCwZ5nnwTjkAE4F2Fg6NiL6SI5BsPXipiVhmqyPFMqTAGJ6SJ7wbROCpRHC0yBVYTRRNwMy3mvPXApXF3Xp8XyDPxeqe+MRbyBPlvYHXaY46PlfqpuVSxqexNbmjsu1Evdh6GNPKTd0nj2To4rqO+yO/B9JuotQtF+hqtz87lKiX1MEYtZzFJlPWj1N5j/pfrUtZfTQ/FwA4A+KEIN+v2RsIB2HH+mDTbDyJ1xz9/155iaYkBisixVnyZ3CoQJYdzDQkU0v7nJ0ZUlrs25LvnIHEZ0AF3z2lvGipqC1meDqvgjK21JNMRw56szVAHlT/ByKeXRzAbcSuBjKLJiD9sDh"
