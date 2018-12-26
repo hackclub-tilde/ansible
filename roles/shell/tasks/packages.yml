@@ -45,6 +45,7 @@
       - php7.0-tidy
       - php7.0-xmlrpc
       - php7.0-xsl
+      - tcl
 
 - name: Install locally created bins
   copy:
