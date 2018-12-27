@@ -19,6 +19,5 @@
 - include: users/gokce.yml
 - include: users/r.yml
 - include: users/brendantcc.yml
-- include: users/logique.yml
 - include: users/dragon.yml
-- include: users/hawaii.yml
+- include: users/spanmer.yml
