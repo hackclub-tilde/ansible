@@ -1,5 +1,12 @@
 # Install our baseline packages for all machines, irrespective of what role they might have
 ---
+- name: Add weechat repo
+  apt_repository: 
+    repo: 'deb https://weechat.org/debian stretch main' 
+    state: present
+    filename: weechat
+    update_cache: yes
+
 - name: Install baseline packages
   apt: 
     name: "{{ packages }}"
