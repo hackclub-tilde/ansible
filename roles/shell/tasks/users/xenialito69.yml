@@ -1,16 +1,15 @@
-    ---
-    - name: Setting up xenialito69
-      user:
-        name: xenialito69
-        groups: tilde
-        state: present
-        skeleton: /etc/skel
-        shell: /bin/bash
-        system: no
-        createhome: yes
-        home: /home/xenialito69
-
-    -  authorized_key:
-        user: parik
-        state: present
-        key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDJT8KjLp1TcWJM/THsaGiyKQnoXwVOizRI4ToE/F9lRGg9cAJUGMxT14igNEm4V3CQhlIdCtHpZ762dfiRLefBbOPkid9EkOkgUeD8MVphGIj2o0yKxr4vnxIQ30L/2JniHZiXVybtJbnXlvXZ8In7bibEjLeeeSLQ5EbxxWdzwcuWPORyMnkd3rvJmgo1ln5Ue6pXfKckTJfE4NRPkEbmU3ltfWtDLj0j5ypsMrYlRykOX30YBOi6qXaBZ3copKCfaJPgIK4DY/f1KEBXjjYqRkcoz+NQV1KkqNywHK8HpzNr9+d1uiBLAS/kJw5rGWuwjt9Wb8xalMll67Sz6kyF azamora@lubuntu"
+---
+- name: Setting up xenialito69
+  user:
+   name: xenialito69
+   groups: tilde
+   state: present
+   skeleton: /etc/skel
+   shell: /bin/bash
+   system: no
+   createhome: yes
+   home: /home/xenialito69
+-  authorized_key:
+    user: parik
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDJT8KjLp1TcWJM/THsaGiyKQnoXwVOizRI4ToE/F9lRGg9cAJUGMxT14igNEm4V3CQhlIdCtHpZ762dfiRLefBbOPkid9EkOkgUeD8MVphGIj2o0yKxr4vnxIQ30L/2JniHZiXVybtJbnXlvXZ8In7bibEjLeeeSLQ5EbxxWdzwcuWPORyMnkd3rvJmgo1ln5Ue6pXfKckTJfE4NRPkEbmU3ltfWtDLj0j5ypsMrYlRykOX30YBOi6qXaBZ3copKCfaJPgIK4DY/f1KEBXjjYqRkcoz+NQV1KkqNywHK8HpzNr9+d1uiBLAS/kJw5rGWuwjt9Wb8xalMll67Sz6kyF azamora@lubuntu"
