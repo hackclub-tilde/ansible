@@ -1,14 +1,14 @@
 ---
 - name: Setting up xenialito69
   user:
-   name: xenialito69
-   groups: tilde
-   state: present
-   skeleton: /etc/skel
-   shell: /bin/bash
-   system: no
-   createhome: yes
-   home: /home/xenialito69
+    name: xenialito69
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/xenialito69
 -  authorized_key:
     user: parik
     state: present
