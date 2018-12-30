@@ -11,6 +11,7 @@
 - include: users/amcclure.yml
 - include: users/ubergeek.yml
 - include: users/naglfar.yml
+- include: users/anton.yml
 - include: users/fosslinux.yml
 - include: users/slip.yml
 - include: users/parik.yml
@@ -22,3 +23,5 @@
 - include: users/dragon.yml
 - include: users/spanmer.yml
 - include: users/panzer.yml
+- include: users/hawaii.yml
+- include: users/trip.yml
