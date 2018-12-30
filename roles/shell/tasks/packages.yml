@@ -53,6 +53,14 @@
       - php7.0-xmlrpc
       - php7.0-xsl
       - tcl
+      - tcl8.6
+      - tcl-dev
+      - tcllib
+      - tcltls
+      - tcl-tls
+      - tdom
+      - openssl
+      - libssl-dev
 
 - name: Install locally created bins
   copy:
