@@ -66,6 +66,7 @@
       - znc-perl
       - znc-python
       - znc-tcl
+      - eggdrop
 
 - name: Install locally created bins
   copy:
