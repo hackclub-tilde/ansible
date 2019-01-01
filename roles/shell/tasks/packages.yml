@@ -61,6 +61,11 @@
       - tdom
       - openssl
       - libssl-dev
+      - znc
+      - znc-dev
+      - znc-perl
+      - znc-python
+      - znc-tcl
 
 - name: Install locally created bins
   copy:
