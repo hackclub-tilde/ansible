@@ -14,58 +14,59 @@
     update_cache: yes
   vars:
     packages:
-      - vim
       - alpine
-      - weechat
-      - mutt
-      - python
-      - lynx
-      - w3m-img
-      - python-pip
-      - cowsay
-      - byobu
       - bsdgames
-      - emacs
+      - byobu
+      - cowsay
+      - eggdrop
       - elinks
-      - pandoc
-      - python-certbot-apache
-      - zsh
-      - mosh
+      - emacs
       - exim4
+      - fish
       - htop
-      - libsdl1.2-dev
-      - php7.0
       - libapache2-mod-php7.0
-      - php7.0-mysql
+      - libsdl1.2-dev
+      - libssl-dev
+      - lynx
+      - mosh
+      - mutt
+      - openssl
+      - pandoc
+      - php-imagick
+      - php-memcache
+      - php-pear
+      - php7.0
       - php7.0-curl
       - php7.0-gd
-      - php7.0-intl
-      - php-pear
-      - php-imagick
       - php7.0-imap
+      - php7.0-intl
       - php7.0-mcrypt
-      - php-memcache
+      - php7.0-mysql
       - php7.0-pspell
       - php7.0-recode
       - php7.0-sqlite3
       - php7.0-tidy
       - php7.0-xmlrpc
       - php7.0-xsl
+      - python
+      - python-certbot-apache
+      - python-pip
       - tcl
-      - tcl8.6
       - tcl-dev
+      - tcl-tls
+      - tcl8.6
       - tcllib
       - tcltls
-      - tcl-tls
       - tdom
-      - openssl
-      - libssl-dev
+      - vim
+      - w3m-img
+      - weechat
       - znc
       - znc-dev
       - znc-perl
       - znc-python
       - znc-tcl
-      - eggdrop
+      - zsh
 
 #Install python packages, when it's the latest
 - name: Install rtv
