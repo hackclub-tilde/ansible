@@ -7,7 +7,7 @@
     shell: /bin/bash
     system: no
     createhome: yes
-    home: /home/naglafar
+    home: /home/naglfar
 
 -  authorized_key:
     user: naglfar
