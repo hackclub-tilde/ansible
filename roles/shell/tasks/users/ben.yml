@@ -2,7 +2,7 @@
 - name: Setting up ben 
   user:
     name: ben
-    groups: tilde,sudo
+    groups: tilde
     state: present
     skeleton: /etc/skel
     shell: /usr/bin/fish
