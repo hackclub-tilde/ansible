@@ -19,7 +19,6 @@
       - weechat
       - mutt
       - python
-      - rtv
       - lynx
       - w3m-img
       - python-pip
@@ -67,6 +66,11 @@
       - znc-python
       - znc-tcl
       - eggdrop
+
+#Install python packages, when it's the latest
+- name: Install rtv
+  pip:
+      name: rtv
 
 - name: Install locally created bins
   copy:
