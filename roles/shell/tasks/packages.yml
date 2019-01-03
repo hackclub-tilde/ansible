@@ -16,6 +16,7 @@
     packages:
       - alpine
       - bsdgames
+      - build-essential
       - byobu
       - cowsay
       - eggdrop
@@ -28,6 +29,7 @@
       - libsdl1.2-dev
       - libssl-dev
       - lynx
+      - make
       - mosh
       - mutt
       - openssl
@@ -51,6 +53,7 @@
       - python
       - python-certbot-apache
       - python-pip
+      - stow
       - tcl
       - tcl-dev
       - tcl-tls
