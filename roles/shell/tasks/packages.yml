@@ -72,8 +72,9 @@
       - zsh
       - python-twisted
       - python3-twisted
-      - inetutils-talk
-      - inetutils-talkd
+      - openbsd-inetd
+      - talk
+      - talkd
       - finger
       - fingerd
 
