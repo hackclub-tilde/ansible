@@ -67,12 +67,18 @@
       - znc-python
       - znc-tcl
       - zsh
+      - python-twisted
+      - python3-twisted
 
-#Install python packages, when it's the latest
-- name: Install rtv
-  pip:
-      name: rtv
-
+#Install python packages, when it's the latest      
+- name: Install pip packages
+  pip: 
+    name: "{{ packages }}"
+    state: present
+  vars:
+    packages:
+		- rtv
+        
 - name: Install locally created bins
   copy:
     src: ../files/chat
