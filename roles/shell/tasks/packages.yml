@@ -77,7 +77,7 @@
     state: present
   vars:
     packages:
-		- rtv
+       - rtv
         
 - name: Install locally created bins
   copy:
