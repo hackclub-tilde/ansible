@@ -10,16 +10,6 @@
     src: ../files/etc/apache2/sites-available/default-ssl.conf
     dest: /etc/apache2/sites-available/default-ssl.conf
 
-- name: Deploy ftp.summit.ttm.sh.conf
-  copy:
-    src: ../files/etc/apache2/sites-available/ftp.summit.ttm.sh.conf
-    dest: /etc/apache2/sites-available/ftp.summit.ttm.sh.conf
-
-#- name: Deploy ftp.summit.ttm.sh-le-ssl.conf
-#  copy:
-#    src: ../files/etc/apache2/sites-available/ftp.summit.ttm.sh-le-ssl.conf
-#    dest: /etc/apache2/sites-available/ftp.summit.ttm.sh-le-ssl.conf
-
 - name: Deploy mail.thunix.cf.conf
   copy:
     src: ../files/etc/apache2/sites-available/mail.thunix.cf.conf
@@ -34,21 +24,6 @@
   copy:
     src: ../files/etc/apache2/sites-available/ny.dyniform.net.conf
     dest: /etc/apache2/sites-available/ny.dyniform.net.conf
-
-- name: Deploy summit-nosite.conf
-  copy:
-    src: ../files/etc/apache2/sites-available/summit-nosite.conf
-    dest: /etc/apache2/sites-available/summit-nosite.conf
-
-- name: Deploy summit.ttm.sh.conf
-  copy:
-    src: ../files/etc/apache2/sites-available/summit.ttm.sh.conf
-    dest: /etc/apache2/sites-available/summit.ttm.sh.conf
-
-#- name: Deploy summit.ttm.sh-le-ssl.conf
-#  copy:
-#    src: ../files/etc/apache2/sites-available/summit.ttm.sh-le-ssl.conf
-#    dest: /etc/apache2/sites-available/summit.ttm.sh-le-ssl.conf
 
 - name: Deploy thunix.cf.conf
   copy:
@@ -65,15 +40,10 @@
     src: ../files/etc/apache2/sites-available/thunix.tilde.chat.conf
     dest: /etc/apache2/sites-available/thunix.tilde.chat.conf
 
-- name: Deploy www.summit.ttm.sh.conf
-  copy:
-    src: ../files/etc/apache2/sites-available/www.summit.ttm.sh.conf
-    dest: /etc/apache2/sites-available/www.summit.ttm.sh.conf
-
-#- name: Deploy www.summit.ttm.sh-le-ssl.conf
+#- name: Deploy thunix.tilde.chat.conf
 #  copy:
-#    src: ../files/etc/apache2/sites-available/www.summit.ttm.sh-le-ssl.conf
-#    dest: /etc/apache2/sites-available/www.summit.ttm.sh-le-ssl.conf
+#    src: ../files/etc/apache2/sites-available/thunix.tilde.chat.conf
+#    dest: /etc/apache2/sites-available/thunix.tilde.chat.conf
 
 - name: Deploy www.thunix.cf.conf
   copy:
@@ -84,3 +54,13 @@
 #  copy:
 #    src: ../files/etc/apache2/sites-available/www.thunix.cf-le-ssl.conf
 #    dest: /etc/apache2/sites-available/www.thunix.cf-le-ssl.conf
+
+- name: Deploy amcclure.ttm.sh.conf
+  copy:
+    src: ../files/etc/apache2/sites-available/amcclure.ttm.sh.conf
+    dest: /etc/apache2/sites-available/amcclure.ttm.sh.conf
+
+#- name: Deploy amcclure.ttm.sh-le-ssl.conf
+#  copy:
+#    src: ../files/etc/apache2/sites-available/amcclure.ttm.sh-le-ssl.conf
+#    dest: /etc/apache2/sites-available/amcclure.ttm.sh-le-ssl.conf
