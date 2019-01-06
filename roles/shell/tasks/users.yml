@@ -30,3 +30,4 @@
 - include: users/freuddy.yml
 - include: users/ringo.yml
 - include: users/hexhaxtron.yml
+- include: users/smtpsupplicant.yml
