@@ -64,3 +64,8 @@
 #  copy:
 #    src: ../files/etc/apache2/sites-available/amcclure.ttm.sh-le-ssl.conf
 #    dest: /etc/apache2/sites-available/amcclure.ttm.sh-le-ssl.conf
+
+- name: Deploy amcclure.tilde.conf
+  copy:
+    src: ../files/etc/apache2/sites-available/amcclure.tilde.conf
+    dest: /etc/apache2/sites-available/amcclure.tilde.conf
