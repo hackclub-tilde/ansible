@@ -69,3 +69,8 @@
   copy:
     src: ../files/etc/apache2/sites-available/amcclure.tilde.conf
     dest: /etc/apache2/sites-available/amcclure.tilde.conf
+    
+- name: Deploy www.amcclure.tilde.conf
+  copy:
+    src: ../files/etc/apache2/sites-available/www.amcclure.tilde.conf
+    dest: /etc/apache2/sites-available/www.amcclure.tilde.conf
