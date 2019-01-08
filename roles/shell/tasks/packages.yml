@@ -22,7 +22,6 @@
       - eggdrop
       - elinks
       - emacs
-      - exim4
       - fish
       - htop
       - libapache2-mod-php7.0
@@ -78,11 +77,8 @@
       - finger
       - fingerd
       - analog
-      - inn2
-      - inn2-inews
       - libconvert-binhex-perl
       - libmime-tools-perl
-      - postfix
 
 #Install python packages, when it's the latest      
 - name: Install pip packages
