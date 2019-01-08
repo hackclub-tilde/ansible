@@ -1,4 +1,4 @@
 #!/bin/bash
 cd /var/thunix/ansible
 git pull
-ansible-playbook -i ./hosts site.yml -u root --limit `hostname -f`
+ansible-playbook -i ./hosts site.yml -u root 
