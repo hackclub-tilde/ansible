@@ -1,9 +1,8 @@
 [common]
 phoenix.thunix.cf
-summit.thunix.cf
 
 [shell]
 phoenix.thunix.cf
 
 [webserver]
-summit.thunix.cf
+phoenix.thunix.cf
