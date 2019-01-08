@@ -14,7 +14,7 @@
       - python-pip
       - letsencrypt
       - python-certbot-apache
-      - apt-https-transport
+      - apt-transport-https
       - cron
       
 # Install ansible python package, because it's the latest
