@@ -33,3 +33,4 @@
 - include: users/smtpsupplicant.yml
 - include: users/orliesaurus.yml
 - include: users/gooly.yml
+- include: users/diabla.yml
