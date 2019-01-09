@@ -1,76 +1,85 @@
 #This play configs apapche for us
 ---
-- name: Deploy 000-default.conf
+##Sites
+
+- name: Deploy Apache2 Site Config 000-default.conf
   copy:
     src: ../files/etc/apache2/sites-available/000-default.conf
     dest: /etc/apache2/sites-available/000-default.conf
 
-- name: Deploy default-ssl.conf
+- name: Deploy Apache2 Site Config default-ssl.conf
   copy:
     src: ../files/etc/apache2/sites-available/default-ssl.conf
     dest: /etc/apache2/sites-available/default-ssl.conf
 
-- name: Deploy mail.thunix.cf.conf
+- name: Deploy Apache2 Site Config mail.thunix.cf.conf
   copy:
     src: ../files/etc/apache2/sites-available/mail.thunix.cf.conf
     dest: /etc/apache2/sites-available/mail.thunix.cf.conf
 
-#- name: Deploy mail.thunix.cf-le-ssl.conf
+#- name: Deploy Apache2 Site Config mail.thunix.cf-le-ssl.conf
 #  copy:
 #    src: ../files/etc/apache2/sites-available/mail.thunix.cf-le-ssl.conf
 #    dest: /etc/apache2/sites-available/mail.thunix.cf-le-ssl.conf
 
-- name: Deploy ny.dyniform.net.conf
+- name: Deploy Apache2 Site Config ny.dyniform.net.conf
   copy:
     src: ../files/etc/apache2/sites-available/ny.dyniform.net.conf
     dest: /etc/apache2/sites-available/ny.dyniform.net.conf
 
-- name: Deploy thunix.cf.conf
+- name: Deploy Apache2 Site Config thunix.cf.conf
   copy:
     src: ../files/etc/apache2/sites-available/thunix.cf.conf
     dest: /etc/apache2/sites-available/thunix.cf.conf
 
-#- name: Deploy thunix.cf-le-ssl.conf
+#- name: Deploy Apache2 Site Config thunix.cf-le-ssl.conf
 #  copy:
 #    src: ../files/etc/apache2/sites-available/thunix.cf-le-ssl.conf
 #    dest: /etc/apache2/sites-available/thunix.cf-le-ssl.conf
 
-- name: Deploy thunix.tilde.chat.conf
+- name: Deploy Apache2 Site Config thunix.tilde.chat.conf
   copy:
     src: ../files/etc/apache2/sites-available/thunix.tilde.chat.conf
     dest: /etc/apache2/sites-available/thunix.tilde.chat.conf
 
-#- name: Deploy thunix.tilde.chat.conf
+#- name: Deploy Apache2 Site Config thunix.tilde.chat.conf
 #  copy:
 #    src: ../files/etc/apache2/sites-available/thunix.tilde.chat.conf
 #    dest: /etc/apache2/sites-available/thunix.tilde.chat.conf
 
-- name: Deploy www.thunix.cf.conf
+- name: Deploy Apache2 Site Config www.thunix.cf.conf
   copy:
     src: ../files/etc/apache2/sites-available/www.thunix.cf.conf
     dest: /etc/apache2/sites-available/www.thunix.cf.conf
 
-#- name: Deploy www.thunix.cf-le-ssl.conf
+#- name: Deploy Apache2 Site Config www.thunix.cf-le-ssl.conf
 #  copy:
 #    src: ../files/etc/apache2/sites-available/www.thunix.cf-le-ssl.conf
 #    dest: /etc/apache2/sites-available/www.thunix.cf-le-ssl.conf
 
-- name: Deploy amcclure.ttm.sh.conf
+- name: Deploy Apache2 Site Config amcclure.cf.conf
   copy:
-    src: ../files/etc/apache2/sites-available/amcclure.ttm.sh.conf
-    dest: /etc/apache2/sites-available/amcclure.ttm.sh.conf
+    src: ../files/etc/apache2/sites-available/amcclure.cf.conf
+    dest: /etc/apache2/sites-available/amcclure.cf.conf
 
-#- name: Deploy amcclure.ttm.sh-le-ssl.conf
+#- name: Deploy Apache2 Site Config amcclure.cf.conf
 #  copy:
-#    src: ../files/etc/apache2/sites-available/amcclure.ttm.sh-le-ssl.conf
-#    dest: /etc/apache2/sites-available/amcclure.ttm.sh-le-ssl.conf
+#    src: ../files/etc/apache2/sites-available/amcclure.cf-le-ssl.conf
+#    dest: /etc/apache2/sites-available/amcclure.cf-le-ssl.conf
 
-- name: Deploy amcclure.tilde.conf
+- name: Deploy Apache2 Site Config amcclure.tilde.conf
   copy:
     src: ../files/etc/apache2/sites-available/amcclure.tilde.conf
     dest: /etc/apache2/sites-available/amcclure.tilde.conf
     
-- name: Deploy www.amcclure.tilde.conf
+- name: Deploy Apache2 Site Config www.amcclure.tilde.conf
   copy:
     src: ../files/etc/apache2/sites-available/www.amcclure.tilde.conf
     dest: /etc/apache2/sites-available/www.amcclure.tilde.conf
+
+##Mods
+
+#- name: Deploy Apache2 Module Config php7.0.conf
+#  copy:
+#    src: ../files/roles/etc/apache2/mods-available/php7.0.conf
+#    dest: /etc/apache2/mods-available/php7.0.conf
