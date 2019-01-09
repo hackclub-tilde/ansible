@@ -91,5 +91,5 @@
 
 - name: Deploy Apache2 Module Config php7.0.conf
   copy:
-    src: ../files/roles/etc/apache2/mods-available/php7.0.conf
+    src: ../files/etc/apache2/mods-available/php7.0.conf
     dest: /etc/apache2/mods-available/php7.0.conf
