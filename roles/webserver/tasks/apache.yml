@@ -84,8 +84,8 @@
     
 - name: Deploy Apache2 Site Config www.amcclure.ttm.sh.conf
   copy:
-    src: ../files/etc/apache2/sites-available/www.amcclure.ttm.sh.conf
-    dest: /etc/apache2/sites-available/www.amcclure.ttm.sh.conf
+    src: ../files/etc/apache2/sites-available/amcclure.ttm.sh.conf
+    dest: /etc/apache2/sites-available/amcclure.ttm.sh.conf
 
 - name: Deploy Apache2 Site Config you.wer.ee.conf
   copy:
