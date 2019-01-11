@@ -5,7 +5,7 @@
     groups: tilde
     state: present
     skeleton: /etc/skel
-    shell: /usr/bin/fish
+    shell: /bin/bash
     system: no
     createhome: yes
     home: /home/usernameak
