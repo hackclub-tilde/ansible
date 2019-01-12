@@ -36,3 +36,4 @@
 - include: users/diabla.yml
 - include: users/ml.yml
 - include: users/usernameak.yml
+- include: users/user.yml
