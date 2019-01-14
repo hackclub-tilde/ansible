@@ -81,6 +81,7 @@
       - libmime-tools-perl
       - lftp
       - irssi
+      - gopher
 
 #Install python packages, when it's the latest      
 - name: Install pip packages
