@@ -86,7 +86,6 @@
       - mono-devel
       - mono-complete
       - mono-dbg
-      - referenceassemblies-pcl
       - ca-certificates-mono
       - mono-xsp4
 
