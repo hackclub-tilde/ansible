@@ -88,6 +88,7 @@
       - mono-dbg
       - ca-certificates-mono
       - mono-xsp4
+      - mono-apache-server
 
 #Install python packages, when it's the latest      
 - name: Install pip packages
