@@ -90,6 +90,7 @@
       - mono-xsp4
       - mono-apache-server
       - vsftpd
+      - vrms
 
 #Install python packages, when it's the latest      
 - name: Install pip packages
