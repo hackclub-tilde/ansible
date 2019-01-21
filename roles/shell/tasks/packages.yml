@@ -92,6 +92,7 @@
       - vrms
       - telnet
       - neofetch
+      - libncurses5-dev
 
 #Install python packages, when it's the latest      
 - name: Install pip packages
