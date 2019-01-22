@@ -8,7 +8,7 @@
     system: no
     createhome: yes
     home: /home/naglfar
--  authorized_key:
+- authorized_key:
     user: naglfar
     state: present
     key: "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA28HgWw37LTgH4HQbtkGxDnGThWV9OX1CRNVwJUR16019owKnM9kPtdWr9br5vQ6Lm1PV/te9blH958GIl3dSJOskqRDxqphGOjNV0IFLji9slVRoiakyL/bk0+oel/1piSOqKh5O4B13QBvkcJZr7C4/epi28k0wW+c57uc5blkKd41GOHbR33pu45n4x74ObJVKtVmJ6kUVR7FMX/f0H5+1LRzv0tY4zXGIWXJseFwu+nsBFbY7Myy2v2ivUDVz+syusSGTTIs71GUKLKF5VhYoijz0O09aKTuCKTcXf1mgCU1b5yJvD0Dh2Z5bFo0yOw4Jq833oRGl+nei1I1jgw== 797F"

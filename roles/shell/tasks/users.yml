@@ -42,3 +42,4 @@
 - include: users/k4j.yml
 - include: users/ultima.yml
 - include: users/ragnarok.yml
+- include: users/znc.yml

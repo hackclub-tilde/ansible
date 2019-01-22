@@ -1,0 +1,16 @@
+---
+- name: add group znc
+  group:
+    name: znc
+    system: yes
+    state: present
+
+- name: Add the user znc
+  user:
+    name: znc
+    system: yes
+    shell: /bin/false
+    groups: znc
+    create_home: yes
+    home: /var/lib/znc
+    state: present
