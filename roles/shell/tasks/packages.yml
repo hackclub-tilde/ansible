@@ -111,6 +111,9 @@
       - neofetch
       - libncurses5-dev
       - python3-toot
+      - mc
+      - mc-data
+      - ranger
 
 #Install python packages, when it's the latest      
 - name: Install pip packages
