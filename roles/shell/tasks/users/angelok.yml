@@ -10,6 +10,6 @@
     createhome: yes
     home: /home/angelok
 - authorized_key:
-    user: user
+    user: angelok
     state: present
     key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAm7hcvV4kpjt/pXXbm4Mdzdn3yWMdo/zS0HVJ81O0aqW2bbPzl01eUCjwQsl+x+AgXpGioMj8S/eGXWuzTSj93TbpUL5iEgun2TMOTak9524AEJ8thJiB31NBUe9fg1TdSovH3Cek7H8YI/Cqt5s7i6bIslOa2AiDmy1kaPDnP8HCR0+ri4JAKZsqUiWEMsMdB6fHK6LQ1LfE/w33+wrmegmyCSo0BjUqULnUPgLbvJao1LL4QWD10O64qokIMBsbJ27acBPCHvfIH3/rZ4w8eQCcQk1k19h32p3XukoPnqr/fVBSZPGFboJwU60SEa8qmOxbQnynx8UZ9KhwbHRHaQ=="
