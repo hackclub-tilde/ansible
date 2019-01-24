@@ -1,10 +1,27 @@
 # Install our baseline packages for all machines, irrespective of what role they might have
 ---
+- name: Add apt key for weechat
+  apt_key:
+    keyserver: p80.pool.sks-keyservers.net
+    id: 11E9DE8848F2B65222AA75B8D1820DB22A11534E
+    state: present
+
+- name: Add apt key for toot
+  apt_key:
+    url: https://keybase.io/ihabunek/pgp_keys.asc
+    state: present 
+
 - name: Add weechat repo
   apt_repository: 
     repo: 'deb https://weechat.org/debian stretch main' 
     state: present
     filename: weechat
+    update_cache: yes
+
+- name: Add toot repo
+  apt_repository:
+    repo: 'deb http://bezdomni.net/packages/ ./'
+    state: present
     update_cache: yes
 
 - name: Install baseline packages
@@ -93,6 +110,7 @@
       - telnet
       - neofetch
       - libncurses5-dev
+      - python3-toot
 
 #Install python packages, when it's the latest      
 - name: Install pip packages
