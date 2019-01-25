@@ -123,7 +123,6 @@
   vars:
     packages:
        - rtv
-       - toot
         
 - name: Install locally created bins
   copy:
