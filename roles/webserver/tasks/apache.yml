@@ -92,6 +92,11 @@
     src: ../files/etc/apache2/sites-available/you.wer.ee.conf
     dest: /etc/apache2/sites-available/you.wer.ee.conf
 
+- name: Deploy Apache2 Site Config ftp.thunix.cf.conf
+  copy:
+    src: ../files/etc/apache2/sites-available/ftp.thunix.cf.conf
+    dest: /etc/apache2/sites-available/ftp.thunix.cf.conf
+
 ##Mods
 
 #- name: Deploy Apache2 Module Config php7.0.conf
