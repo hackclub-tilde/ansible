@@ -48,5 +48,5 @@
 - include: users/rado.yml
 - include: users/sata.yml
 - include: users/wesx.yml
-- include: users/arda
-- include: users/larasaty
+- include: users/arda.yml
+- include: users/larasaty.yml
