@@ -1,7 +1,7 @@
 ---
 - name: Setting up wesx
   user:
-    name: diabla
+    name: wesx
     groups: tilde
     state: present
     skeleton: /etc/skel
