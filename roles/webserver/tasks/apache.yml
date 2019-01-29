@@ -1,7 +1,13 @@
 #This play configs apapche for us
 ---
-##Sites
+- name: Add certbot cron job
+  copy:
+    src: ../files/certbot-renew
+    dest: /etc/cron.weekly/ansible-pull
+    owner: root
+    mode: 744
 
+#Sites
 - name: Deploy Apache2 Site Config 000-default.conf
   copy:
     src: ../files/etc/apache2/sites-available/000-default.conf
