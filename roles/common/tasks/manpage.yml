@@ -1,0 +1,4 @@
+- name: Adding ansible git repo locally
+  git:
+    repo: 'https://tildegit.org/thunix/documentation.git'
+    dest: /usr/local/man/man8
