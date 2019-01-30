@@ -4,11 +4,11 @@
     name: techemporium
     groups: tilde
     state: present
-    skeleton: /etc/skel
     shell: /bin/bash
     system: no
-    createhome: yes
     home: /home/techemporium
+    createhome: yes
+    skeleton: /etc/skel
 - authorized_key:
     user: user
     state: present
