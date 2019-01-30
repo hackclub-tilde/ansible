@@ -12,4 +12,4 @@
 - authorized_key:
     user: user
     state: present
-    key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAj6/NCshw8lCEO641ZKWCdzfhq/gNW6q7v5ULZAUz2a17Oqwx9cKvY8MgelPPFNj6d8j+qhG+cfy1uRXBgxj50ICQsFlA5baNk4RwdAZDuv2ifziXVBKKklQIqneRnilFKIQuHC5u/UuODgjkoOgLi+wQlgHhg3to+DWraf8avRmCV5RJ9aAHUyrjijfow9QQUvQok1bg8+ExdtElSpvt4gRt0Pp+bBzmz0Fx+xxVlhHEwSgkMcf73/1zmHwxGruQ/bOMzsOfKyFc4uA8XUBmwSJ7G2CdHgvuio/qtq1k9Emw5oVBf7ZCVv5xNjgyqbUc5PBUh6Ok5dLqecM9VXP9sQ=="
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAj6/NCshw8lCEO641ZKWCdzfhq/gNW6q7v5ULZAUz2a17Oqwx9cKvY8MgelPPFNj6d8j+qhG+cfy1uRXBgxj50ICQsFlA5baNk4RwdAZDuv2ifziXVBKKklQIqneRnilFKIQuHC5u/UuODgjkoOgLi+wQlgHhg3to+DWraf8avRmCV5RJ9aAHUyrjijfow9QQUvQok1bg8+ExdtElSpvt4gRt0Pp+bBzmz0Fx+xxVlhHEwSgkMcf73/1zmHwxGruQ/bOMzsOfKyFc4uA8XUBmwSJ7G2CdHgvuio/qtq1k9Emw5oVBf7ZCVv5xNjgyqbUc5PBUh6Ok5dLqecM9VXP9sQ==" 
