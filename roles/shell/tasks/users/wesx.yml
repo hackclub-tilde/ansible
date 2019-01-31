@@ -12,16 +12,4 @@
 - authorized_key:
     user: wesx
     state: present
-    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDc8oZYpn6miL92I3Vza8Mfd63J8kwJaSwecsr/vv9Vh7ZA1ZQbkKtrKu/t+uNZkmDJmEB7/+s/9h3NKEGBQM/dhNw2yVKADko7TQFN+1ZwiDKOrsClg2XsJZ6l36dz/Mlgm+YfaO47cDcJfdtDIWpHsRSWUZXL+aC2yZlVqOkEXjoY9coEZSYtjB1X1C4WVnpIFpZGDB07y0AEtRZ9I2kJHVRbRqgSiaRhTc6+xMZ4AHJshorxP5uI4a1yrP7Plw+MlKl2gxDRZLWeTJrKvZ7OQYK8geNJ0+kbfPLck82/AIbCz21fG26APAMv77e79ZBSAlX8Zd0ScE7xGpXbP7H5=="
-- authorized_key:
-    user: wesx
-    state: present
-    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQClNRs0spKDCoCTcIRkHM9auwL9y+Wp0onDt1Q296759kQ+wYCe2WmvFb5sv0pd0uAWgob2Z162G1igaY557iSO1RzPdrvnLj+zDMyzOl5BBvydind4skypywJR5Zh7hb+iKsHO9xiH26PTuxc3ZTRME5snzzjup5cvCWpsekAZzj5EurP9L4RZimYSHB5jtNMt1QR3hvxQtniC/mtbvTVYOh48m0fFz+VcY9bwCu/D1fjcb5u0lusSjRSci+yJ8A7lLN7LfkA13sTZ7dCwdLOmbAZVXZZz5sTj6rzBF/CmKYSK/mv5SKoiz4jZ0zm+Fe9nYbMflxotlwZj9CRXdZC5=="
-- authorized_key:
-    user: wesx
-    state: present
-    key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAnrcVuqSnAQxAHDjs2a+uUBDCogCRD7rolnvF9m/vYsSd9FMPLWHegVgd9CGUhrHd8BVADpdGhFU4v0snsnAJ5h5Qbr/JlKqkQLrnWZ9b/uR0s0pfvJiZQei/aGvCMlcrm76SC8OTORDjDk/NpjrOAjYiuFRp6ypOI4KuFF2ogWJK+YpiPVwvG9+/mZsOjCQVO4ui7wAndDXqUsuGc2pb5u3BTbTF2ZC/FmJ0iRFEfSAhsS+n6HvHzECb/INh3yYvup1iPP30Dfo9fsGFxfCD9ciRR4LuSwiZ040HjSm05t2x6gIIP7A+I7rUvNzzA/EKn8VIiVTp0rcAXGBF2ORm6w=="
-- authorized_key:
-    user: wesx
-    state: present
-    key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAzIhzIi/U0Emffv+7nZPN+0M5fkVYoXlv3RswyJWzMaZS68PeA6Jcq87HHPS9PcBdmsVRsNrdvhjlKIHdMPDKcsjGJacIITpqR1VUBj7N57EV77OW4lwsqjx9zCcfSyNjxkRLJamajvI+dFN0lGakZ7LQffYmugOd72LOLbVfEZ9qa9E9d3dwXXC5NMXJMDjwNrtpbOdx6AJ7dCamKjVM2r5VGN9IhrOedLdqxiqxTL+fjcJWbtmJiKLCkhaBYkqtqlxrxQFGWz0ALPjFO9Jheem33PrQrZaYQmz1EluoM8wm5Ub/AzUBy/FavEkwoOaeGZ7omFzs3gMx3DYEUVf++w=="
+    key: "ssh-rsa ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAzIhzIi/U0Emffv+7nZPN+0M5fkVYoXlv3RswyJWzMaZS68PeA6Jcq87HHPS9PcBdmsVRsNrdvhjlKIHdMPDKcsjGJacIITpqR1VUBj7N57EV77OW4lwsqjx9zCcfSyNjxkRLJamajvI+dFN0lGakZ7LQffYmugOd72LOLbVfEZ9qa9E9d3dwXXC5NMXJMDjwNrtpbOdx6AJ7dCamKjVM2r5VGN9IhrOedLdqxiqxTL+fjcJWbtmJiKLCkhaBYkqtqlxrxQFGWz0ALPjFO9Jheem33PrQrZaYQmz1EluoM8wm5Ub/AzUBy/FavEkwoOaeGZ7omFzs3gMx3DYEUVf++w=="
