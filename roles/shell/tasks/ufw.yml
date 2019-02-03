@@ -1,0 +1,33 @@
+# Install our baseline packages for all machines, irrespective of what role they might have
+---
+- name: Create UFW tcp rules 
+  ufw:
+    rule: allow
+    proto: tcp
+    port: '{{ item }}'
+  with_items:
+    - 22
+    - 443
+    - 80
+    - 143
+    - 25
+    - 79
+    - 2222
+
+- name: Create UFW udp rules
+  ufw:
+    rule: allow
+    proto: udp
+    port: '{{ item }}'
+  with_items:
+      - "60000:61000"
+      - 1326
+
+- name: Create limits
+  ufw:
+    rule: limit
+    proto: tcp
+    port: '{{ item }}'
+  with_items:
+    - 22
+    - 2222
