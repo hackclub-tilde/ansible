@@ -117,6 +117,10 @@
       - python3-toot
       - imagemagick
       - caca-utils
+      - python3-pip
+      - cmake
+      - libsdl2-dev
+      - p7zip-full
 
 #Install python packages, when it's the latest      
 - name: Install pip packages
