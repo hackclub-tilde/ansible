@@ -6,7 +6,7 @@
     state: directory
     owner: znc
     group: root
-    mode: 770
+    mode: 0770
     recurse: yes
 
 - name: Create znc run dir
@@ -15,7 +15,7 @@
     state: directory
     owner: znc
     group: root
-    mode: 770
+    mode: 0770
 
 - name: Install crontab target
   copy:
@@ -48,7 +48,7 @@
     dest: /var/lib/znc/znc_account.newconf
     owner: znc
     group: root
-    mode: 660
+    mode: 0660
 
 - name: Install znc user script
   copy:
@@ -56,4 +56,4 @@
     dest: /var/lib/znc/create-znc_account.sh
     owner: znc
     group: root
-    mode: 770
+    mode: 0770

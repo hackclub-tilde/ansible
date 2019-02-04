@@ -6,13 +6,11 @@
     proto: tcp
     port: '{{ item }}'
   with_items:
-    - 22
     - 443
     - 80
     - 143
     - 25
     - 79
-    - 2222
 
 - name: Create UFW udp rules
   ufw:
