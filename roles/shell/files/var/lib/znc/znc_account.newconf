@@ -1,0 +1,25 @@
+<User newuser>
+	Admin = false
+	AltNick = newuser|znc
+	AppendTimestamp = false
+	AutoClearChanBuffer = true
+	AutoClearQueryBuffer = true
+	Buffer = 50
+	DenyLoadMod = false
+	DenySetBindHost = false
+	Ident = newuser
+	JoinTries = 10
+	LoadModule = chansaver
+	MaxJoins = 0
+	MaxNetworks = 2
+	MaxQueryBuffers = 50
+	MultiClients = true
+	Nick = newuser
+	PrependTimestamp = true
+	QuitMsg = bouncer provider phoenix.thunix.cf
+	RealName = Got Thunix ?
+	StatusPrefix = *
+	TimestampFormat = [%H:%M:%S]
+
+	<Pass password>
+	Method = SHA256

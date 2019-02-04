@@ -1,0 +1,59 @@
+# Install our baseline packages for all machines, irrespective of what role they might have
+---
+- name: Create home dirs for znc 
+  file:
+    path: /var/lib/znc/.znc
+    state: directory
+    owner: znc
+    group: root
+    mode: 770
+    recurse: yes
+
+- name: Create znc run dir
+  file:
+    path: /var/run/znc
+    state: directory
+    owner: znc
+    group: root
+    mode: 770
+
+- name: Install crontab target
+  copy:
+    dest: /etc/systemd/system/znc.service
+    content: |
+      [Install]
+      WantedBy=multi-user.target
+      [Unit]
+      Description=Simulates cron, limited to /etc/cron.*
+      Requires=crontab@hourly.timer
+      Requires=crontab@daily.timer
+      Requires=crontab@weekly.timer
+      Requires=crontab@monthly.timer
+
+      [Unit]
+      Description=ZNC, an advanced IRC bouncer
+      After=network-online.target
+
+      [Service]
+      ExecStart=/usr/bin/znc -f --datadir=/var/lib/znc/.znc
+      ExecReload=/bin/kill -HUP $MAINPID
+      User=znc
+
+      [Install]
+      WantedBy=multi-user.target
+
+- name: Install znc_newaccount
+  copy:
+    src: ../files/var/lib/znc/znc_account.newconf
+    dest: /var/lib/znc/znc_account.newconf
+    owner: znc
+    group: root
+    mode: 660
+
+- name: Install znc user script
+  copy:
+    src: ../files/var/lib/znc/create-znc_account.sh
+    dest: /var/lib/znc/create-znc_account.sh
+    owner: znc
+    group: root
+    mode: 770
