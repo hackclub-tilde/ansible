@@ -1,8 +1,8 @@
 [common]
-phoenix.thunix.cf
+phoenix.thunix.cf ansible_connection=local
 
 [shell]
-phoenix.thunix.cf
+phoenix.thunix.cf ansible_connection=local
 
 [webserver]
-phoenix.thunix.cf
+phoenix.thunix.cf ansible_connection=local

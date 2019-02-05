@@ -11,6 +11,11 @@
     url: https://keybase.io/ihabunek/pgp_keys.asc
     state: present 
 
+- name: Add apt key for zandronum
+  apt_key:
+    url: http://debian.drdteam.org/drdteam.gpg
+    state: present
+
 - name: Add weechat repo
   apt_repository: 
     repo: 'deb https://weechat.org/debian stretch main' 
@@ -21,6 +26,12 @@
 - name: Add toot repo
   apt_repository:
     repo: 'deb http://bezdomni.net/packages/ ./'
+    state: present
+    update_cache: yes
+
+- name: Add zandronum repo
+  apt_repository:
+    repo: 'deb http://debian.drdteam.org/ stable multiverse' 
     state: present
     update_cache: yes
 
@@ -121,6 +132,22 @@
       - cmake
       - libsdl2-dev
       - p7zip-full
+      - bzflag-server
+      - minetest-data
+      - minetest-mod-advspawning
+      - minetest-mod-animalmaterials
+      - minetest-mod-animals
+      - minetest-mod-maidroid
+      - minetest-mod-mesecons
+      - minetest-mod-mobf-core
+      - minetest-mod-mobf-trap
+      - minetest-mod-moreblocks
+      - minetest-mod-moreores
+      - minetest-mod-nether
+      - minetest-mod-pipeworks
+      - minetest-mod-torches
+      - minetest-server
+      - zandronum-server
 
 #Install python packages, when it's the latest      
 - name: Install pip packages
