@@ -9,6 +9,24 @@
     mode: 0770
     recurse: yes
 
+- name: Install znc target
+  copy:
+    dest: /etc/systemd/system/bzflag.service
+    content: |
+      [Install]
+      WantedBy=multi-user.target
+
+      [Unit]
+      Description=BZFlag Game Server
+      After=network-online.target
+
+      [Service]
+      ExecStart=/usr/games/bzfs -conf /var/lib/bzflag/bzflag.conf
+      ExecReload=/bin/kill -HUP $MAINPID
+      User=bzflag
+
+      [Install]
+      WantedBy=multi-user.target
 #- name: Install znc user script
 #  copy:
 #    src: ../files/var/lib/znc/create-znc_account.sh
