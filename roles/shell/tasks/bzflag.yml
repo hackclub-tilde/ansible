@@ -27,10 +27,3 @@
 
       [Install]
       WantedBy=multi-user.target
-#- name: Install znc user script
-#  copy:
-#    src: ../files/var/lib/znc/create-znc_account.sh
-##    dest: /var/lib/znc/create-znc_account.sh
-#    owner: znc
-##    group: root
-#    mode: 0770
