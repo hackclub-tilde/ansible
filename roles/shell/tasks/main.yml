@@ -6,3 +6,4 @@
 - include: apache2-mods.yml
 - include: ufw.yml
 - include: znc.yml
+- include: bzflag.yml
