@@ -12,6 +12,7 @@
     - 25
     - 79
     - 1326
+    - 5154
 
 - name: Create UFW udp rules
   ufw:
@@ -21,6 +22,7 @@
   with_items:
       - "60000:61000"
       - 1326
+      - 5154
 
 - name: Create limits
   ufw:

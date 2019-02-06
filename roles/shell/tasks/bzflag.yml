@@ -1,0 +1,18 @@
+# Configure bzflag 
+---
+- name: Create home dirs for bzflag 
+  file:
+    path: /var/lib/bzflag
+    state: directory
+    owner: bzflag
+    group: root
+    mode: 0770
+    recurse: yes
+
+#- name: Install znc user script
+#  copy:
+#    src: ../files/var/lib/znc/create-znc_account.sh
+##    dest: /var/lib/znc/create-znc_account.sh
+#    owner: znc
+##    group: root
+#    mode: 0770

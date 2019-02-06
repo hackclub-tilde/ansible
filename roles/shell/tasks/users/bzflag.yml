@@ -1,0 +1,16 @@
+---
+- name: add group bzflag
+  group:
+    name: bzflag
+    system: yes
+    state: present
+
+- name: Add the user bzflag
+  user:
+    name: bzflag
+    system: yes
+    shell: /bin/false
+    groups: bzflag
+    create_home: yes
+    home: /var/lib/bzflag
+    state: present
