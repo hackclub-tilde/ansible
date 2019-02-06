@@ -125,7 +125,6 @@
       - mc
       - mc-data
       - ranger
-      - python3-toot
       - imagemagick
       - caca-utils
       - python3-pip
