@@ -1,4 +1,4 @@
-# Install our baseline packages for all machines, irrespective of what role they might have
+# Configure UFW rules
 ---
 - name: Create UFW tcp rules 
   ufw:

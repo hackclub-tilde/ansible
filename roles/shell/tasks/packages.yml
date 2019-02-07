@@ -1,4 +1,4 @@
-# Install our baseline packages for all machines, irrespective of what role they might have
+# Install our shell role packages for all machines
 ---
 - name: Add apt key for weechat
   apt_key:
