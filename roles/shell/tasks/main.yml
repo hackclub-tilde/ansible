@@ -7,3 +7,4 @@
 - include: ufw.yml
 - include: znc.yml
 - include: bzflag.yml
+- include: minetest.yml

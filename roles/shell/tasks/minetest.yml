@@ -1,0 +1,9 @@
+# Configure minetest
+---
+- name: Install minetest.conf 
+  copy:
+    src: ../files/minetest.conf
+    dest: /etc/minetest/minetest.conf
+    owner: root
+    group: root
+    mode: 0644
