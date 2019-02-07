@@ -13,6 +13,7 @@
     - 79
     - 1326
     - 5154
+    - 30000
 
 - name: Create UFW udp rules
   ufw:
@@ -23,6 +24,7 @@
       - "60000:61000"
       - 1326
       - 5154
+      - 30000
 
 - name: Create limits
   ufw:
