@@ -1,4 +1,4 @@
-- name: Adding ansible git repo locally
+- name: Adding manpage git repo locally
   git:
     repo: 'https://tildegit.org/thunix/documentation.git'
     dest: /usr/local/man/man8

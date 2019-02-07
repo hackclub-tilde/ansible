@@ -1,0 +1,11 @@
+- name: Adding monitoring git repo locally
+  git:
+    repo: 'https://tildegit.org/thunix/monurbox.git'
+    dest: /var/lib/monitoring
+
+me: Add monitoring cron job
+  copy:
+    src: ../files/monitoring
+    dest: /etc/cron.hourly/monitoring
+    owner: root
+    mode: 744
