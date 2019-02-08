@@ -34,6 +34,11 @@
     repo: 'deb http://debian.drdteam.org/ stable multiverse' 
     state: present
     update_cache: yes
+- name: Add debian contrib
+  apt_repository:
+    repo: 'deb http://ftp.de.debian.org/debian stretch main contrib'
+    state: present
+    update_cache: yes
 
 - name: Install baseline packages
   apt: 
@@ -147,6 +152,7 @@
       - minetest-mod-torches
       - minetest-server
       - zandronum-server
+      - dosemu
 
 #Install python packages, when it's the latest      
 - name: Install pip packages
