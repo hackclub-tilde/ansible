@@ -1,6 +1,6 @@
 # Configure minecraft server
 ---
-- name: Create home dirs for znc 
+- name: Create home dirs for minecraft
   file:
     path: /var/lib/minecraft
     state: directory
