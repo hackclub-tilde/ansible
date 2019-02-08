@@ -1,0 +1,29 @@
+# Configure minecraft server
+---
+- name: Create home dirs for znc 
+  file:
+    path: /var/lib/minecraft
+    state: directory
+    owner: minecraft
+    group: root
+    mode: 0770
+    recurse: yes
+
+- name: Install minecraft target
+  copy:
+    dest: /etc/systemd/system/minecraft.service
+    content: |
+      [Install]
+      WantedBy=multi-user.target
+
+      [Unit]
+      Description=Minecraft Game Server
+      After=network-online.target
+
+      [Service]
+      ExecStart=
+      ExecReload=/bin/kill -HUP $MAINPID
+      User=znc
+
+      [Install]
+      WantedBy=multi-user.target
