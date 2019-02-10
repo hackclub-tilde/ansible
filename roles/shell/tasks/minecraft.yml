@@ -5,7 +5,7 @@
     path: /var/lib/minecraft
     state: directory
     owner: minecraft
-    group: root
+    group: minecraft
     mode: 0770
     recurse: yes
 
@@ -21,9 +21,25 @@
       After=network-online.target
 
       [Service]
-      ExecStart=
+      ExecStart=/var/lib/minecraft/paper/start.sh
       ExecReload=/bin/kill -HUP $MAINPID
-      User=znc
+      User=minecraft
 
       [Install]
       WantedBy=multi-user.target
+
+- name: Install start.sh
+  copy:
+    src: ../files/var/lib/minecraft/paper/start.sh
+    dest: /var/lib/minecraft/paper/start.sh
+    owner: minecraft
+    group: root
+    mode: 0660
+
+- name: Install minecraft ops list
+  copy:
+    src: ../files/var/lib/minecraft/paper/ops.json
+    dest: /var/lib/minecraft/paper/ops.json
+    owner: minecraft
+    group: minecraft
+    mode: 0660
