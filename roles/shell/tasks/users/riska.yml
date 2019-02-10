@@ -1,0 +1,15 @@
+---
+- name: Setting up riska 
+  user:
+    name: riska
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/riska
+- authorized_key:
+    user: riska
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAgJC/C+ydzVulrJuiC/ZkMeceoyhr6gOfGTv1D7/sqaoFDt9i4qJTE6J68V6orzcM+oi0t72+1LeKF6FJm0OPTvzZZNKFh/irkBxw8s+d0WlYu390liB9jKrNqI6Sr565pxwe62li27xFLIG+WMsTeUyWPGITOHklZslfO2KkSZaGcWybiMPdZ825NfpfaqNNK+Zcw7N1n6a5IpU20VWx8sqnFr0wK6LMzAsSjzdmuzeooGegL8UCLoPDBt/33f9zMij7WjB/XBNXuWIyoGsEY9jg3ISwY0wFMT+1bygQ0v2Gu/zZMrLi/wcWuw+0/PAeiucqA/tgkU7swTd8GPOEMw=="

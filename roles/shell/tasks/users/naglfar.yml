@@ -1,7 +1,7 @@
 ---
 - user:
     name: naglfar
-    groups: tilde
+    groups: tilde,sudo
     state: present
     skeleton: /etc/skel
     shell: /bin/bash
