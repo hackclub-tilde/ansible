@@ -14,6 +14,7 @@
     - 1326
     - 5154
     - 30000
+    - 25565 
 
 - name: Create UFW udp rules
   ufw:
