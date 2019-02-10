@@ -34,7 +34,7 @@
     dest: /var/lib/minecraft/paper/start.sh
     owner: minecraft
     group: root
-    mode: 0660
+    mode: 0770
 
 - name: Install minecraft ops list
   copy:

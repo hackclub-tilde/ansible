@@ -8,3 +8,4 @@
 - include: znc.yml
 - include: bzflag.yml
 - include: minetest.yml
+- include: minecraft.yml
