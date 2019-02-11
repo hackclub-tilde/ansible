@@ -33,3 +33,6 @@ To install a new package on a machine, just find the package name, and add it to
 * Don't be afraid to make a PR!  Worst case, the PR is rejected.  That's fine, nobody will be offended.  What will likely happen is it'll be merged in if it doesn't break master. It might get tweaked a bit, but that's all.
 * If you have a problem/request, and don't know how to make it happen, open a ticket.  Even if you know how to fix it, open a ticket, to link to your PR.  It makes a good place to discuss proposed changes.
 * ASK!  If you have a question/concern, feel free to ask in IRC.
+
+
+[Come chat with us! (tilde.chat:6697/#thunix)](https://web.tilde.chat/?join=thunix) ![chat badge](https://tilde.chat/badges/badge.php?channel=%23thunix)
