@@ -12,4 +12,4 @@
 - authorized_key:
     user: riska
     state: present
-    key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAgJC/C+ydzVulrJuiC/ZkMeceoyhr6gOfGTv1D7/sqaoFDt9i4qJTE6J68V6orzcM+oi0t72+1LeKF6FJm0OPTvzZZNKFh/irkBxw8s+d0WlYu390liB9jKrNqI6Sr565pxwe62li27xFLIG+WMsTeUyWPGITOHklZslfO2KkSZaGcWybiMPdZ825NfpfaqNNK+Zcw7N1n6a5IpU20VWx8sqnFr0wK6LMzAsSjzdmuzeooGegL8UCLoPDBt/33f9zMij7WjB/XBNXuWIyoGsEY9jg3ISwY0wFMT+1bygQ0v2Gu/zZMrLi/wcWuw+0/PAeiucqA/tgkU7swTd8GPOEMw=="
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAvTxi7bWkWoDHVAg1f5Q4ldpdLaCq1xU3yI99w8mnK6BJlL6co52pjSWiOQSDldJMCduO4h0rBTg/h8WqBaKmpU9KPCCGi1IddBv1TqT95ilhjXeOp0xTcQ1Lr11Is2o/rFT4W303UsowXOfEBZSQwRluKNrF7ikqNTiRh+4Xz1AYN7PFhr7u+z/yjnrE/3XeNC8PoDRjuGWwEkmGupS+aSMTtt4JUFPjMeYKCSDb0oaJt0IOx31l0BORA1H4cCdrr/oClrthkwnw4awjtj+W7776kMoiq7f1hIBMqk3sfkB3zV7SI+0Ge7GHn8dmVolRCTyUlHy7bOWunbEEkey2xQ=="
