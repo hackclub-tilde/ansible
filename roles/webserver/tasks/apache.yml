@@ -42,3 +42,8 @@
   copy:
     src: ../files/etc/apache2/sites-available/www.thunix.net.conf
     dest: /etc/apache2/sites-available/www.thunix.net.conf
+
+- name: Deploy apache2 site conf for ftp.thunix.net.conf
+  copy:
+    src: ../files/etc/apache2/sites-available/ftp.thunix.net.conf
+    dest: /etc/apache2/sites-available/ftp.thunix.net.conf
