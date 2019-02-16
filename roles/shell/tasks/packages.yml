@@ -154,6 +154,9 @@
       - zandronum-server
       - dosemu
       - opendkim
+      - scala
+      - scala-doc
+      - scala-library
 
 #Install python packages, when it's the latest      
 - name: Install pip packages
