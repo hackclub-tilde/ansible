@@ -153,6 +153,7 @@
       - minetest-server
       - zandronum-server
       - dosemu
+      - opendkim
 
 #Install python packages, when it's the latest      
 - name: Install pip packages
