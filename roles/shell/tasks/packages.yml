@@ -174,3 +174,11 @@
     owner: root
     group: root
     mode: 0755
+
+- name: Install remote DCSS
+  copy:
+    src: ../files/usr/local/bin/dcss
+    dest: /usr/local/bin/dcss
+    owner: root
+    group: root
+    mode: 0755

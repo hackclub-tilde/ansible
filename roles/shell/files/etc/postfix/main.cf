@@ -49,3 +49,9 @@ smtpd_sasl_auth_enable = yes
 smtpd_sasl_security_options = noanonymous
 smtpd_sasl_local_domain = $myhostname
 smtpd_recipient_restrictions = permit_mynetworks,permit_auth_destination,permit_sasl_authenticated,reject
+
+milter_protocol = 2
+milter_default_action = accept
+
+smtpd_milters = inet:localhost:12301
+non_smtpd_milters = inet:localhost:12301
