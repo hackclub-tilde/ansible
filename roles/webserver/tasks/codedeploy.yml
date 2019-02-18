@@ -4,3 +4,8 @@
     repo: 'https://tildegit.org/thunix/www.git'
     dest: /var/www/thunix.cf
     force: yes
+
+- git:
+    repo: 'https://tildegit.org/thunix/thunix_gopher.git'
+    dest: /var/gopher
+    force: yes
