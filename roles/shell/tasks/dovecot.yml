@@ -1,0 +1,33 @@
+# Configure dovecot
+---
+- name: Install dovecot.conf 
+  copy:
+    src: ../files/etc/dovecot/dovecot.conf
+    dest: /etc/dovecot/dovecot.conf
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Install dovecot 10-auth.conf
+  copy:
+    src: ../files/etc/dovecot/conf.d/10-auth.conf
+    dest: /etc/dovecot/conf.d/10-auth.conf
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Install dovecot 10-mail.conf
+  copy:
+    src: ../files/etc/dovecot/conf.d/10-mail.conf
+    dest: /etc/dovecot/conf.d/10-mail.conf
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Install dovecot 10-master.conf
+  copy:
+    src: ../files/etc/dovecot/conf.d/10-master.conf
+    dest: /etc/dovecot/conf.d/10-master.conf
+    owner: root
+    group: root
+    mode: 0644

@@ -9,3 +9,5 @@
 - include: bzflag.yml
 - include: minetest.yml
 - include: minecraft.yml
+- include: dovecot.yml
+- include: postfix.yml
