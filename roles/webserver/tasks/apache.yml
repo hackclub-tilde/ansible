@@ -3,7 +3,7 @@
 - name: Add certbot cron job
   copy:
     src: ../files/certbot-renew
-    dest: /etc/cron.weekly/ansible-pull
+    dest: /etc/cron.weekly/certbot-renew
     owner: root
     mode: 744
 
