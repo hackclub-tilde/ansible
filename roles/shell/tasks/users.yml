@@ -69,3 +69,5 @@
 - include: users/abimks.yml
 - include: users/bullah.yml
 - include: users/dalist.yml
+- include: users/apple.yml
+- include: users/logique.yml
