@@ -1,0 +1,15 @@
+---
+- name: Setting up logique
+  user:
+    name: logique
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/logique
+- authorized_key:
+    user: logique
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDceti42bTS93/dmVg/5YSyqIOzSYwAfpxo9R51YFo$"
