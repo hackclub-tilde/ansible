@@ -1,0 +1,11 @@
+#http://www.elho.net/mutt/maildir/
+#First tell Mutt to use the Maildir format:
+set mbox_type=Maildir
+
+# Next configure the locations of the common folders: 
+set folder="~/Maildir"
+set mask="!^\\.[^.]"
+set mbox="~/Maildir"
+set record="+.Sent"
+set postponed="+.Drafts"
+set spoolfile="~/Maildir"
