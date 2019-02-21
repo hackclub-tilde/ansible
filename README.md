@@ -17,7 +17,7 @@ So, when you need to add a user, get a package installed, etc etc, please keep t
 
 ## Common tasks
 
-### Adding a user to phoenix
+### Adding a user
 To add a user to phoenix, just copy one of the files in ./roles/shell/tasks/users to a new file in that same directory.  Edit the file, changing the applicable info (user name, keys, homedir, etc etc etc).  Then, add that file's path to ./roles/shells/tasks/users.yml.  Run the playbook against phoenix:
 
 ```ansible-playbook -i ./hosts site.yml --limit phoenix.thunix.cf```
