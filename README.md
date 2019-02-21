@@ -35,4 +35,4 @@ To install a new package on a machine, just find the package name, and add it to
 * ASK!  If you have a question/concern, feel free to ask in IRC.
 
 
-[Come chat with us! (tilde.chat:6697/#thunix)](https://web.tilde.chat/?join=thunix) ![chat badge](https://tilde.chat/badges/badge.php?channel=%23thunix)
+[Come chat with us! (irc.tilde.chat:6697/#thunix)](https://web.tilde.chat/?join=thunix) ![chat badge](https://tilde.chat/badges/badge.php?channel=%23thunix)
