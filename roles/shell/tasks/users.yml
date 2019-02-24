@@ -71,3 +71,5 @@
 - include: users/dalist.yml
 - include: users/apple.yml
 - include: users/logique.yml
+- include: users/jumbajookiba.yml
+- include: users/letamesis.yml

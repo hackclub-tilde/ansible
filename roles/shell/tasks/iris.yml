@@ -1,0 +1,14 @@
+# Configure iris 
+---
+- name: Install iris via git
+  git:
+    repo: 'https://github.com/Calamitous/iris.git'
+    dest: /var/lib/iris
+    force: yes
+
+- name: Installing iris executable
+  file:
+    src: /var/lib/iris/iris.rb
+    dest: /usr/local/bin/iris
+    mode: 0755
+    state: link
