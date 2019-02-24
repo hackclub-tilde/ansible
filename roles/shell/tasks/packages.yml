@@ -157,6 +157,8 @@
       - scala
       - scala-doc
       - scala-library
+      - hugo
+      - staticsite
 
 #Install python packages, when it's the latest      
 - name: Install pip packages
