@@ -13,12 +13,12 @@ brought to you by:
 -----------------------------------------------------------
 For system document type 'man thunix'.
 -----------------------------------------------------------
-Available commands:
+Some available commands:
 * chat - Jump into thunix chat
-* man thunix - view the Thunix help file
 * dcss - Dungeon Crawl Server
 * lynx - web browser
-* alpine - email
+* mutt - email
+* iris - terminal based forum
 -----------------------------------------------------------
 To modify the thunix.net website, propose a PR here:
 https://tildegit.org/thunix/main_site
