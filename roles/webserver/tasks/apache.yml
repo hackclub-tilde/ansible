@@ -47,3 +47,18 @@
   copy:
     src: ../files/etc/apache2/sites-available/ftp.thunix.net.conf
     dest: /etc/apache2/sites-available/ftp.thunix.net.conf
+
+- name: Deploy apache2 site conf for forums.thunix.net.conf
+  copy:
+    src: ../files/etc/apache2/sites-available/forums.thunix.net.conf
+    dest: /etc/apache2/sites-available/forums.thunix.net.conf
+
+- name: Deploy apache2 site conf for git.thunix.net.conf
+  copy:
+    src: ../files/etc/apache2/sites-available/git.thunix.net.conf
+    dest: /etc/apache2/sites-available/git.thunix.net.conf
+
+- name: Deploy apache2 site conf for lists.thunix.net.conf
+  copy:
+    src: ../files/etc/apache2/sites-available/lists.thunix.net.conf
+    dest: /etc/apache2/sites-available/lists.thunix.net.conf
