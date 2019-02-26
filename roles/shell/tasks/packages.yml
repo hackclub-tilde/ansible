@@ -184,3 +184,11 @@
     owner: root
     group: root
     mode: 0755
+
+- name: Instal tldr
+  copy:
+    src: ../files/usr/local/bin/tldr
+    dest: /usr/local/bin/tldr
+    owner: root
+    group: root
+    mode: 0755
