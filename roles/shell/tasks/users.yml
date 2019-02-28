@@ -73,3 +73,5 @@
 - include: users/logique.yml
 - include: users/jumbajookiba.yml
 - include: users/letamesis.yml
+- include: users/chuck.yml
+- include: users/janda.yml
