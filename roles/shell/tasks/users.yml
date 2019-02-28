@@ -75,4 +75,4 @@
 - include: users/letamesis.yml
 - include: users/chuck.yml
 - include: users/janda.yml
-- include: users/tildeos.yml
+- include: users/os.yml
