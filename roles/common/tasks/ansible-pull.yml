@@ -5,10 +5,10 @@
     owner: root
     mode: 744
     
-- name: Add rsync cron job
+- name: Add mirror rsync cron job
   copy:
-    src: ../files/rsync
-    dest: /etc/cron.daily/rsync
+    src: ../files/mirror-rsync
+    dest: /etc/cron.daily/mirror-rsync
     owner: root
     mode: 744
     
