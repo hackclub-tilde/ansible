@@ -82,6 +82,7 @@
       - php7.0-tidy
       - php7.0-xmlrpc
       - php7.0-xsl
+      - pngtools
       - python
       - python-certbot-apache
       - python-pip
