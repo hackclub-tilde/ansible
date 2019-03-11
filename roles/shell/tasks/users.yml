@@ -83,3 +83,4 @@
 - include: users/abah.yml
 - include: users/derby.yml
 - include: users/usher.yml
+- include: users/responsibleracoon.yml
