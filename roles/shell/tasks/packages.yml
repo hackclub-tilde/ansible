@@ -16,6 +16,12 @@
     url: http://debian.drdteam.org/drdteam.gpg
     state: present
 
+- name: Add apt key for mono-project
+  apt_key:
+    keyserver: hkp://keyserver.ubuntu.com:80
+    id: 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+    state: present
+
 - name: Add weechat repo
   apt_repository: 
     repo: 'deb https://weechat.org/debian stretch main' 
@@ -34,9 +40,16 @@
     repo: 'deb http://debian.drdteam.org/ stable multiverse' 
     state: present
     update_cache: yes
+    
 - name: Add debian contrib
   apt_repository:
     repo: 'deb http://ftp.de.debian.org/debian stretch main contrib'
+    state: present
+    update_cache: yes
+
+- name: Add mono-project repo
+  apt_repository:
+    repo: 'deb https://download.mono-project.com/repo/debian stable-stretch main' 
     state: present
     update_cache: yes
 
