@@ -85,3 +85,4 @@
 - include: users/usher.yml
 - include: users/responsibleracoon.yml
 - include: users/transfusion.yml
+- include: users/adam.yml
