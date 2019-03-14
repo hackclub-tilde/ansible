@@ -17,6 +17,16 @@
       - apt-transport-https
       - cron
       - debhelper
+      - ieee-data
+      - python-httplib2
+      - python-jinja2
+      - python-kerberos
+      - python-markupsafe
+      - python-netaddr
+      - python-paramiko
+      - python-selinux
+      - python-xmltodict
+      - python-yaml
 
 # Install ansible python package, because it's the latest
 - name: Install ansible
