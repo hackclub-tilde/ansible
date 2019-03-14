@@ -1,0 +1,15 @@
+---
+- name: Setting up adam
+  user:
+    name: adam
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/adam
+- authorized_key:
+    user: adam
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCxjKdiAqV5tGmzL+OdWJnhz3xBhKnKLDwAcsi7CH/kyvHsJqiog8rfw+A6J1whesJcCfY1PxIssz43jC6vfuwERL3qK/DboCjmPOc4/lCnxic7B/mcDZdhrs9bQ65NP8j9kksMOoSoAozQbg4FQdWL3nvkfF21AfTzum/6IxIAEZWgigyUldQjv+z7mVirjADGhBdvAAdtajkIwgG7jBVWKdCCPcASURlX/td1uym/kM6fIEf2NhYSjgfOkhhVJr4JtNv7rfDBKVmtjzM2A3Idqkh2cvExODmduvgR9lTBV//03eWW+ar033113crwrdwLgxUirZM1g/AWfhXBgCrT adam@DESKTOP-ECBQOHU"
