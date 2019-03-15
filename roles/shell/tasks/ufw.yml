@@ -37,4 +37,5 @@
     port: '{{ item }}'
   with_items:
     - 22
+    - 587
     - 2222
