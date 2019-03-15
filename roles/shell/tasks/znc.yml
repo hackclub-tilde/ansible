@@ -51,3 +51,11 @@
     owner: znc
     group: root
     mode: 0770
+
+- name: Install LE hook
+  copy:
+    src: ../files/etc/letsencrypt/renewal-hooks/update-znc.pem
+    dest: /etc/letsencrypt/renewal-hooks/update-znc.pem
+    owner: root
+    group: root
+    mode: 755
