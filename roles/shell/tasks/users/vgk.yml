@@ -1,0 +1,15 @@
+---
+- name: Setting up vgk 
+  user:
+    name: vgk
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/vgk
+- authorized_key:
+    user: vgk
+    state: present
+    key: "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBAeeIoSAdzpBzC/ZHphm5IIVYU2yHaONSvrMUm9xqn+jGnbK9iJaAENCvZIFI22AbIwwKb5tpDjKTdtkWHRZ7WU= ~vgk"

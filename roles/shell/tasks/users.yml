@@ -87,3 +87,4 @@
 - include: users/transfusion.yml
 - include: users/adam.yml
 - include: users/audiofile.yml
+- include: users/vgk.yml

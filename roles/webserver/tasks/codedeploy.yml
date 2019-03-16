@@ -9,3 +9,17 @@
     repo: 'https://tildegit.org/thunix/thunix_gopher.git'
     dest: /var/gopher
     force: yes
+
+- file:
+    path: /var/www/autoconfig
+    state: directory
+    mode: 0755
+    owner: root
+    group: root
+
+- copy:
+    src: ../files/autoconfig.xml
+    dest: /var/www/autoconfig/autoconfig.xml
+    mode: 0755
+    owner: root
+    group: root
