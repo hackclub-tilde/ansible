@@ -11,15 +11,16 @@
     force: yes
 
 - file:
-    path: /var/www/autoconfig
+    path: /var/www/autoconfig/mail
     state: directory
     mode: 0755
     owner: root
     group: root
+    recurse: yes
 
 - copy:
     src: ../files/autoconfig.xml
-    dest: /var/www/autoconfig/autoconfig.xml
+    dest: /var/www/autoconfig/mail/config-v1.1.xml
     mode: 0755
     owner: root
     group: root
