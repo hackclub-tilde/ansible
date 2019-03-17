@@ -3,14 +3,14 @@
     src: ../files/ansible-pull
     dest: /etc/cron.hourly/ansible-pull
     owner: root
-    mode: 744
+    mode: 755
     
 - name: Add mirror rsync cron job
   copy:
     src: ../files/mirror-rsync
     dest: /etc/cron.daily/mirror-rsync
     owner: root
-    mode: 744
+    mode: 755
     
 - name: Adding ansible git repo locally
   git:
