@@ -1,5 +1,5 @@
 #!/bin/bash
-ANSIBLE_LOCAL_TEMP = /tmp/.ansible
+export ANSIBLE_LOCAL_TEMP = /tmp/.ansible
 cd /var/thunix/ansible
 git pull
 ansible-playbook -i ./hosts site.yml -u root 
