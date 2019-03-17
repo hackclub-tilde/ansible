@@ -1,3 +1,3 @@
 #!/bin/bash
 
-weechat-curses -r "/set irc.look.temporary_servers on; /connect irc://`whoami`@locahost:6667/#thunix"
+weechat-curses -r "/set irc.look.temporary_servers on; /connect irc://`whoami`@localhost:6667/#thunix"
