@@ -1,0 +1,4 @@
+[Unit]
+Description=ansible-run
+[Service]
+ExecStart=/usr/local/bin/ansible-run

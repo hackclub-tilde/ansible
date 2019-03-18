@@ -1,0 +1,6 @@
+[Unit] 
+Description=ansible-run path
+[Path]
+PathModified=/dev/shm/run-ansible
+[Install]
+WantedBy=multi-user.target

@@ -3,14 +3,46 @@
     src: ../files/ansible-pull
     dest: /etc/cron.hourly/ansible-pull
     owner: root
-    mode: 775
-    
+    mode: 0755
+
+- name: Add githook local script
+  copy:
+    src: ../files/ansible-run
+    dest: /usr/local/bin/ansible-run
+    owner: root
+    mode: 0755
+
+- name: Add githook systemd path unit
+  copy:
+    src: ../files/ansible-run.path
+    dest: /etc/systemd/system/ansible-run.path
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Add githook system service unit
+  copy:
+    src: ../files/ansible-run.service
+    dest: /etc/systemd/system/ansible-run.service
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Enabling ansible-pull units
+  systemd:
+    name: "{{ item }}"
+    enabled: yes
+    state: started
+  with_items:
+    - 'ansible-pull.path'
+    - 'ansible-pull.service'
+
 - name: Add mirror rsync cron job
   copy:
     src: ../files/mirror-rsync
     dest: /etc/cron.daily/mirror-rsync
     owner: root
-    mode: 775
+    mode: 0775
     
 - name: Adding ansible git repo locally
   git:
