@@ -18,18 +18,27 @@ So, when you need to add a user, get a package installed, etc etc, please keep t
 ## Common tasks
 
 ### Adding a user
-To add a user to phoenix, just copy one of the files in ./roles/shell/tasks/users to a new file in that same directory.  Edit the file, changing the applicable info (user name, keys, homedir, etc etc etc).  Then, add that file's path to ./roles/shells/tasks/users.yml.  Run the playbook against phoenix:
+To add a user to thunix, just copy one of the files in ./roles/shell/tasks/users to a new file in that same directory.  Edit the file, changing the applicable info (user name, keys, homedir, etc etc etc).  Then, add that file's path to ./roles/shells/tasks/users.yml.  Run a syntax check:
 
-```ansible-playbook -i ./hosts site.yml --limit phoenix.thunix.cf```
+```ansible-playbook -i ./hosts site.yml --syntax```
+
+This should just return an "OK" if it looks good (Syntactically).  Doesn't test the logic though!
+
+After that, run it again, without the syntax flag:
+
+```ansible-playbook -i ./hosts site.yml```
+
+If it looks good, add all your files, then push to the repo.
+
 
 ### Adding a Package
-To install a new package on a machine, just find the package name, and add it to the end of ./role/{which role}/tasks/packages.yml.  Run ansible-playbook against the machine you want (Or all of them):
+To install a new package on a machine, just find the package name, and add it to the end of ./role/{which role}/tasks/packages.yml.  Run ansible-playbook against thunix:
 
 ```ansible-playbook -i ./hosts site.yml```
 
 ## Don't
 
-* Don't commit right to master.  Create a git branch, commit changes there, and do a test run of ansible against it.  Master runs automatically, and we never want master in a broken state.
+* Don't commit right to master.  Create a git branch, commit changes there, and do a test run of ansible against it.  Master runs automatically as soon as you push, and we never want master in a broken state.
 * Don't be afraid to make a PR!  Worst case, the PR is rejected.  That's fine, nobody will be offended.  What will likely happen is it'll be merged in if it doesn't break master. It might get tweaked a bit, but that's all.
 * If you have a problem/request, and don't know how to make it happen, open a ticket.  Even if you know how to fix it, open a ticket, to link to your PR.  It makes a good place to discuss proposed changes.
 * ASK!  If you have a question/concern, feel free to ask in IRC.
