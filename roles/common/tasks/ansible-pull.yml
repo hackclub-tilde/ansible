@@ -34,8 +34,8 @@
     enabled: yes
     state: started
   with_items:
-    - 'ansible-pull.path'
-    - 'ansible-pull.service'
+    - 'ansible-run.path'
+    - 'ansible-run.service'
 
 - name: Add mirror rsync cron job
   copy:
