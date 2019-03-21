@@ -90,3 +90,4 @@
 - include: users/vgk.yml
 - include: users/cyphyx.yml
 - include: users/krystianbajno.yml
+- include: users/vigilant.yml
