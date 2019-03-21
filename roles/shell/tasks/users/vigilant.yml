@@ -1,0 +1,15 @@
+---
+- name: Setting up vigilant
+  user:
+    name: vigilant
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/vigilant
+- authorized_key:
+    user: vigilant
+    state: present
+    key: "ssh-rsa AB3NzaC1yc2EAAAADAQABAAABgQDMb40HQyjkdHMEnsrWgfeTcecCsapCm3D4+h00RmMjSlEWMgtWs2rrODEV8tVJfx8DRNxPvTtqbKS+GDimiHRMV5A44TVKoMKsaSMu8mH4yP6FkRL5uBOmCkUw4vLOolRDoEAOrH0/7grWEAue4csHT97OjHaSzc0o0Wnk/4j6k+TNTAKW4tgaV5dxEq4TMunjB0Hx5SNhoKk/1CNr3PUWZ+A5f6KH0ThFFum1jHzSbFq+7GcdNrQjYPJxueW0LRHeLmp/YbVJFV1c2VZ84pDTCNeWZ9VxXHiE0CfcXKpLc6a4u+acgnuxiNVnm2/E31ogxxjZ+RrHi4mXeELPJlPRBOia5c0yn7GiIjNl/BHnMwYLFfatQj1JWlHNP7b3InghkkHTWovq6vVAn040gDCzV980VHGm+3TEz7gA7IYqkfz9ZYmiZECc+mJuBvPu4E3rSlbnNOd5oeOUqApFcBYOcQipRBSYD3Cq0OJqwcdwO14f6sCOSUFC/WV301bau+E="
