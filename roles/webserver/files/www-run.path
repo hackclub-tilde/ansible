@@ -1,0 +1,6 @@
+[Unit] 
+Description=www-run path
+[Path]
+PathModified=/dev/shm/run-www
+[Install]
+WantedBy=multi-user.target

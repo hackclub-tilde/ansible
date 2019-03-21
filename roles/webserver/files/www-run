@@ -1,0 +1,15 @@
+#!/bin/bash
+export RUNNING="/dev/shm/www_is_running"
+
+if [ -f $RUNNING ]; then
+   echo "www is currently running."
+	exit 1
+else
+	touch $RUNNING
+	cd /var/www/thunix.cf
+	/usr/bin/git pull
+	rm /dev/shm/run-www
+	touch /dev/shm/www-hook-last-run
+	rm $RUNNING
+	exit 0
+fi

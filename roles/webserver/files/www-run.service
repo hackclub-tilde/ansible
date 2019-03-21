@@ -1,0 +1,4 @@
+[Unit]
+Description=www-run
+[Service]
+ExecStart=/usr/local/bin/www-run
