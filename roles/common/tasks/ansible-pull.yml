@@ -1,9 +1,10 @@
-- name: Add ansible cron job
-  copy:
-    src: ../files/ansible-pull
-    dest: /etc/cron.hourly/ansible-pull
-    owner: root
-    mode: 0755
+#- name: Add ansible cron job
+#  copy:
+#    src: ../files/ansible-pull
+#    dest: /etc/cron.hourly/ansible-pull
+#    owner: root
+#    mode: 0755
+#    state: absent
 
 - name: Add githook local script
   copy:
