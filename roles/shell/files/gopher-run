@@ -1,0 +1,14 @@
+#!/bin/bash
+export RUNNING="/dev/shm/gopher_is_running"
+
+if [ -f $RUNNING ]; then
+   echo "Gopher is currently running."
+	exit 1
+else
+	touch $RUNNING
+	cd /var/gopher
+	/usr/bin/git pull
+	touch /dev/shm/ansible-hook-last-run
+	rm $RUNNING
+	exit 0
+fi

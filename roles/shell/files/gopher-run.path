@@ -1,0 +1,6 @@
+[Unit] 
+Description=gopher-run path
+[Path]
+PathModified=/dev/shm/gopher-ansible
+[Install]
+WantedBy=multi-user.target

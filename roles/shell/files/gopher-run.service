@@ -1,0 +1,4 @@
+[Unit]
+Description=gopher-run
+[Service]
+ExecStart=/usr/local/bin/gopher-run
