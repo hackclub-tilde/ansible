@@ -8,7 +8,6 @@ else
 	touch $RUNNING
 	cd /var/www/thunix.cf
 	/usr/bin/git pull
-	rm /dev/shm/run-www
 	touch /dev/shm/www-hook-last-run
 	rm $RUNNING
 	exit 0

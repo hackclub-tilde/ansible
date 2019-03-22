@@ -9,7 +9,6 @@ else
 	cd /var/thunix/ansible
 	/usr/bin/git pull
 	/usr/local/bin/ansible-playbook -i /var/thunix/ansible/hosts /var/thunix/ansible/site.yml -u root
-	rm /dev/shm/run-ansible
 	touch /dev/shm/ansible-hook-last-run
 	rm $RUNNING
 	exit 0
