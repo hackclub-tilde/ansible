@@ -1,0 +1,33 @@
+# Configure gopher units
+---
+- name: Add githook local script
+  copy:
+    src: ../files/gopher-run
+    dest: /usr/local/bin/gopher-run
+    owner: root
+    mode: 0755
+
+- name: Add githook systemd path unit
+  copy:
+    src: ../files/gopher-run.path
+    dest: /etc/systemd/system/gopher-run.path
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Add githook system service unit
+  copy:
+    src: ../files/gopher-run.service
+    dest: /etc/systemd/system/gopher-run.service
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Enabling gopher-pull units
+  systemd:
+    name: "{{ item }}"
+    enabled: yes
+    state: started
+  with_items:
+    - 'gopher-run.path'
+    - 'gopher-run.service'
