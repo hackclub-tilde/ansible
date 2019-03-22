@@ -24,3 +24,35 @@
     mode: 0755
     owner: root
     group: root
+    
+- name: Add githook local script
+  copy:
+    src: ../files/www-run
+    dest: /usr/local/bin/www-run
+    owner: root
+    mode: 0755
+
+- name: Add githook systemd path unit
+  copy:
+    src: ../files/www-run.path
+    dest: /etc/systemd/system/www-run.path
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Add githook system service unit
+  copy:
+    src: ../files/www-run.service
+    dest: /etc/systemd/system/www-run.service
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Enabling ansible-pull units
+  systemd:
+    name: "{{ item }}"
+    enabled: yes
+    state: started
+  with_items:
+    - 'www-run.path'
+    - 'www-run.service'
