@@ -27,6 +27,7 @@
       - python-selinux
       - python-xmltodict
       - python-yaml
+      - members
 
 # Install ansible python package, because it's the latest
 - name: Install ansible
