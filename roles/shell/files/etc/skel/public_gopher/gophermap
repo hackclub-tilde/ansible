@@ -1,4 +1,8 @@
 This is my gopher page.
 There are many like it, but this one is mine.
-1Thunix	thunix.net
+
+You can edit this site by logging in via SSH or SFTP and editing
+~/public_gopher/
+
+1thunix.net	thunix.net
 
