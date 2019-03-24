@@ -5,7 +5,7 @@
     |  |     |  |  |  | |  `--'  | |  |\   | |  |  /  .  \  
     |__|     |__|  |__|  \______/  |__| \__| |__| /__/ \__\
 
-https://thunix.net                             EST DEC 2018
+https://www.thunix.net                         EST DEC 2018
 -----------------------------------------------------------
 brought to you by:
      amcclure
@@ -21,7 +21,7 @@ Some available commands:
 * iris - terminal based forum
 -----------------------------------------------------------
 To modify the thunix.net website, propose a PR here:
-https://tildegit.org/thunix/main_site
+https://tildegit.org/thunix/www
 
 To modify the system config, propose a PR here:
 https://tildegit.org/thunix/ansible
@@ -30,13 +30,6 @@ To request a package, or something to be configured, open
 an issue here: https://tildegit.org/thunix/ansible/issues
 -----------------------------------------------------------
 Enjoy your stay!
-***********************************************************
-
-Thunix.net has gone dark for #321EUOfflineDay.  Please see
-https://copyright-blackout.eu/ and
-https://saveyourinternet.eu/ for more information.
-
-***********************************************************
 
 *** END OF LINE.
 
