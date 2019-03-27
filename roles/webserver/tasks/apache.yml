@@ -62,3 +62,9 @@
   copy:
     src: ../files/etc/apache2/sites-available/lists.thunix.net.conf
     dest: /etc/apache2/sites-available/lists.thunix.net.conf
+
+- name: Deploy apache2 site conf for staticadventures.netlib.re
+  copy:
+    src: ../files/etc/apache2/sites-available/staticadventures.netlib.re.conf
+    dest: /etc/apache2/sites-available/staticadventures.netlib.re.conf
+
