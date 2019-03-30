@@ -20,6 +20,4 @@
 	RealName = Got Thunix ?
 	StatusPrefix = *
 	TimestampFormat = [%H:%M:%S]
-
-	<Pass password>
-	Method = SHA256
+</User>
