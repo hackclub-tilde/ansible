@@ -12,6 +12,7 @@
 - include: users/bzflag.yml
 - include: users/znc.yml
 
+- include: users/*.yml
 #Normal Users
 - include: users/amcclure.yml
 - include: users/ben.yml
@@ -95,3 +96,5 @@
 - include: users/moskrin.yml
 - include: users/southerntofu.yml
 - include: users/dariusz.yml
+- include: users/testuser.yml
+
