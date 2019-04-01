@@ -29,6 +29,8 @@
       - python-yaml
       - members
       - sqlite
+      - sudo
+      - ufw
 
 # Install ansible python package, because it's the latest
 - name: Install ansible
