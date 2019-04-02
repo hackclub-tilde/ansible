@@ -97,3 +97,4 @@
 - include: users/southerntofu.yml
 - include: users/dariusz.yml
 - include: users/testuser.yml
+- include: users/testuser.yml
