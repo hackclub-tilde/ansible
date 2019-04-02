@@ -12,7 +12,6 @@
 - include: users/bzflag.yml
 - include: users/znc.yml
 
-- include: users/*.yml
 #Normal Users
 - include: users/amcclure.yml
 - include: users/ben.yml
