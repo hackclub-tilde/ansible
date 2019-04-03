@@ -5,9 +5,9 @@ CONF="/var/lib/znc/.znc/configs/znc.conf"
 PID=$(pgrep -u znc znc)
 
 # $username and $password are retrieved from create-account script
-if [ -z $1 ]
+if [[ -z $1 || -z $2 ]]
 then    
-        echo -e "Usage: $(basename $0) [username]"
+	echo -e "Usage: $(basename $0) [username] [password]"
         exit
 fi
 
@@ -19,12 +19,23 @@ then
 fi
 
 username=$1
+password=$2
 
 kill -s USR1 $PID # Rewrite znc.conf
 sleep 1
 
-# set username
+# set username and password
 sed s/newuser/$username/g znc_account.newconf >> $CONF
+expect << EOF | grep -E 'Hash|Salt' | tr -d \\r >> $CONF
+spawn znc --makepass
+expect "*Enter password: "
+send "$password\r"
+expect "*Confirm password: "
+send "$password\r"
+expect eof
+EOF
+echo "  </Pass>" >> $CONF
+echo "</User>" >> $CONF
 
 sleep 1
 kill -s HUP $PID # Reload znc.conf
