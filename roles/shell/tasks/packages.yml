@@ -177,6 +177,7 @@
       - todotxt-cli
       - ruby-trollop
       - ruby-paint
+      - finch
 
 #Install python packages, when it's the latest      
 - name: Install pip packages
