@@ -29,3 +29,4 @@
       - php7.0-xsl
       - php-mbstring
       - shellinabox
+      - dpkg-dev
