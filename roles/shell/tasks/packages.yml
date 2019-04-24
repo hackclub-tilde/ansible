@@ -179,6 +179,7 @@
       - ruby-paint
       - finch
       - devscripts
+      - wordgrinder-ncurses
 
 #Install python packages, when it's the latest      
 - name: Install pip packages
