@@ -68,3 +68,12 @@
     src: ../files/etc/apache2/sites-available/staticadventures.netlib.re.conf
     dest: /etc/apache2/sites-available/staticadventures.netlib.re.conf
 
+- name: Deploy apache site conf for deb.thunix.net
+  copy:
+    src: ../files/etc/apache2/sites-available/deb.thunix.net.conf
+    dest: /etc/apache2/sites-available/deb.thunix.net.conf
+
+- name: Deploy apache site conf for rpm.thunix.net
+  copy:
+    src: ../files/etc/apache2/sites-available/rpm.thunix.net.conf
+    dest: /etc/apache2/sites-available/rpm.thunix.net.conf
