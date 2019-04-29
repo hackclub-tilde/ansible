@@ -97,3 +97,4 @@
 - include: users/dariusz.yml
 - include: users/aniruddh.yml
 - include: users/growl.yml
+- include: users/rain.yml
