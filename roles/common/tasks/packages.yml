@@ -1,5 +1,10 @@
 # Install our baseline packages for all machines, irrespective of what role they might have
 ---
+- name: Add Thunix Repo
+  apt_key:
+    url: http://deb.thunix.net/release.key
+    state: present
+
 - name: Install baseline packages
   apt: 
     name: "{{ packages }}"
@@ -31,6 +36,7 @@
       - sqlite
       - sudo
       - ufw
+      - dpkg-sig
 
 # Install ansible python package, because it's the latest
 - name: Install ansible

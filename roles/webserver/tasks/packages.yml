@@ -30,3 +30,6 @@
       - php-mbstring
       - shellinabox
       - dpkg-dev
+      - yum-utils
+      - createrepo
+      - gophernicus
