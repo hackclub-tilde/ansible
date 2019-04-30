@@ -19,4 +19,4 @@
 - authorized_key:
     user: amcclure
     state: present
-    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINQ5CBrqSoOT/EsuMJzniUj9M0jOSedcpSwrS56KE700 amcclure@DESKTOP-B9N337U"
+    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAb/LEff3etQLEEF6L61KyTkxXfsI6tJwV161oSoPkyb amcclure@gowinnt"
