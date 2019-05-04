@@ -47,7 +47,6 @@
 - include: users/k4j.yml
 - include: users/ultima.yml
 - include: users/ragnarok.yml
-- include: users/campari.yml
 - include: users/jundi.yml
 - include: users/rado.yml
 - include: users/sata.yml
