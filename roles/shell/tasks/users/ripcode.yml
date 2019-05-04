@@ -1,0 +1,15 @@
+---
+- name: Setting up ripcode
+  user:
+    name: ripcode
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/ripcode
+- authorized_key:
+    user: ripcode
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDM82CbZhOxmI1Jirdv5Uc7wff02XOOWFo5dlGgoty+f5+DgkKueSQimpMhtJTmIgwz6CxQBtRN2Jp2gV73GLjku4vbvx+Ss+i7pxkla6KR1pcOqvIu3XSXz2wW5mZUif+NUZ2fNjHlx7rD+nbYv264472nq9Nyrbx8UqPRM17IPw1NMkCCWfMCO+pdt+th/6Z0LH2g+I7b44h0aNwIfhWWFdRMgf2q3ZaIYE0Cw59dql7PhjqO/BSxcmrN2Ah7YPQcqiVmn9tx6wGVlj5Mz1NM6JD/h8fqugmDluyeJ0+9QiLvIwy7pKuCSua8IfSmkZhoZO1VA7hMOjjkkGC9zpPH"
