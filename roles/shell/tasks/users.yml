@@ -100,3 +100,4 @@
 - include: users/mspe.yml
 - include: users/pidgeotto.yml
 - include: users/ripcode.yml
+- include: users/blades.yml
