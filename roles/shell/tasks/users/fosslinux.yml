@@ -2,7 +2,7 @@
 - name: Setting up fosslinux
   user:
     name: fosslinux
-    groups: tilde
+    groups: tilde,sudo
     state: present
     skeleton: /etc/skel
     shell: /bin/zsh
