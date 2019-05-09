@@ -3,7 +3,7 @@
   user:
     name: ripcode
     groups: tilde
-    state: present
+    state: absent
     skeleton: /etc/skel
     shell: /bin/bash
     system: no
