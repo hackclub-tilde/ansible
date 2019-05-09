@@ -99,7 +99,5 @@
 - include: users/rain.yml
 - include: users/mspe.yml
 - include: users/pidgeotto.yml
-- include: users/ripcode.yml
 - include: users/blades.yml
 - include: users/wie.yml
-- include: users/remy.yml
