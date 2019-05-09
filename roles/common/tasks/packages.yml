@@ -12,31 +12,31 @@
     update_cache: yes
   vars:
     packages:
-      - aptitude
-      - git
-      - python
-      - man
-      - python-pip
-      - letsencrypt
-      - python-certbot-apache
       - apt-transport-https
+      - aptitude
       - cron
       - debhelper
+      - dpkg-sig
+      - git
       - ieee-data
+      - letsencrypt
+      - man
+      - members
+      - python
+      - python-certbot-apache
       - python-httplib2
       - python-jinja2
       - python-kerberos
       - python-markupsafe
       - python-netaddr
       - python-paramiko
+      - python-pip
       - python-selinux
       - python-xmltodict
       - python-yaml
-      - members
       - sqlite
       - sudo
       - ufw
-      - dpkg-sig
 
 # Install ansible python package, because it's the latest
 - name: Install ansible

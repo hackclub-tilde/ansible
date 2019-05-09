@@ -61,23 +61,70 @@
   vars:
     packages:
       - alpine
+      - analog
       - bsdgames
       - build-essential
       - byobu
+      - bzflag-server
+      - ca-certificates-mono
+      - caca-utils
+      - cmake
       - cowsay
+      - devscripts
+      - dosemu
       - eggdrop
       - elinks
       - emacs
+      - finch
+      - finger
+      - fingerd
       - fish
+      - fortune
+      - gitweb
+      - gopher
       - htop
+      - hugo
+      - imagemagick
+      - irssi
+      - lftp
       - libapache2-mod-php7.0
+      - libconvert-binhex-perl
+      - libmime-tools-perl
+      - libncurses5-dev
       - libsdl1.2-dev
+      - libsdl2-dev
       - libssl-dev
       - lynx
       - make
+      - mc
+      - mc-data
+      - minetest-data
+      - minetest-mod-advspawning
+      - minetest-mod-animalmaterials
+      - minetest-mod-animals
+      - minetest-mod-maidroid
+      - minetest-mod-mesecons
+      - minetest-mod-mobf-core
+      - minetest-mod-mobf-trap
+      - minetest-mod-moreblocks
+      - minetest-mod-moreores
+      - minetest-mod-nether
+      - minetest-mod-pipeworks
+      - minetest-mod-torches
+      - minetest-server
+      - mono-apache-server
+      - mono-complete
+      - mono-dbg
+      - mono-devel
+      - mono-xsp4
       - mosh
       - mutt
+      - nbsdgames
+      - neofetch
+      - openbsd-inetd
+      - opendkim
       - openssl
+      - p7zip-full
       - pandoc
       - php-imagick
       - php-memcache
@@ -99,7 +146,20 @@
       - python
       - python-certbot-apache
       - python-pip
+      - python-twisted
+      - python3-pip
+      - python3-toot
+      - python3-twisted
+      - ranger
+      - ruby-paint
+      - ruby-trollop
+      - scala
+      - scala-doc
+      - scala-library
+      - staticsite
       - stow
+      - talk
+      - talkd
       - tcl
       - tcl-dev
       - tcl-tls
@@ -107,80 +167,20 @@
       - tcllib
       - tcltls
       - tdom
+      - telnet
+      - todotxt-cli
       - vim
+      - vrms
       - w3m-img
       - weechat
+      - wordgrinder-ncurses
+      - zandronum-server
       - znc
       - znc-dev
       - znc-perl
       - znc-python
       - znc-tcl
       - zsh
-      - python-twisted
-      - python3-twisted
-      - openbsd-inetd
-      - talk
-      - talkd
-      - finger
-      - fingerd
-      - analog
-      - libconvert-binhex-perl
-      - libmime-tools-perl
-      - lftp
-      - irssi
-      - gopher
-      - fortune
-      - mono-devel
-      - mono-complete
-      - mono-dbg
-      - ca-certificates-mono
-      - mono-xsp4
-      - mono-apache-server
-      - vrms
-      - telnet
-      - neofetch
-      - libncurses5-dev
-      - python3-toot
-      - mc
-      - mc-data
-      - ranger
-      - imagemagick
-      - caca-utils
-      - python3-pip
-      - cmake
-      - libsdl2-dev
-      - p7zip-full
-      - bzflag-server
-      - minetest-data
-      - minetest-mod-advspawning
-      - minetest-mod-animalmaterials
-      - minetest-mod-animals
-      - minetest-mod-maidroid
-      - minetest-mod-mesecons
-      - minetest-mod-mobf-core
-      - minetest-mod-mobf-trap
-      - minetest-mod-moreblocks
-      - minetest-mod-moreores
-      - minetest-mod-nether
-      - minetest-mod-pipeworks
-      - minetest-mod-torches
-      - minetest-server
-      - zandronum-server
-      - dosemu
-      - opendkim
-      - scala
-      - scala-doc
-      - scala-library
-      - hugo
-      - staticsite
-      - gitweb
-      - todotxt-cli
-      - ruby-trollop
-      - ruby-paint
-      - finch
-      - devscripts
-      - wordgrinder-ncurses
-      - nbsdgames
 
 #Install python packages, when it's the latest      
 - name: Install pip packages
