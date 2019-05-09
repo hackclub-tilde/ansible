@@ -99,5 +99,4 @@
 - include: users/rain.yml
 - include: users/mspe.yml
 - include: users/pidgeotto.yml
-- include: users/blades.yml
 - include: users/wie.yml
