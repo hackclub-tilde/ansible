@@ -41,7 +41,7 @@
 - name: Add mirror rsync cron job
   copy:
     src: ../files/mirror-rsync
-    dest: /etc/cron.daily/mirror-rsync
+    dest: /etc/cron.hourly/mirror-rsync
     owner: root
     mode: 0775
     
