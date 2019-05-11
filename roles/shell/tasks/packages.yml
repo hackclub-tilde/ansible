@@ -65,6 +65,7 @@
       - bsdgames
       - build-essential
       - byobu
+      - bzip2
       - bzflag-server
       - ca-certificates-mono
       - caca-utils
@@ -86,6 +87,7 @@
       - hugo
       - imagemagick
       - irssi
+      - jq
       - lftp
       - libapache2-mod-php7.0
       - libconvert-binhex-perl
