@@ -72,6 +72,7 @@
       - cmake
       - cowsay
       - devscripts
+      - dos2unix
       - dosemu
       - eggdrop
       - elinks
