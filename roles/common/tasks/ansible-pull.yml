@@ -45,6 +45,13 @@
     owner: root
     mode: 0775
     
+- name: Add mirror rsync cron job (daily)
+  copy:
+    src: ../files/mirror-rsync-daily
+    dest: /etc/cron.hourly/mirror-rsync-daily
+    owner: root
+    mode: 0775
+    
 - name: Adding ansible git repo locally
   git:
     repo: 'https://tildegit.org/thunix/ansible.git'
