@@ -12,4 +12,4 @@
 - authorized_key:
     user: tomjerr
     state: present
-    key: "rsa-key-20190513 AAAAB3NzaC1yc2EAAAABJQAAAQBeAywEW0oaJuvyG+aMWU/vrzB6bmzn+nx69G3GXlIY40KB4q8MfNTnwUa+9iG6nFcF8rbzlY+19clOWHlqTt/nwibq9M9T9/ZPnikjORYrG4RPVqHyWBTsvx52qu4vjJ85Hiz31zXlmwqiz3J5G9qsURa/g+mmwt/ow3osHZJnAfHDtDekcGAASv1pfOBI7aeK6PF8mS008iJtpRV03xEmDW2pCOZTsMXPEUnwKdVNdOik1Ygb0M73DpK0zSuUNz/qgLZZQm563sOjyW7q1SpStawd5QFoh+gIk4W8uIbgReZaz3NTEbH9/SeZGg/Fr9C838wdnE69hj/skEBj/ls7"
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQBeAywEW0oaJuvyG+aMWU/vrzB6bmzn+nx69G3GXlIY40KB4q8MfNTnwUa+9iG6nFcF8rbzlY+19clOWHlqTt/nwibq9M9T9/ZPnikjORYrG4RPVqHyWBTsvx52qu4vjJ85Hiz31zXlmwqiz3J5G9qsURa/g+mmwt/ow3osHZJnAfHDtDekcGAASv1pfOBI7aeK6PF8mS008iJtpRV03xEmDW2pCOZTsMXPEUnwKdVNdOik1Ygb0M73DpK0zSuUNz/qgLZZQm563sOjyW7q1SpStawd5QFoh+gIk4W8uIbgReZaz3NTEbH9/SeZGg/Fr9C838wdnE69hj/skEBj/ls7"
