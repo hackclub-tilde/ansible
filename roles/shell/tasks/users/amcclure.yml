@@ -15,7 +15,7 @@
 - authorized_key:
     user: amcclure
     state: present
-    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBywPzkTo3xB2xCtXNejfsTn+5S3mCPbnu1brR792jN1 amcclure@solaris"
+    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICwcsPNIZE3EJa7XYKrXq+ZDIGKstU5+zOwS+JsDGafK amcclure@amcclure-ubuntu"
 - authorized_key:
     user: amcclure
     state: present
