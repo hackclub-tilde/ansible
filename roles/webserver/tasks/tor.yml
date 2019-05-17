@@ -1,0 +1,15 @@
+#This play configs tor for us
+---
+- name: Deploy torrc file
+  copy:
+    src: ../files/etc/tor/torrc
+    dest: /etc/tor/torrc
+    owner: root
+    mode: 0644
+
+- name: Deploy hidden service files
+  copy:
+    src: ../files/var/lib/tor/hidden_service/hostname
+    dest: /var/lib/tor/hidden_service/hostname
+    owner: root
+    mode: 0600

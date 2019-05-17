@@ -1,5 +1,24 @@
 # Install apache and accoutrements www, irrespective of what role they might have
 ---
+- name: Add apt key for tor project repo
+  apt_key:
+    url: https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc
+    state: present
+
+- name: Add tor project repo
+  apt_repository:
+    repo: 'deb https://deb.torproject.org/torproject.org stretch main'
+    state: present
+    filename: tor
+    update_cache: yes
+
+- name: Add tor project repo
+  apt_repository:
+    repo: 'deb-src https://deb.torproject.org/torproject.org stretch main'
+    state: present
+    filename: torsrc
+    update_cache: yes
+
 - name: Install packages for webserver
   apt:
     name: "{{ packages }}"
@@ -32,4 +51,6 @@
       - php7.0-xmlrpc
       - php7.0-xsl
       - shellinabox
+      - tor
+      - torsocks
       - yum-utils
