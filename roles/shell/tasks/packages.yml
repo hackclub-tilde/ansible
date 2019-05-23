@@ -91,6 +91,7 @@
       - jq
       - lftp
       - libapache2-mod-php7.0
+      - libarchive-dev
       - libconvert-binhex-perl
       - libmime-tools-perl
       - libncurses5-dev
