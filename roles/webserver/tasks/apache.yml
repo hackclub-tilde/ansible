@@ -77,3 +77,8 @@
   copy:
     src: ../files/etc/apache2/sites-available/rpm.thunix.net.conf
     dest: /etc/apache2/sites-available/rpm.thunix.net.conf
+
+- name: Deploy apache site conf for stats.thunix.net
+  copy:
+    src: ../files/etc/apache2/sites-available/stats.thunix.net.conf
+    dest: /etc/apache2/sites-available/stats.thunix.net.conf
