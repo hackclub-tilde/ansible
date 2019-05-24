@@ -1,13 +1,13 @@
 # Install analog yml file and hourly cron job
 ---
-- name: Add mirror rsync cron job
+- name: Add analog cconfig file
   copy:
     src: ../files/etc/analog.cfg
     dest: /etc/analog.cfg
     owner: root
     mode: 644
 
-- name: Add mirror rsync cron job
+- name: Add analog cron task for stats
   copy:
     src: ../files/analog-cron
     dest: /etc/cron.hourly/analog
