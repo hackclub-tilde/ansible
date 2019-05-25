@@ -93,6 +93,7 @@
       - libapache2-mod-php7.0
       - libarchive-dev
       - libconvert-binhex-perl
+      - libffi-dev
       - libmime-tools-perl
       - libncurses5-dev
       - libsdl1.2-dev
