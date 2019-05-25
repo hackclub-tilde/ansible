@@ -1,0 +1,13 @@
+# install pb
+---
+- name: clone pb
+  git:
+    repo: 'https://tildegit.org/tomasino/pb'
+    dest: /usr/src/pb
+    force: yes
+
+- name: install pb
+  make:
+    chdir: /usr/src/pb
+    target: install
+  become: yes
