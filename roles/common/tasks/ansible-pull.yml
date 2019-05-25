@@ -38,19 +38,19 @@
     - 'ansible-run.path'
     - 'ansible-run.service'
 
-- name: Add mirror rsync cron job
-  copy:
-    src: ../files/mirror-rsync
-    dest: /etc/cron.hourly/mirror-rsync
-    owner: root
-    mode: 0775
+#- name: Add mirror rsync cron job
+#  copy:
+#    src: ../files/mirror-rsync
+#    dest: /etc/cron.hourly/mirror-rsync
+#    owner: root
+#    mode: 0775
     
-- name: Add mirror rsync cron job (daily)
-  copy:
-    src: ../files/mirror-rsync-daily
-    dest: /etc/cron.daily/mirror-rsync-daily
-    owner: root
-    mode: 0775
+#- name: Add mirror rsync cron job (daily)
+#  copy:
+#    src: ../files/mirror-rsync-daily
+#    dest: /etc/cron.daily/mirror-rsync-daily
+#    owner: root
+#    mode: 0775
     
 - name: Adding ansible git repo locally
   git:
