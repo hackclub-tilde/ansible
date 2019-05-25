@@ -1,6 +1,15 @@
-- name: Add mirror rsync cron job
+# Add mirror rsync cron jobs (hourly and daily)
+---
+- name: Add mirror rsync cron job that run hourly
   copy:
-    src: ../files/mirror-rsync
-    dest: /etc/cron.daily/mirror-rsync
+    src: ../files/mirror-rsync-hourly
+    dest: /etc/cron.daily/mirror-rsync-hourly
+    owner: root
+    mode: 744
+
+- name: Add mirror rsync cron job that run daily
+  copy:
+    src: ../files/mirror-rsync-daily
+    dest: /etc/cron.daily/mirror-rsync-daily
     owner: root
     mode: 744
