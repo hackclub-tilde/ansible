@@ -156,6 +156,7 @@
       - python3-pip
       - python3-toot
       - python3-twisted
+      - python3-venv
       - ranger
       - ruby-paint
       - ruby-trollop
