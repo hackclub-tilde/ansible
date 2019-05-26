@@ -1,0 +1,15 @@
+# Configure botany 
+# must manually initalize sqlite database by running botany as root once
+---
+- name: Clone botany repository
+  git:
+    repo: 'https://github.com/jifunks/botany.git'
+    dest: /var/lib/botany
+    force: yes
+
+- name: Install botany executable
+  file:
+    src: /var/lib/botany/botany.py
+    dest: /usr/local/bin/botany
+    mode: 0755
+    state: link
