@@ -20,3 +20,7 @@
     user: amcclure
     state: present
     key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAb/LEff3etQLEEF6L61KyTkxXfsI6tJwV161oSoPkyb amcclure@gowinnt"
+- authorized_key:
+    user: amcclure
+    state: present
+    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPviU+iBxO7xObbUxRS3+2WkKJAW4a7rnneLfFfip9wE amcclure@Antons-MacBook-Pro.local"
