@@ -1,0 +1,15 @@
+---
+- name: Setting up marc
+  user:
+    name: marc
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/marc
+- authorized_key:
+    user: marc
+    state: present
+    key: "ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAFBp8vFUIRu4Bq8EvnCGwlp71GQ4wGT5wKdY1X/c9AfYjsn/pnBNgnfNFxPxoNasG1MXeXjutSLtlXqnsWx2NQpFQC321MeUvd3Z/DCeIvS4WvpOZMyBvVUd2sTsuuCRVuH3fbJF5XPJrFzH3nEFNtcW7lmN+F6nKLB0kYahc3+gyTH+g=="
