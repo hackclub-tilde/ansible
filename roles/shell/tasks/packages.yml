@@ -181,6 +181,9 @@
       - w3m-img
       - weechat
       - wordgrinder-ncurses
+      - xfce4
+      - xfce4-goodies
+      - task-xfce-desktop
       - zandronum-server
       - znc
       - znc-dev
