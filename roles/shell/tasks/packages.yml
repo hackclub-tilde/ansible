@@ -22,7 +22,7 @@
     id: 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
     state: present
 
-- name: Add apt key for mono-project
+- name: Add apt key for mysql
   apt_key:
     keyserver: pgp.mit.edu
     id: 5072E1F5
