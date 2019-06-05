@@ -193,6 +193,7 @@
       - znc-python
       - znc-tcl
       - zsh
+
 #Install python packages, when it's the latest      
 - name: Install pip packages
   pip: 
