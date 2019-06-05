@@ -83,6 +83,7 @@
       - fish
       - fortune
       - gitweb
+      - gnome-icon-theme-full 
       - gopher
       - htop
       - hugo
@@ -167,6 +168,7 @@
       - stow
       - talk
       - talkd
+      - tango-icon-theme
       - tcl
       - tcl-dev
       - tcl-tls
@@ -191,7 +193,6 @@
       - znc-python
       - znc-tcl
       - zsh
-
 #Install python packages, when it's the latest      
 - name: Install pip packages
   pip: 
