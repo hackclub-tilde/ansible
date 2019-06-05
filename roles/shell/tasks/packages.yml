@@ -124,6 +124,8 @@
       - mono-xsp4
       - mosh
       - mutt
+      - mysql-client
+      - mysql-server
       - nasm
       - nbsdgames
       - neofetch
