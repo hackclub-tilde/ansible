@@ -12,3 +12,7 @@
   apache2_module:
     name: php7.0
     state: present
+- name: rewrite
+  apache2_module:
+    name: rewrite
+    state: present
