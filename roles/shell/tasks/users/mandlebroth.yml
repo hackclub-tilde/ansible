@@ -1,0 +1,15 @@
+---
+- name: Setting up mandlebroth
+  user:
+    name: mandlebroth
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/mandlebroth
+- authorized_key:
+    user: mandlebroth
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDzQ0TCPqsfhaT7DvH1d00L8sDVh+rO+Bw0d1mBItlggpIG3bUJ2ihuJ4a2uB9Cvmas1ju0CEtQ8rP3bU4Rvy/Dg+oxI6AKwZBsA8DcQSU6/W+Kv4o6eKGxrE/A0qxb8bqszewsJGsp773WFBgzdqj4MzFyyRlULGfHWpaVgCIpBeGtEgEjYoVIIChT8NWelsvGyPVrC4iq9/ipQteFYf1BtHcJxjCKMdA4e8ZNAzkfZpXMqCwfFhJtmRWJAza/GlnBLk70zOEgVkdFjEeQG/WgSDFghrWTSQYiTkGynbcaOVuYvI+JEkAqw9shjZMq22WYAs59JiwlO+fsSnHeNkEmIAZYVMrMPt11LXnHUsHy20xK2VaSTE16hB/P7jcYH1B6xIaj/cv0zKelv0yNe6AMjpnO0Z4z54o2owR+F30pi6INOF+77fOu4UDvZd3/6qzNxzeK/qTEnhd2jhSt4dTVJvWQw45AeV5FrS0dp4tRCjejb8Fni3xzf9L+QJvEvkfS/sDI0dUzz11jLyzshEbkqwqZHEs4ImY5y5zmVdYklNPyVdKEO95b8G6iKcrxDHBhda9fELfV5q0Sq6U86B86EMf6SQ51D6fAuNV1qdjDhyMLXhVsKe45polwn8OZMrfmVCDYrYQoJ55GOysmqhEELshuH82C0eh1Wq7Tk+ugFQ== broth@uroboros"

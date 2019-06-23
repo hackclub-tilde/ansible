@@ -114,3 +114,4 @@
 - include: users/serafeim.yml
 - include: users/dot.yml
 - include: users/virus.yml
+- include: users/mandlebroth.yml
