@@ -116,3 +116,4 @@
 - include: users/virus.yml
 - include: users/mandlebroth.yml
 - include: users/victoralt.yml
+- include: users/arch3r.yml
