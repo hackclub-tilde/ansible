@@ -37,6 +37,7 @@
       - sqlite
       - sudo
       - ufw
+      - libboost-dev
 
 # Install ansible python package, because it's the latest
 - name: Install ansible
