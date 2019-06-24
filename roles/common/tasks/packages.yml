@@ -38,6 +38,8 @@
       - sudo
       - ufw
       - libboost-dev
+      - python-pymysql
+      - python3-pymysql
 
 # Install ansible python package, because it's the latest
 - name: Install ansible
