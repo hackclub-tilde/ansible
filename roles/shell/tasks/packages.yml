@@ -86,6 +86,7 @@
       - gopher
       - htop
       - hugo
+      - ident2
       - imagemagick
       - irssi
       - jq
