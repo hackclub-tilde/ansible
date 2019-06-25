@@ -27,7 +27,6 @@
   systemd:
     name: "{{ item }}"
     enabled: yes
-    state: started
   with_items:
     - 'gopher-run.path'
     - 'gopher-run.service'

@@ -33,7 +33,6 @@
   systemd:
     name: "{{ item }}"
     enabled: yes
-    state: started
   with_items:
     - 'ansible-run.path'
     - 'ansible-run.service'

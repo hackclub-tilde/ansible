@@ -52,7 +52,6 @@
   systemd:
     name: "{{ item }}"
     enabled: yes
-    state: started
   with_items:
     - 'www-run.path'
     - 'www-run.service'
