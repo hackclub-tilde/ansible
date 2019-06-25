@@ -7,7 +7,6 @@
     owner: minecraft
     group: minecraft
     mode: 0770
-    recurse: yes
 
 - name: Install minecraft target
   copy:

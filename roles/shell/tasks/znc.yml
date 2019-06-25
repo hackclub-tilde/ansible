@@ -7,7 +7,6 @@
     owner: znc
     group: root
     mode: 0770
-    recurse: yes
 
 - name: Create znc run dir
   file:
