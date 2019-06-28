@@ -1,0 +1,6 @@
+[Unit] 
+Description=wiki-run path
+[Path]
+PathModified=/dev/shm/run-wiki
+[Install]
+WantedBy=multi-user.target

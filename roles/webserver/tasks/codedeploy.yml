@@ -53,6 +53,30 @@
     group: root
     mode: 0644
 
+- name: Add githook for wiki local script
+  copy:
+    src: ../files/wiki-run
+    dest: /usr/local/bin/wiki-run
+    owner: root
+    group: root
+    mode: 0755
+
+- name: Add wiki githook system path unit
+  copy:
+    src: ../files/wiki-run.path
+    dest: /etc/systemd/system/wiki-run.path
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Add wiki githook service unit
+  copy:
+    src: ../files/wiki-run.service
+    dest: /etc/systemd/system/wiki-run.service
+    owner: root
+    group: root
+    mode: 0644
+
 - name: Enabling ansible-pull units
   systemd:
     name: "{{ item }}"
@@ -60,3 +84,5 @@
   with_items:
     - 'www-run.path'
     - 'www-run.service'
+    - 'wiki-run.path'
+    - 'wiki-run.service'

@@ -1,0 +1,14 @@
+#!/bin/bash
+export RUNNING="/dev/shm/wiki_is_running"
+
+if [ -f $RUNNING ]; then
+   echo "wiki is currently running."
+	exit 1
+else
+	touch $RUNNING
+	cd /var/www/wiki.thunix.net
+	/usr/bin/git pull
+	touch /dev/shm/wiki-hook-last-run
+	rm $RUNNING
+	exit 0
+fi

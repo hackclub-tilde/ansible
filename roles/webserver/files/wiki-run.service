@@ -1,0 +1,4 @@
+[Unit]
+Description=wiki-run
+[Service]
+ExecStart=/usr/local/bin/wiki-run
