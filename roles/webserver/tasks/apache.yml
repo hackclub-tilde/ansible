@@ -82,3 +82,8 @@
   copy:
     src: ../files/etc/apache2/sites-available/stats.thunix.net.conf
     dest: /etc/apache2/sites-available/stats.thunix.net.conf
+
+- name: Deploy apache site conf for wiki.thunix.net
+  copy:
+    src: ../files/etc/apache2/sites-available/wiki.thunix.net.conf
+    dest: /etc/apache2/sites-available/wiki.thunix.net.conf

@@ -10,6 +10,11 @@
     dest: /var/gopher
     force: yes
 
+- git:
+    repo: 'https://tildegit.org/thunix/wiki.git'
+    dest: /var/www/wiki.thunix.net
+    force: yes
+
 - file:
     path: /var/www/autoconfig/mail
     state: directory
