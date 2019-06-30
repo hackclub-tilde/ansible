@@ -1,0 +1,15 @@
+---
+- name: Setting up haivets
+  user:
+    name: haivets
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/haivets
+- authorized_key:
+    user: haivets
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDET1359QSxtgCMA4cDovVDWbK+XzEuXohfzXlUyk8nuSSJlUE4kZtxgs0QbRdrJEcYO4MqhE33S/cqN+60XFx73Rsin6nX14t8J9slr6kv1W4Zvg6u/TP0vT8ABHfFcyM7fnBe2YzkjDPo7WFI9BEWPFHEjwbjFAlLza+O1/9XezE6LSo2qtbt+4MU1dDRlJfyUGI36Vvi6Rinj1FE9oq3u6hY9qkhCq5+lCU7xep/uP5A4//ajkVJURmuYEzAhnjYAHbWly55XiSK/JMOitgkZsRpo3LTgyjAxEQoCK18kNb3Zzobybgh5LDkvjK9p6ftxue8cYJ9gUszUWLwbbsjDMgkEb0owXbQR2BgiBpSem0jRXVGP1uSnqZH5p8XFvS+abs4JvkQ17/qF2s8itdNmoxbexhUoCEV9uElUbJ4YkM67Rjr2G9pjBCBuS671E0WXRkt1ZCy+BDJT6L/RDHrlOGMPmJpmNws5aU1rdkVJqEvgWmRDbHhPux2u4U2FnGAmVvOeSsO5ttoXfYu7s1iszgnz5h3PQ6KT/SEdT00bzMVz5uHsLNBJqOrEgBPErWoM6to9rujTi5cN/S4aNhiWROsj4ewe2KippOKtqx71a6AmvEoWbQmz54EEMWphPtNSKwanscorprdr+B7ID9MUyVJBbQdVFyCYS1HecGZ5w=="
