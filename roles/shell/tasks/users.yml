@@ -114,7 +114,7 @@
 - include: users/serafeim.yml
 - include: users/dot.yml
 - include: users/virus.yml
-- include: users/mandlebroth.yml
+- include: users/mandelbroth.yml
 - include: users/victoralt.yml
 - include: users/arch3r.yml
 - include: users/linel.yml
