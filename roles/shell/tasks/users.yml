@@ -53,7 +53,7 @@
 - include: users/wesx.yml
 - include: users/arda.yml
 #- include: users/larasaty.yml
-- include: users/techemporium.yml
+#- include: users/techemporium.yml
 - include: users/bercik.yml
 - include: users/khuxkm.yml
 #- include: users/z00t.yml
