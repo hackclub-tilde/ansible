@@ -121,3 +121,4 @@
 - include: users/haivets.yml
 - include: users/tux.yml
 - include: users/georges.yml
+- include: users/techemporium.yml

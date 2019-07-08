@@ -4,12 +4,12 @@
     name: techemporium
     groups: tilde
     state: present
+    skeleton: /etc/skel
     shell: /bin/bash
     system: no
-    home: /home/techemporium
     createhome: yes
-    skeleton: /etc/skel
+    home: /home/techemporium
 - authorized_key:
-    user: user
+    user: techemporium
     state: present
-    key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA3eGPbmzlxyBoaJOluN1zNVAiPIHtZef60BMSSwbB0zvVPOfZ3eXP5H39G/LUnKi2am5ECzgAHrOupr+m1aPCWSYK/1V7ih3++HRpoACb5odROXDmOiI4fUJ2KEvCDWhw0zSpN4EuO/vxidHQhlmEXGZSUUqELhxDfEnO/+bTxjcwHE3VNOZFtZ0OGLqN6ZDK+vdRq75Kl4iOzrubpxUzDnnFUBEjQaRtfCMbsMy5V97RFoC5UtZXKfGeTiFh3OWzB0MwzElifzmqlM5N0RUd0jbsZ8D3EE2p0GRHwq6JiFqWdYOqPUYlTeoigKMpKEWf8ov290gMCMGuBOCCrT/z6Q=="
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQBUxaUJSQsvK09ZyB+yCLlgHw6965h2ZyD3NHGZPUb55oHGEPn/RTd5PtxLfD9e6iCcWzmDzOBAyvUUNXNpDNrvcYCIfQd5VOlGg4btfDlgCWD7nEyiXLrmv9j5Pyc7DSHuHkH3GS0Y5/4UKoz4qfhegyTZygUX4T3pYMzv4Y6jMiOOqpVBzIWgLLlhSGZK3hwqLCkvmwalrSdsoO5chc5CgsyuU+/LCm4c5ONbkBP98zhJgnn326FYjIjJgL/MIGhfyL+dxIcY9aruLUjGXm/FFe/Nw1hnYxpCYQb5+z8/sbG4CoMlecBZJ69lJxy21QRsGgwM9VUEiV+og8bkqEQ3"
