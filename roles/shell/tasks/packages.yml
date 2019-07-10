@@ -228,3 +228,11 @@
     owner: root
     group: root
     mode: 0755
+
+- name: Install CLI wiki browser
+  copy:
+    src: ../files/usr/local/bin/wiki
+    dest: /usr/local/bin/tldr
+    owner: root
+    group: root
+    mode: 0755
