@@ -232,7 +232,7 @@
 - name: Install CLI wiki browser
   copy:
     src: ../files/usr/local/bin/wiki
-    dest: /usr/local/bin/tldr
+    dest: /usr/local/bin/wiki
     owner: root
     group: root
     mode: 0755
