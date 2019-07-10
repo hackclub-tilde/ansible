@@ -8,8 +8,8 @@
 https://www.thunix.net                         EST DEC 2018
 -----------------------------------------------------------
 brought to you by:
-     amcclure
-     ubergeek
+     amcclure     naglfar
+     ubergeek     fosslinux
 -----------------------------------------------------------
 For system document type 'man thunix'.
 -----------------------------------------------------------
@@ -19,6 +19,7 @@ Some available commands:
 * lynx - web browser
 * mutt - email
 * iris - terminal based forum
+* wiki - browse the Thunix wiki via the command line
 -----------------------------------------------------------
 To modify the thunix.net website, propose a PR here:
 https://tildegit.org/thunix/www
