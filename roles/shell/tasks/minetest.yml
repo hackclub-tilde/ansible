@@ -7,3 +7,11 @@
     owner: root
     group: root
     mode: 0644
+
+- name: Install world settings
+  copy:
+    src: ../files/var/games/minetest-server/.minetest/worlds/world/world.mt
+    dest: /files/var/games/minetest-server/.minetest/worlds/world/world.mt
+    owner: root
+    group: root
+    mode: 0644
