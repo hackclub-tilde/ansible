@@ -1,0 +1,26 @@
+---
+- name: Setting up warcall22
+  user:
+    name: warcall22
+    groups: fortitude
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: no
+    home: /home/warcall22
+- authorized_key:
+    user: warcall22
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAgACoAWMdo6+nKlS1XfOrYgtd/yIV0Bn2upOZ1+5
+fKEIxiSR4e0GLlC6/zZZt3N7ZKNPlLyQNaSRFBR2VBVwshhn/P+wYxtEcA3w4cpa
+rWn9iY5DLGDA66FhThMAm/du8hOq7nSv/gwS/8FBtYAtvY46DMMb7eN3y+zuqGOy
+6G/wGJUq32l3aAvPJXmGJ93OxQ+qxLk6FReZ0VHnXhDtkNE6i+y1rg6Bz1HdSNAg
+lJFdz2u5aa3iN0S4WdmyeXueBvk2MWtp/3Ay7sZdjUf5DPVKp0TQXDpeMERh4FL/
+0xddvbf0e5qjjx1fgsVJDJCJALkctCJqh0Wkj7CKE1fFU+NQXLsEI/2K6U/uxQ9g
+dbjPeIs65rUYT/UhbJo0V/Isp02Llac8nxS6WXpYxS7nRRAQMVwS4Lu3ZCawRl9d
+SmHlh9+JlWE3HvEedTO53SlZVAa/nFJo+NCQKE1AqxrNrqfUsiKawMJLAuMkYUzE
+FyTEO9YTmFyhBLeRhtFSPaHkMrroekKvRsU6MAF4bEp3Q+K9EinUk/mY0k7oQKJE
+jGWLLu3jt4OyOaAiljHvoV6Ewg0R+UXmXs8Ut9JCka5lbj5jo6bdddpy9rNnqhC4
+GaBtnqwx2HJlxTIsOW9mhGu+dmJebpbrzYcqHiTu7k5jL3bX+heQidbuqkfL4eqb
+UaMLlw=="
