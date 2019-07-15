@@ -1,0 +1,7 @@
+# install pb
+---
+- name: install pb
+  make:
+    chdir: /usr/src/pb
+    target: install
+  become: yes
