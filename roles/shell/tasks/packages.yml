@@ -61,6 +61,7 @@
   vars:
     packages:
       - alpine
+      - adwaita-icon-theme
       - analog
       - bsdgames
       - build-essential
@@ -88,6 +89,7 @@
       - htop
       - hugo
       - ident2
+      - inkscape
       - imagemagick
       - irssi
       - jq
