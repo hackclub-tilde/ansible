@@ -79,8 +79,6 @@
       - elinks
       - emacs
       - ffmpeg
-      - libfreetype6
-      - libfreetype6-dev
       - finch
       - finger
       - fingerd
@@ -100,6 +98,8 @@
       - libarchive-dev
       - libconvert-binhex-perl
       - libffi-dev
+      - libfreetype6
+      - libfreetype6-dev
       - libmime-tools-perl
       - libncurses5-dev
       - libsdl1.2-dev
