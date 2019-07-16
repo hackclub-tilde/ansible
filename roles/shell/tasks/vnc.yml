@@ -1,0 +1,9 @@
+# install vnc scripts
+---
+- name: clone vnc
+  git:
+    repo: https://tildegit.org/thunix/vnc
+    dest: /usr/src/vnc
+    force: yes
+  notify:
+    - install vnc 

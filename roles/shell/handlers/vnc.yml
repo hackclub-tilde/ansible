@@ -1,0 +1,7 @@
+# install vnc 
+---
+- name: install vnc
+  make:
+    chdir: /usr/src/pb
+    target: install
+  become: yes
