@@ -80,7 +80,7 @@
       - emacs
       - ffmpeg
       - libfreetype6
-      -	libfreetype6-dev
+      - libfreetype6-dev
       - finch
       - finger
       - fingerd
