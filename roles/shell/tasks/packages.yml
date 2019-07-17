@@ -100,8 +100,12 @@
       - libffi-dev
       - libfreetype6
       - libfreetype6-dev
+      - libjpeg62-turbo
+      - libjpeg62-turbo-dev
       - libmime-tools-perl
       - libncurses5-dev
+      - libopencolorio1v5
+      - libopencolorio-dev
       - libsdl1.2-dev
       - libsdl2-dev
       - libssl-dev
