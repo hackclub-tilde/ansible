@@ -93,6 +93,7 @@
       - imagemagick
       - irssi
       - jq
+      - lbzip2
       - lftp
       - libapache2-mod-php7.0
       - libarchive-dev
