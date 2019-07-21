@@ -133,6 +133,7 @@
       - mono-dbg
       - mono-devel
       - mono-xsp4
+      - moon-buggy
       - mosh
       - mutt
       - mysql-client
