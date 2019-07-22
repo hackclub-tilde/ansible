@@ -173,6 +173,8 @@
       - python3-toot
       - python3-twisted
       - python3-venv
+      - qemu
+      - qemu-efi
       - ranger
       - ruby-paint
       - ruby-trollop
