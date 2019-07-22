@@ -86,6 +86,7 @@
       - fortune
       - gitweb
       - gopher
+      - gnome-icon-theme-full
       - htop
       - hugo
       - ident2
@@ -177,6 +178,7 @@
       - scala
       - scala-doc
       - scala-library
+      - shimmer-themes
       - staticsite
       - stow
       - talk
