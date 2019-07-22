@@ -177,6 +177,7 @@
       - ranger
       - ruby-paint
       - ruby-trollop
+      - rustc
       - scala
       - scala-doc
       - scala-library
