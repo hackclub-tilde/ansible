@@ -182,7 +182,6 @@
       - scala
       - scala-doc
       - scala-library
-      - shimmer-themes
       - staticsite
       - stow
       - talk
