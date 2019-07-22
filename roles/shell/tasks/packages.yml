@@ -60,7 +60,6 @@
     update_cache: yes
   vars:
     packages:
-      - alacritty
       - alpine
       - adwaita-icon-theme
       - analog
