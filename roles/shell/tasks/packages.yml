@@ -86,7 +86,8 @@
       - fortune
       - gitweb
       - gopher
-      - gnome-icon-theme-full
+      - gnome-icon-theme
+      - gnome-icon-theme-extras
       - htop
       - hugo
       - ident2
