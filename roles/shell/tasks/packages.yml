@@ -94,6 +94,7 @@
       - inkscape
       - imagemagick
       - irssi
+      - jekyll
       - jq
       - lbzip2
       - lftp
