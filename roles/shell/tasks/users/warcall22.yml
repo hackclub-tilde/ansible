@@ -2,7 +2,7 @@
 - name: Setting up warcall22
   user:
     name: warcall22
-    groups: fortitude
+    groups: fortitude, tilde
     state: present
     skeleton: /etc/skel
     shell: /bin/bash
