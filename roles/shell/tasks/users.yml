@@ -9,8 +9,9 @@
     state: present
     
 - group:
-	name: fortitude
+    name: fortitude
     state: present
+
 #Service accounts
 - include: users/minecraft.yml
 - include: users/bzflag.yml
