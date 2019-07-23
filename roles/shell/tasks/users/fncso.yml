@@ -2,7 +2,7 @@
 - name: Setting up fncso
   user:
     name: fncso
-    groups: fortitude
+    groups: fortitude, tilde
     state: present
     skeleton: /etc/skel
     shell: /bin/bash
