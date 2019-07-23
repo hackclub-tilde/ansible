@@ -131,6 +131,10 @@
       - minetest-mod-pipeworks
       - minetest-mod-torches
       - minetest-server
+      - mkdocs
+      - mkdocs-doc
+      - mkdocs-bootstrap
+      - mkdocs-bootswatch
       - mono-apache-server
       - mono-complete
       - mono-dbg
@@ -149,6 +153,8 @@
       - openssl
       - p7zip-full
       - pandoc
+      - pelican
+      - pelican-doc
       - php-imagick
       - php-memcache
       - php-pear
