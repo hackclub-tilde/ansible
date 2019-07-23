@@ -7,7 +7,7 @@
     skeleton: /etc/skel
     shell: /bin/bash
     system: no
-    createhome: no
+    createhome: yes
     home: /home/fncso
 - authorized_key:
     user: fncso
