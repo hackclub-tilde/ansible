@@ -7,6 +7,10 @@
 - group:
     name: sudo
     state: present
+    
+- group:
+	name: fortitude
+    state: present
 #Service accounts
 - include: users/minecraft.yml
 - include: users/bzflag.yml
@@ -128,3 +132,6 @@
 - include: users/xallmm.yml
 - include: users/danielscode.yml
 - include: users/haakondahl.yml
+- include: users/warcall22.yml
+- include: users/fncso.yml
+- include: users/fncdo.yml
