@@ -98,7 +98,7 @@
       - jq
       - lbzip2
       - lftp
-      - libapache2-mod-php7.0
+      - libapache2-mod-php
       - libarchive-dev
       - libconvert-binhex-perl
       - libffi-dev
@@ -144,7 +144,6 @@
       - mosh
       - mutt
       - mysql-client
-      - mysql-server
       - nasm
       - nbsdgames
       - neofetch
@@ -158,19 +157,19 @@
       - php-imagick
       - php-memcache
       - php-pear
-      - php7.0
-      - php7.0-curl
-      - php7.0-gd
-      - php7.0-imap
-      - php7.0-intl
-      - php7.0-mcrypt
-      - php7.0-mysql
-      - php7.0-pspell
-      - php7.0-recode
-      - php7.0-sqlite3
-      - php7.0-tidy
-      - php7.0-xmlrpc
-      - php7.0-xsl
+      - php
+      - php-curl
+      - php-gd
+      - php-imap
+      - php-intl
+      - php-mcrypt
+      - php-mysql
+      - php-pspell
+      - php-recode
+      - php-sqlite3
+      - php-tidy
+      - php-xmlrpc
+      - php7.3-xsl
       - pngtools
       - python
       - python-certbot-apache
