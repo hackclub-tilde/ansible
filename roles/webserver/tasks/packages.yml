@@ -7,14 +7,14 @@
 
 - name: Add tor project repo
   apt_repository:
-    repo: 'deb https://deb.torproject.org/torproject.org stretch main'
+    repo: 'deb https://deb.torproject.org/torproject.org buster main'
     state: present
     filename: tor
     update_cache: yes
 
 - name: Add tor project repo
   apt_repository:
-    repo: 'deb-src https://deb.torproject.org/torproject.org stretch main'
+    repo: 'deb-src https://deb.torproject.org/torproject.org buster main'
     state: present
     filename: torsrc
     update_cache: yes
