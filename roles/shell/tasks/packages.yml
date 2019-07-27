@@ -181,6 +181,7 @@
       - python3-venv
       - qemu
       - qemu-efi
+      - qemu-system
       - ranger
       - ruby-paint
       - ruby-trollop
