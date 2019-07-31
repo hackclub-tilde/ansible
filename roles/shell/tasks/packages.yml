@@ -162,7 +162,6 @@
       - php-gd
       - php-imap
       - php-intl
-      - php-mcrypt
       - php-mysql
       - php-pspell
       - php-recode
