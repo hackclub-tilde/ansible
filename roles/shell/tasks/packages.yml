@@ -94,7 +94,9 @@
       - inkscape
       - imagemagick
       - irssi
+      - isync
       - jekyll
+      - ksh
       - jq
       - lbzip2
       - lftp
@@ -113,6 +115,7 @@
       - libsdl1.2-dev
       - libsdl2-dev
       - libssl-dev
+      - lua5.3
       - lynx
       - make
       - mc
@@ -147,6 +150,7 @@
       - nasm
       - nbsdgames
       - neofetch
+      - neomutt
       - openbsd-inetd
       - opendkim
       - openssl
@@ -169,14 +173,19 @@
       - php-tidy
       - php-xmlrpc
       - php7.3-xsl
+      - php7.3-curl
+      - php7.3-xml
       - pngtools
       - python
       - python-certbot-apache
       - python-pip
+      - python-potr
       - python-twisted
+      - python3
       - python3-pip
       - python3-toot
       - python3-twisted
+      - python3-potr
       - python3-venv
       - qemu
       - qemu-efi
@@ -206,6 +215,12 @@
       - vrms
       - w3m-img
       - weechat
+      - weechat-lua
+      - weechat-php
+      - weechat-python
+      - weechat-ruby
+      - weechat-scripts
+      - weechat-tcl
       - wordgrinder-ncurses
       - xdm
       - xfce4
