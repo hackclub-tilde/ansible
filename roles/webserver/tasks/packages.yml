@@ -30,7 +30,6 @@
       - createrepo
       - dpkg-dev
       - gophernicus
-      - libapache2-mod-php7.0
       - mariadb-client
       - mariadb-server
       - php-imagick
@@ -42,7 +41,6 @@
       - php-gd
       - php-imap
       - php-intl
-      - php-mcrypt
       - php-mysql
       - php-pspell
       - php-recode
@@ -50,7 +48,6 @@
       - php-tidy
       - php-xmlrpc
       - php7.3-xsl
-      - shellinabox
       - tor
       - torsocks
       - yum-utils
