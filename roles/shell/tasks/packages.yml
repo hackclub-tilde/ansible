@@ -176,6 +176,7 @@
       - php7.3-curl
       - php7.3-xml
       - pngtools
+      - proot
       - python
       - python-certbot-apache
       - python-pip
