@@ -222,6 +222,7 @@
       - weechat-ruby
       - weechat-scripts
       - weechat-tcl
+      - whois
       - wordgrinder-ncurses
       - x11vnc
       - xdm
