@@ -66,7 +66,7 @@
 #- include: users/mom.yml
 #- include: users/andro.yml
 #- include: users/hasbullah.yml
-- include: users/riska.yml
+#- include: users/riska.yml
 #- include: users/naruto.yml
 #- include: users/pria.yml
 #- include: users/abimks.yml
