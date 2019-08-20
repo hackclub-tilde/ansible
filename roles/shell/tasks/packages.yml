@@ -151,6 +151,8 @@
       - nbsdgames
       - neofetch
       - neomutt
+      - newsbeuter
+      - newsboat
       - openbsd-inetd
       - opendkim
       - openssl
