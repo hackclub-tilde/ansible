@@ -31,7 +31,7 @@
       - 5154
       - 30000
 
-- name: Create limits
+- name: Create tcp limits
   ufw:
     rule: limit
     proto: tcp
@@ -40,3 +40,12 @@
     - 22
     - 587
     - 2222
+    - 53
+
+- name: Create UDP limits
+  ufw:
+    rule: limit
+    proto: udp
+    port: '{{ item }}'
+  with_items:
+    - 53
