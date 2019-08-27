@@ -71,6 +71,7 @@
       - ca-certificates-mono
       - caca-utils
       - cmake
+      - context
       - cowsay
       - devscripts
       - dos2unix
