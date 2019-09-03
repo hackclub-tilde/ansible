@@ -8,9 +8,9 @@
     name: sudo
     state: present
     
-- group:
-    name: fortitude
-    state: present
+#- group:
+#    name: fortitude
+#    state: present
 
 #Service accounts
 - include: users/minecraft.yml
