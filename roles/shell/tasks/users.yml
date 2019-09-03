@@ -134,8 +134,8 @@
 - include: users/danielscode.yml
 - include: users/haakondahl.yml
 - include: users/warcall22.yml
-- include: users/fncso.yml
-- include: users/fncdo.yml
+#- include: users/fncso.yml
+#- include: users/fncdo.yml
 - include: users/pavel.yml
 - include: users/quantum.yml
 - include: users/gonthey.yml
