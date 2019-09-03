@@ -121,6 +121,7 @@
       - make
       - mc
       - mc-data
+      - midori
       - minetest-data
       - minetest-mod-advspawning
       - minetest-mod-animalmaterials
