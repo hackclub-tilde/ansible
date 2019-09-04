@@ -142,3 +142,4 @@
 - include: users/mononote.yml
 - include: users/aavtt.yml
 - include: users/zszoke.yml
+- include: users/neo.yml
