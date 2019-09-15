@@ -76,6 +76,9 @@
       - devscripts
       - dos2unix
       - dosemu
+      - dovecot-pop3d
+      - dovecot-core
+      - dovecot-imapd
       - eggdrop
       - elinks
       - emacs
