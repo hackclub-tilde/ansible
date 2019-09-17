@@ -146,3 +146,4 @@
 - include: users/init0.yml
 - include: users/lugubris.yml
 - include: users/syncore.yml
+- include: users/geetfun.yml
