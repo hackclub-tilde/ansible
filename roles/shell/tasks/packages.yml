@@ -47,6 +47,12 @@
     state: present
     update_cache: yes
 
+- name: Add Debian unstable
+  apt_repository:
+    repo: 'deb http://deb.debian.org/debian/ unstable main'
+    state: present
+    update_cache: yes
+
 - name: Add mono-project repo
   apt_repository:
     repo: 'deb https://download.mono-project.com/repo/debian stable-buster main' 
@@ -88,6 +94,7 @@
       - fingerd
       - fish
       - fortune
+      - frotz
       - gitweb
       - gopher
       - gnome-icon-theme
@@ -205,6 +212,7 @@
       - scala
       - scala-doc
       - scala-library
+      - sipcalc
       - staticsite
       - stow
       - talk
@@ -230,6 +238,7 @@
       - weechat-scripts
       - weechat-tcl
       - whois
+      - wireguard
       - wordgrinder-ncurses
       - x11vnc
       - xdm
