@@ -238,7 +238,6 @@
       - weechat-scripts
       - weechat-tcl
       - whois
-      - wireguard
       - wordgrinder-ncurses
       - x11vnc
       - xdm
