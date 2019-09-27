@@ -1,0 +1,15 @@
+---
+- name: Setting up liesinties
+  user:
+    name: liesinties
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/liesinties
+- authorized_key:
+    user: liesinties
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD4XJ5xBUQFnH6Ro3F2fvdCeEFL5BuEvzrCBin8+4zQ5e+6Lwf3musIr4Y1v/xi5gdZcit3yKirNpLZHinE7b3iplCgdcPWiooe8Ma4gAKxdbpIozpRhGP994MJmTCzyVQzM0zEC3XLQcSedxXHE5dmq3g6QQqDLrTZn6sg5mbnsUkQkNCyftlDsrjuENi585tzj9eOTcEnbgwV886i115t+6wPuTUXI1W/IlL1DnyJVZH7S5UAzlIZ2sB9ekpW+oxhT3xACNBR8xdP/F663ZKaiEWEaWaZs8dibWTZxA3xUEUFhsb7Ak9ceF2A2ADyzji7L2ihC5BDDqSbaOLRAAp1"
