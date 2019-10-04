@@ -151,3 +151,4 @@
 - include: users/camellia.yml
 - include: users/liesinties.yml
 - include: users/hijaben.yml
+- include: users/delta.yml
