@@ -226,6 +226,7 @@
       - tcltls
       - tdom
       - telnet
+      - telegram-cli
       - todotxt-cli
       - vim
       - vrms
