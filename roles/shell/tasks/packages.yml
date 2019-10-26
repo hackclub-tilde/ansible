@@ -212,6 +212,7 @@
       - scala
       - scala-doc
       - scala-library
+      - screen
       - sipcalc
       - staticsite
       - stow
