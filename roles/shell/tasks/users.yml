@@ -38,7 +38,7 @@
 - include: users/trip.yml
 #- include: users/xenialito69.yml
 #- include: users/freuddy.yml
-- include: users/ringo.yml
+#- include: users/ringo.yml
 #- include: users/hexhaxtron.yml
 #- include: users/smtpsupplicant.yml
 - include: users/orliesaurus.yml
