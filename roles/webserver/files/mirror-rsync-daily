@@ -3,3 +3,5 @@
 
 rsync -rvltpHS --delete-excluded rsync://ftp.halifax.rwth-aachen.de/ubuntu-releases/ /var/www/ftp.thunix.cf/ubuntu-releases
 rsync -avz --delete --safe-links rsync://rsync.apache.org/apache-dist /var/www/ftp.thunix.cf/apache/
+rsync -rlptv --delete ftp.ibiblio.org::ldp_mirror /var/ftp/tldp
+
