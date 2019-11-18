@@ -1,0 +1,9 @@
+# This deploys manually managed scripts 
+---
+- name: Deploy modlog tool
+  copy:
+    src: ../files/usr/local/bin/modlog
+    dest: /usr/local/bin/modlog
+    owner: root
+    group: root
+    mode: 0755
