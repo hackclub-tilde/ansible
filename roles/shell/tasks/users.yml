@@ -160,3 +160,4 @@
 - include: users/kronos.yml
 - include: users/leonid.yml
 - include: users/shark.yml
+- include: users/stereo.yml
