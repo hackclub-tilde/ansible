@@ -6,7 +6,6 @@
     proto: tcp
     port: '{{ item }}'
   with_items:
-    - 25
     - 70
     - 79
     - 80
@@ -38,6 +37,7 @@
     port: '{{ item }}'
   with_items:
     - 22
+    - 25
     - 587
     - 2222
     - 53
