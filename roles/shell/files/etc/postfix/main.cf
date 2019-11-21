@@ -48,7 +48,20 @@ smtpd_sasl_path = private/auth
 smtpd_sasl_auth_enable = yes
 smtpd_sasl_security_options = noanonymous
 smtpd_sasl_local_domain = $myhostname
-smtpd_recipient_restrictions = permit_mynetworks,permit_auth_destination,permit_sasl_authenticated,reject
+#Allow ONLY authenticated users to send email
+smtpd_recipient_restrictions =
+ permit_mynetworks,
+ permit_sasl_authenticated,
+ permit_auth_destination,
+ reject_invalid_hostname,
+ reject_unauth_pipelining,
+ reject_non_fqdn_sender,
+ reject_non_fqdn_recipient,
+ reject_unknown_sender_domain,
+ reject_unknown_recipient_domain,
+ reject_rbl_client sbl.spamhaus.org,
+ reject_rhsbl_sender dbl.spamhaus.org
+ 
 
 milter_protocol = 2
 milter_default_action = accept
