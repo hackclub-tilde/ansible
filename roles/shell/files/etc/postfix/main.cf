@@ -59,6 +59,7 @@ smtpd_recipient_restrictions =
  reject_non_fqdn_recipient,
  reject_unknown_sender_domain,
  reject_unknown_recipient_domain,
+ reject_rbl_client blackholes.tepucom.nl,
  reject_rbl_client spam.dnsbl.anonmails.de,
  reject_rbl_client sbl.spamhaus.org,
  reject_rhsbl_sender dbl.spamhaus.org
