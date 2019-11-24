@@ -2,8 +2,8 @@
 ---
 - name: Set up post-deploy LE stuff
   copy:
-    src: ../files/etc/letsencrypt/renewal-hooks/postfix
-    dest: /etc/letsencrypt/renewal-hooks/postfix
+    src: ../files/etc/letsencrypt/renewal-hooks/update-postfix
+    dest: /etc/letsencrypt/renewal-hooks/update-postfix
     owner: root
     group: root
     mode: 0644
