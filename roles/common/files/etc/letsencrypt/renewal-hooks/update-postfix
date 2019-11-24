@@ -1,0 +1,4 @@
+#!/bin/bash
+
+/bin/systemctl restart postfix
+/bin/systemctl restart dovecot
