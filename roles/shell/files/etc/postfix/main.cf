@@ -59,11 +59,13 @@ smtpd_recipient_restrictions =
  reject_non_fqdn_recipient,
  reject_unknown_sender_domain,
  reject_unknown_recipient_domain,
+ check_policy_service unix:private/policyd-spf,
  reject_rbl_client blackholes.tepucom.nl,
  reject_rbl_client spam.dnsbl.anonmails.de,
  reject_rbl_client sbl.spamhaus.org,
  reject_rhsbl_sender dbl.spamhaus.org
- 
+
+policyd-spf_time_limit = 3600
 
 milter_protocol = 2
 milter_default_action = accept
