@@ -8,11 +8,3 @@
     group: root
     mode: 0644
 
-# Deploy master.cf
-- name: Deploy postfix conf
-  copy:
-    src: ../files/etc/postfix/master.cf
-    dest: /etc/postfix/master.cf
-    owner: root
-    group: root
-    mode: 0644

@@ -10,4 +10,3 @@
 - include: manpage.yml
 - include: monitoring.yml
 - include: scripts.yml
-- include: postfix.yml
