@@ -162,3 +162,4 @@
 - include: users/shark.yml
 - include: users/stereo.yml
 - include: users/joro.yml
+- include: users/info.yml
