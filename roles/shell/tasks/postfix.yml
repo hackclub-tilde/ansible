@@ -18,3 +18,13 @@
     group: root
     mode: 0644
   notify: restart Postfix
+
+# Deploy policyd-spf.conf
+- name: Deploy postfix spf
+  copy:
+    src: ../files/etc/postfix-policyd-spf-python/policyd-spf.conf
+    dest: /etc/postfix-policyd-spf-python/policyd-spf.conf
+    owner: root
+    group: root
+    mode: 0644
+
