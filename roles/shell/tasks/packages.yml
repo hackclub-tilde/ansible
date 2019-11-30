@@ -69,6 +69,8 @@
       - alpine
       - adwaita-icon-theme
       - analog
+      - autoconf2.13
+      - bison
       - bsdgames
       - build-essential
       - byobu
@@ -93,6 +95,7 @@
       - finger
       - fingerd
       - fish
+      - flex
       - fortune
       - frotz
       - gitweb
@@ -113,6 +116,8 @@
       - lftp
       - libapache2-mod-php
       - libarchive-dev
+      - libc-dev
+      - libc++-dev
       - libconvert-binhex-perl
       - libffi-dev
       - libfreetype6
@@ -126,6 +131,9 @@
       - libsdl1.2-dev
       - libsdl2-dev
       - libssl-dev
+      - libtool
+      - libtool-bin
+      - linux-headers-amd64
       - lua5.3
       - lynx
       - make
@@ -227,10 +235,12 @@
       - tcl8.6
       - tcllib
       - tcltls
+      - texinfo
       - tdom
       - telnet
       - telegram-cli
       - todotxt-cli
+      - uuid
       - vim
       - vrms
       - w3m-img
