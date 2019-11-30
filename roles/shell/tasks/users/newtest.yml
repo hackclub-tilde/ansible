@@ -1,0 +1,15 @@
+---
+- name: Setting up newtest
+  user:
+    name: newtest
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/newtest
+- authorized_key:
+    user: newtest
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCuhWim/XCzkdKpIR8e0muwH6U7MbSuxBoYHgNhV42ecahnWt8SBuzIH5fdYThwleRNRPW2LtEOIhtcNJa58hwDiE1OMcV4P3mjeIXDSWV0rW7ksCwNS2IO06EYJ+sfWYPL4E7OGe7uUHmvNAMAGAJmtng4IkgwPNAWXPoSquxRsCsfAMK+6LXT52Zh/ma++k/ZE0DEuiwk8p+7FJuwIMJ9po1Q67yq5Ue5y8MBqWjZrJVC8CBsMWlQojKptdIMZJsdycij5NZ81HGQ4d1CY+WvxcUaB1j/wHG3jtWRwa2BMoGgPFyP+YoB1j0TW9JRFoJMg0RYoZosCBWcouOoAHtj ubergeek@thunix.net"
