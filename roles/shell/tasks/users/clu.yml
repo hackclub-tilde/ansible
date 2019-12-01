@@ -1,0 +1,15 @@
+---
+- name: Setting up clu
+  user:
+    name: clu
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/clu
+- authorized_key:
+    user: clu
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDep3Dcw8VufXUAFSv97AXuX6mv4kBPfJYl8vqLu8kQRWiJmYhjL9rZL09Nb+BdqddtJUcxtVFGrlOkWiySbAjzU/VhorxII7oqtmcaX4RIMYeu9+cbogwF5ioyWLAM8EfDoIb93tW3JBlXwdHoCsQxCXmiPunqc67+dO5g9EHHMaivVuEqGpEoD1HGW+gm/083fOo9/j3MqsU76fGfFteBXMmdwLYN2pD4mb/nbG5Nn9Um6xaO8Uq6A329ISG7FtOc9JZlyH/Egd4OI1pzJHWf/yKNxpT3fEoostd5Q13Wygxco2yCRgnewfY8oQKaBTZVZs1Qp+++gDf+0SSQzmHr clu@mcp.program"
