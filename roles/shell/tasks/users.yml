@@ -47,7 +47,7 @@
 - include: users/ml.yml
 - include: users/usernameak.yml
 - include: users/user.yml
-#- include: users/angelok.yml
+- include: users/angelok.yml
 #- include: users/johnc.yml
 #- include: users/k4j.yml
 #- include: users/ultima.yml
