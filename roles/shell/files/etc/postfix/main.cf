@@ -64,6 +64,7 @@ smtpd_recipient_restrictions =
  reject_rbl_client spam.dnsbl.anonmails.de,
  reject_rbl_client all.spamrats.com,
  reject_rbl_client ix.dnsbl.manitu.net,
+ reject_rbl_client db.wpbl.info,
  reject_rbl_client sbl.spamhaus.org,
  reject_rbl_client xbl.spamhaus.org,
  reject_rhsbl_sender dbl.spamhaus.org
