@@ -1,0 +1,15 @@
+---
+- name: Setting up sebre
+  user:
+    name: sebre
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/sebre
+- authorized_key:
+    user: sebre
+    state: present
+    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEQuprLlS/gtj67G4qMJs29VnURehGYZ8U48jX1EMbIc"
