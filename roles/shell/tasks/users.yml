@@ -163,6 +163,7 @@
 - include: users/stereo.yml
 - include: users/joro.yml
 - include: users/info.yml
+- include: users/infoTV.yml
 - include: users/clu.yml
 - include: users/sebre.yml
 - include: users/olya.yml
