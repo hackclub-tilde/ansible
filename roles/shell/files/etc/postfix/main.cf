@@ -61,13 +61,14 @@ smtpd_recipient_restrictions =
  reject_unknown_sender_domain,
  reject_unknown_recipient_domain,
  check_policy_service unix:private/policyd-spf,
- reject_rbl_client blackholes.tepucom.nl,
+ reject_rbl_client bl.fmb.la,
  reject_rbl_client spam.dnsbl.anonmails.de,
  reject_rbl_client all.spamrats.com,
  reject_rbl_client ix.dnsbl.manitu.net,
  reject_rbl_client db.wpbl.info,
  reject_rbl_client sbl.spamhaus.org,
  reject_rbl_client xbl.spamhaus.org,
+ reject_rbl_client blackholes.tepucom.nl,
  reject_rhsbl_sender dbl.spamhaus.org
 
 policyd-spf_time_limit = 3600
