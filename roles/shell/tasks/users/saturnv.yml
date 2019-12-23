@@ -1,0 +1,15 @@
+---
+- name: Setting up saturnv
+  user:
+    name: saturnv
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/saturnv
+- authorized_key:
+    user: saturnv
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAyvvBuBVsPA1ny1CVkeKFehgUpebSlQyBeqhAj5oFLTnJObzWiPNLiKBIACFeOOjB7ELt1rACMz08GkiwLUjKfdfjfXnBn3COJA2kCySFZOp5+Y6NBW0d8L7AJxzjqFbPrUe+GiwNcUeiDAreEQvO4VFhABy0VenmWFNWcQZ2vEtpzHKqkU4jBKLw3c/mD2DVGjQm8rZ8qh0E5PC3V9F3Xqwa9OBRu9fS6DfwN0DArCXbsO8D77DoA1fcwEhTTPSZZE2OYNvj9Asmro0ey14+zrVz9P8hksbzu4ucSTuUuCblglyHbBJgKCxo01FTn+q0ZW/qCEq49cXu2qQ3EN/phQ=="
