@@ -1,0 +1,15 @@
+---
+- name: Setting up chispitos
+  user:
+    name: chispitos
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/chispitos
+- authorized_key:
+    user: chispitos
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAxOTXVUtz42e9ncMLb6rt0dqHrotmq1D9myKh2Z8f91MF1MyIivFX2QN0wUnDkSzB1gcf1dXF41Ufq1MoMDrAgswm+d7sGuuXzXTEhae6jPYx42/jTxf1CwKu+Ko4IfcZuHwLFydLMJzT4Yh/fqnhQm0FFoKOu5cbY37SvYB2YO3iXWAoHEjStU49IKeI3W5FDhch47l5PI9pIR/5z002C0hWu+8DJW+mLAuvWzfbD+EBnKJ6gE4inmA1l9oak1lhv9RhcqtaaIHJycRqF6s0vikHLowOLS0WQXqSEUcG1vdarNrGyVTS7N2rEnA4kCf9jr38kGQG5kqQKYpDdUKFuw== rsa-key-20191219"
