@@ -1,0 +1,15 @@
+---
+- name: Setting up bacterio
+  user:
+    name: bacterio
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/bacterio
+- authorized_key:
+    user: bacterio
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC14jVKK8/cNaerfumybkwXORyp55E2AYdTYhj/2EVK6lgLpfK+0MrrDa8Me1kMHRURfeFfOgqizaXlsDYTW2iP0GjWRwd8LEZReuJiMtFpiWRJ0p2iM4oXVmL2DY9rGEDor2MPdDkQkfv3XtXQURKy9NNRo"
