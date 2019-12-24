@@ -296,3 +296,11 @@
     owner: root
     group: root
     mode: 0755
+
+- name: Install Telehack wrapper
+  copy:
+    src: ../files/usr/local/bin/telehack
+    dest: /usr/local/bin/telehack
+    owner: root
+    group: root
+    mode: 0755
