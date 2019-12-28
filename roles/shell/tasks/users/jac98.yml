@@ -12,4 +12,4 @@
 - authorized_key:
     user: jac98
     state: present
-    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDJdu3JpA02RFmd9YVhVIw53FolIR9Drq2TJzob8jVmcn6S5cXjTfZ+//OJk2wopLoRkEn2hF+nuYM7apPLgGuKbMDcdC9czIOymgaXbm3q9h7Nj2REIQeIHohO7UMN7pf"
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDJdu3JpA02RFmd9YVhVIw53FolIR9Drq2TJzob8jVmcn6S5cXjTfZ+//OJk2wopLoRkEn2hF+nuYM7apPLgGuKbMDcdC9czIOymgaXbm3q9h7Nj2REIQeIHohO7UMN7pfQMcP/fw/yFUT9f+QQ/7Puy2ESSNBzVTOmv2tyDAAPkQ=="
