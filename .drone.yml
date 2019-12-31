@@ -1,0 +1,15 @@
+kind: pipeline
+name: default
+
+steps:
+  - name: syntax
+    image: debian:10
+    commands:
+      - .drone/deps
+      - ansible-playbook -i hosts site.yml --syntax
+  - name: run
+    image: debian:10
+    commands:
+      - .drone/deps
+      - sed -i "s/thunix.net/127.0.0.1/g" hosts
+      - ansible-playbook -i hosts site.yml

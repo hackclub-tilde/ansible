@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+apt-get update -qq > /dev/null
+apt-get dist-upgrade -qq > /dev/null
+apt-get install ansible -qq > /dev/null
