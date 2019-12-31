@@ -30,6 +30,7 @@ After that, run it again, without the syntax flag:
 
 If it looks good, add all your files, then push to the repo.
 
+If for whatever reason you **can't** do this, create a PR and let our CI (Drone) test it for you.
 
 ### Adding a Package
 To install a new package on a machine, just find the package name, and add it to the end of ./role/{which role}/tasks/packages.yml.  Run ansible-playbook against thunix:
