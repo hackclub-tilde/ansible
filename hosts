@@ -1,8 +1,12 @@
+[all:vars]
+ansible_connection=local
+ansible_python_interpreter=/usr/bin/python3
+
 [common]
-thunix.net ansible_connection=local
+thunix.net
 
 [shell]
-thunix.net ansible_connection=local
+thunix.net
 
 [webserver]
-thunix.net ansible_connection=local
+thunix.net
