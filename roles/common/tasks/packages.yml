@@ -31,6 +31,7 @@
       - dpkg-sig
       - git
       - ieee-data
+      - libboost-dev
       - letsencrypt
       - man
       - members
@@ -43,15 +44,15 @@
       - python-netaddr
       - python-paramiko
       - python-pip
+      - python-pymysql
       - python-selinux
       - python-xmltodict
       - python-yaml
+      - python3-pip
+      - python3-pymysql
       - sqlite
       - sudo
       - ufw
-      - libboost-dev
-      - python-pymysql
-      - python3-pymysql
 
 # Install ansible python package, because it's the latest
 - name: Install ansible
