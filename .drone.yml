@@ -7,9 +7,3 @@ steps:
     commands:
       - .drone/deps
       - ansible-playbook -i hosts site.yml --syntax
-  - name: run
-    image: debian:10
-    commands:
-      - .drone/deps
-      - .drone/seds
-      - ansible-playbook -i hosts site.yml
