@@ -1,0 +1,3 @@
+#!/bin/sh
+sed -i "s/thunix.net/127.0.0.1/g" hosts
+sed -i 's/- include: resolv.yml/#&/' roles/common/tasks/main.yml
