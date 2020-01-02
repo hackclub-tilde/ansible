@@ -52,6 +52,7 @@
       - python3-pymysql
       - sqlite
       - sudo
+      - systemd
       - ufw
 
 # Install ansible python package, because it's the latest
