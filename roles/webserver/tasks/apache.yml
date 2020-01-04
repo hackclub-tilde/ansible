@@ -92,3 +92,9 @@
   copy:
     src: ../files/etc/apache2/sites-available/mightywcms.thunix.conf
     dest: /etc/apache2/sites-available/mightywcms.thunix.conf
+
+- name: Create the symbolic link for mightywcms.thunix.net
+  file:
+    src: /etc/apache2/sites-available/mightywcms.thunix.conf
+    dest: /etc/apache2/sites-enabled/mightywcms.thunix.conf
+    state: link
