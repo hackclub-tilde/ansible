@@ -1,0 +1,15 @@
+---
+- name: Setting up turboblack
+  user:
+    name: turboblack
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/turboblack
+- authorized_key:
+    user: turboblack
+    state: present
+    key: " ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQD4lvSX45GdpDmPyhFp1Ix7OCmALKXxV5kmBF40vo7WpzEl5W1pB8ZAM/R4ICES4k3KuQzFFACDFp9tmbQhHZOlu0RXtkG7SmFv8i9Id2thBCe2Pnn1Ont8djxc68kh55q tim+7NvjHiJ+0uhJSK1LS8g2bgGpUskQsjZCnDkeiV6hImWZp5xBVyXWOK2jO0+qr5sD9j85xTUFVzYKwzjIKFhKPJCvYdlGdKNDR+FbR4PVkUyc1qMkP7iB+0MjknmTW1EhkWLNRUzgC3vrCVTsvRb+RYDo8pE W+oDVWfO0EDy7aATRCu1Vv4lg4Vpxrs6y4kt+1WmxTbGT1zAuSetGZPrYjnYQSUainDU90hQOJ5egyMXYoxztk4LYeN6fvQ+hO75RWfdDoDhK7na3E5lOKlKF77spCMpbBF8suMPpDi44xWuG7Om3oV8eL+Opr9 zm2BAF5T0XivTzc2csY5ZOXiLJEjN4ZWqdq0Z2nXugsHtacnWe7i5rvHCBy/vLDrZk="
