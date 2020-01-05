@@ -314,3 +314,11 @@
     owner: root
     group: root
     mode: 0755
+
+- name: Install Backup Job
+  copy:
+    src: ../files/usr/local/bin/backup
+    dest: /usr/local/bin/backup
+    owner: root
+    group: root
+    mode: 0774
