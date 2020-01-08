@@ -8,15 +8,11 @@
     name: sudo
     state: present
     
-#- group:
-#    name: fortitude
-#    state: present
-
 #Service accounts
 - include: users/minecraft.yml
 - include: users/bzflag.yml
 - include: users/znc.yml
-
+- include: users/cherry.yml
 #Normal Users
 - include: users/amcclure.yml
 - include: users/ben.yml
