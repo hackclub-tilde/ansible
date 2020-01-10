@@ -1,6 +1,6 @@
 #!/bin/bash
 
-tar -cvz --exclude "nobackup" --exclude "/home/irc/*"--exclude='/home/chuck/*' --exclude='/home/slip/*' --exclude='/home/angelok/*' --exclude='/home/usernameak/*' --exclude='/home/ubergeek/*' --exclude='/home/amcclure/*' --exclude='/home/fosslinux/*' --exclude='/home/zszoke/*' -f /var/backups/`date +%Y%m%d`.tgz /home/
+tar -cvz --exclude ".nobackup" --exclude "/home/irc/*"--exclude='/home/chuck/*' --exclude='/home/slip/*' --exclude='/home/angelok/*' --exclude='/home/usernameak/*' --exclude='/home/ubergeek/*' --exclude='/home/amcclure/*' --exclude='/home/fosslinux/*' --exclude='/home/zszoke/*' -f /var/backups/`date +%Y%m%d`.tgz /home/
 
 chown root:sudo /var/backups/$(date +%Y%m%d).tgz
 chmod 640 /var/backups/*.tgz
