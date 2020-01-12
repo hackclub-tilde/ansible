@@ -92,7 +92,6 @@
   copy:
     src: ../files/etc/apache2/sites-available/mightywcms.thunix.conf
     dest: /etc/apache2/sites-available/mightywcms.thunix.conf
-    force: yes
 
 - name: Create the symbolic link for mightywcms.thunix.net
   file:
