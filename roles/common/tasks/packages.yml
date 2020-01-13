@@ -35,6 +35,7 @@
       - letsencrypt
       - man
       - members
+      - pflogsumm
       - python
       - python-certbot-apache
       - python-httplib2
