@@ -29,9 +29,9 @@
     mode: 0644
 
 # Deploy cron for reports
-- name: Deploy cron reportss
+- name: Deploy cron reports
   copy:
-    src: ../files/etc/crond.daily/postfix_stats
+    src: ../files/etc/cron.daily/postfix_stats
     dest: /etc/cron.daily/postfix_stats
     owner: root
     group: root
