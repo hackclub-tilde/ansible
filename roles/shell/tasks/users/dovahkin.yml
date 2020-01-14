@@ -2,7 +2,7 @@
 - name: Setting up dovahkin
   user:
     name: dovahkin
-    groups: tilde
+    groups: tilde,cherry
     state: present
     skeleton: /etc/skel
     shell: /bin/bash
