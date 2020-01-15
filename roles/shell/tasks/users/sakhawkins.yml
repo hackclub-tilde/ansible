@@ -12,4 +12,4 @@
 - authorized_key:
     user: sakhawkins
     state: present
-    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHK+/S/13nmqUONdv6vsH911j+VNj+Ax/RPMTsgo/bNd"
+    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPXSUzAyJMouTDP+auIXOiAxiHbYR4ovkS92O1aNuJjq"
