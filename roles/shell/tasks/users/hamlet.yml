@@ -1,0 +1,16 @@
+---
+- name: Setting up hamlet
+  user:
+    name: hamlet
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/hamlet
+- authorized_key:
+    user: hamlet
+    state: present
+    key: "DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=thunix.net; s=mail;
+Pubkey:         ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAticGtgRJWaFhI1y/0kT670vzntjM/GDe0QINGgkfl+3ZdoYMWl3RIMonp8TQVlcW+n2fY60HgaLxVkTFPbXm1CY2+pLBtWtvPK4cat8AkG+LYTn4zAyjmVaPUmpXd1NvTMigBZMRQ5TIhjEbpG90wM1YkvPgmE0tc3co0QMr7EByFgtXbk75mh1U0rbgLdQNRdmH+fkkARoKXyTNOamgsPgFjOZeG+fIZ+s9WuUdKlBhe1CIxR9GtmjtIR84O7feiGiBMUHQby2IJPCRtm0dGtBFaJUHtpOA2MHL1Aw321VsIGMrKXT/M4bt+R1ETZpigoCEcpazFwKAIP4UO1mqZw== rsa-key-20200101"
