@@ -154,7 +154,7 @@
 - include: users/atdx.yml
 - include: users/dingb4t.yml
 - include: users/kronos.yml
-- include: users/leonid.yml
+#- include: users/leonid.yml
 - include: users/shark.yml
 - include: users/stereo.yml
 - include: users/joro.yml
