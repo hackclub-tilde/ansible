@@ -10,22 +10,11 @@
 
 - name: Install minecraft target
   copy:
+    src: ../files/minecraft.service
     dest: /etc/systemd/system/minecraft.service
-    content: |
-      [Install]
-      WantedBy=multi-user.target
-
-      [Unit]
-      Description=Minecraft Game Server
-      After=network-online.target
-
-      [Service]
-      ExecStart=/var/lib/minecraft/paper/start.sh
-      ExecReload=/bin/kill -HUP $MAINPID
-      User=minecraft
-
-      [Install]
-      WantedBy=multi-user.target
+    owner: root
+    group: root
+    mode: 0644
 
 - name: Install start.sh
   copy:

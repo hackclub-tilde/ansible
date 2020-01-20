@@ -1,14 +1,17 @@
 # Enable or disable apache2 mods
 ---
-- name: userdir
+
+- name: Enable userdir apache module
   apache2_module:
     name: userdir
     state: present
-- name: ssl
+
+- name: Enable ssl apache module
   apache2_module:
     name: ssl
     state: present
-- name: php7.0
+
+- name: Enable php7.0 apache module
   apache2_module:
     name: php7.0
     state: present
