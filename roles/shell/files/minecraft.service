@@ -1,0 +1,14 @@
+[Install]
+WantedBy=multi-user.target
+
+[Unit]
+Description=Minecraft Game Server
+After=network-online.target
+
+[Service]
+ExecStart=/var/lib/minecraft/paper/start.sh
+ExecReload=/bin/kill -HUP $MAINPID
+User=minecraft
+
+[Install]
+WantedBy=multi-user.target

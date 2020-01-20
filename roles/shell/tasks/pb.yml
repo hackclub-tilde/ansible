@@ -1,6 +1,6 @@
 # install pb
 ---
-- name: clone pb
+- name: Clone pb
   git:
     repo: https://tildegit.org/tomasino/pb
     dest: /usr/src/pb

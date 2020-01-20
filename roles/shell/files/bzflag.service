@@ -1,0 +1,14 @@
+[Install]
+WantedBy=multi-user.target
+
+[Unit]
+Description=BZFlag Game Server
+After=network-online.target
+
+[Service]
+ExecStart=/usr/games/bzfs -conf /var/lib/bzflag/bzflag.conf
+ExecReload=/bin/kill -HUP $MAINPID
+User=bzflag
+
+[Install]
+WantedBy=multi-user.target
