@@ -215,6 +215,7 @@
       - qemu
       - qemu-efi
       - qemu-system
+      - racket
       - ranger
       - ruby-paint
       - ruby-trollop
