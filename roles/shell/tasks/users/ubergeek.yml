@@ -34,4 +34,8 @@
     user: ubergeek
     state: present
     key: "ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAA0NYVVAp4bcJlPCXU9HRHAwJHoyfI4IN0H6Tx/fdf56dzB6hR7SCKFLdmhaFkCZnlGWd4rLN1Phrem26ncsiOsBwEjzPFdlyOVCXfvheK17RsNT/D8zHXI6P06Soz0WzNCYD5NUVwtQJvs6ptA6fMUCOlmZapxyUW4pjMLkCbRKhuxQw=="
+- authorized_key:
+    user: ubergeek
+    state: present
+    key: "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBL0VsUZQ9Rv+ATjE8q/gaaP/rM7tcae8Y/YDwKldnwEUvDjopv7TPiiQvoQXCC0CTqoscmyU3JSpn9jTJHYXQKs= dextop@localhost"
     
