@@ -1,0 +1,15 @@
+---
+- name: Setting up spike
+  user:
+    name: spike
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/spike
+- authorized_key:
+    user: spike
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAgM1zTt0k+vNSUrTtdamKdrTQL1JbCsKYMt9EY3iR1fwS9GFRZHZLA3LJpebgX9Byr8AmLbxr+axrF+dF6ulR3jIbDT20WU83v7uExnQvNMX4yhos4O8qdJomuPPwDP/GMwdwl/BiAc1mo4Bs6MD4zhgELlTVwxBQbnJ4U1adp0SlFkgzARYYTxqxUXt6/tb1Mb873syAwlefFRsZ3Nrbk+lMkKFzOv+CpppAwLYnGAkaE57bxjECm+X4CM7Naf1dU5PQqRrEM4nr8ZhKbn0XhkY0QRbWs2HNdN4NsVkw5mUfRrN3oFrfBxHq21R65pypAxopqCG5i9NIOrUjhZReBQ=="
