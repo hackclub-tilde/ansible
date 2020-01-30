@@ -1,0 +1,15 @@
+---
+- name: Setting up yaya1
+  user:
+    name: yaya1
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/yaya1
+- authorized_key:
+    user: yaya1
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIgZ57G+9TCweYpTjci1SFrLTCTlOtSXBB4/PMusEOcmIkXoTtBQjR8fawcuRsyJGdS8zNhtkCO/FV4i1R8Gz9rgr1O9jYMQ3i733X3kp6Txp6D0Tcs2nU6k8gjbDAsnGSvjMenjac6hHoYepMPdflOA/Was+c7HjgrNq1i5qVOTcKKfgKDLWgqJN+AsEYqdddzAY/w+TMfcYb12kxjDUVjsDNZI4VssKgXHjcK1EVHW6BMmicRkdc8SMECITeqqV7g3RetvSk1kWDkFOnlNgyaUHJCPoi88B54oT7H1Piq95CqnOJXdAZiF8Ls1SXAD5O/stA5gbym6y3TVZkK7Ov"
