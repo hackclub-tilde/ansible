@@ -49,7 +49,11 @@
       - python-selinux
       - python-xmltodict
       - python-yaml
+      - python3-flask
+      - python3-flask-restful
+      - python3-flask-api
       - python3-pip
+      - python3-psutil
       - python3-pymysql
       - sqlite
       - sudo
