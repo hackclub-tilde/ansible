@@ -179,3 +179,4 @@
 - include: users/spike.yml
 - include: users/grifit.yml
 - include: users/denzuko.yml
+- include: users/lagom.yml
