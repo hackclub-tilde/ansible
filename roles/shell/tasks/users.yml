@@ -50,7 +50,7 @@
 #- include: users/derby.yml
 - include: users/dex.yml
 - include: users/diabla.yml
-- include: users/dingb4t.yml
+#- include: users/dingb4t.yml
 #- include: users/dot.yml
 - include: users/dovahkin.yml
 #- include: users/dragon.yml
@@ -100,7 +100,7 @@
 #- include: users/makassar.yml
 #- include: users/makmur.yml
 #- include: users/mandelbroth.yml
-- include: users/marc.yml
+#- include: users/marc.yml
 #- include: users/mks.yml
 - include: users/ml.yml
 #- include: users/mom.yml
@@ -113,7 +113,7 @@
 - include: users/neo.yml
 - include: users/noce.yml
 - include: users/olya.yml
-- include: users/orliesaurus.yml
+#- include: users/orliesaurus.yml
 #- include: users/os.yml
 #- include: users/panzer.yml
 #- include: users/parik.yml
@@ -144,7 +144,7 @@
 - include: users/southerntofu.yml
 #- include: users/spanmer.yml
 #- include: users/stenli990801.yml
-- include: users/stereo.yml
+#- include: users/stereo.yml
 - include: users/swann.yml
 #- include: users/syncore.yml
 - include: users/techemporium.yml
