@@ -43,7 +43,7 @@
 - include: users/cyber.yml
 - include: users/cyphyx.yml
 - include: users/d34d.yml
-- include: users/dalist.yml
+#- include: users/dalist.yml
 #- include: users/danielscode.yml
 - include: users/dariusz.yml
 #- include: users/delta.yml
@@ -86,7 +86,7 @@
 #- include: users/jundi.yml
 #- include: users/k4j.yml
 - include: users/khuxkm.yml
-- include: users/kpeh.yml
+#- include: users/kpeh.yml
 - include: users/kronos.yml
 #- include: users/krystianbajno.yml
 #- include: users/larasaty.yml
