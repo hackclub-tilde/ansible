@@ -180,3 +180,4 @@
 - include: users/grifit.yml
 - include: users/denzuko.yml
 - include: users/lagom.yml
+- include: users/calamitous.yml
