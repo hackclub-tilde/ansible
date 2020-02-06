@@ -24,3 +24,7 @@
     user: amcclure
     state: present
     key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIMF+N1NxdN2SBb7Yyk+d4ThVoO87bRSYhEqgR2K9gA4 amcclure@lake"
+- authorized_key
+    user: amcclure
+    state: present
+    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGCA/TGxVNNVHevXq96yrMT3suUrPO+v93NqLC2wjEv0 anton@antonmcclure.com"
