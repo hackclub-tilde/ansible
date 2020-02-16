@@ -8,11 +8,6 @@
     mode: 744
 
 #Sites
-- name: Deploy Apache2 Site Config 000-default.conf
-  copy:
-    src: ../files/etc/apache2/sites-available/000-default.conf
-    dest: /etc/apache2/sites-available/000-default.conf
-
 - name: Deploy Apache2 Site Config default-ssl.conf
   copy:
     src: ../files/etc/apache2/sites-available/default-ssl.conf
@@ -47,21 +42,6 @@
   copy:
     src: ../files/etc/apache2/sites-available/ftp.thunix.net.conf
     dest: /etc/apache2/sites-available/ftp.thunix.net.conf
-
-- name: Deploy apache2 site conf for forums.thunix.net.conf
-  copy:
-    src: ../files/etc/apache2/sites-available/forums.thunix.net.conf
-    dest: /etc/apache2/sites-available/forums.thunix.net.conf
-
-- name: Deploy apache2 site conf for git.thunix.net.conf
-  copy:
-    src: ../files/etc/apache2/sites-available/git.thunix.net.conf
-    dest: /etc/apache2/sites-available/git.thunix.net.conf
-
-- name: Deploy apache2 site conf for lists.thunix.net.conf
-  copy:
-    src: ../files/etc/apache2/sites-available/lists.thunix.net.conf
-    dest: /etc/apache2/sites-available/lists.thunix.net.conf
 
 - name: Deploy apache2 site conf for staticadventures.netlib.re
   copy:

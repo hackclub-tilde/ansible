@@ -29,7 +29,7 @@
       - apache2
       - createrepo
       - dpkg-dev
-      - gophernicus
+#      - gophernicus
       - mariadb-client
       - mariadb-server
       - php-imagick
