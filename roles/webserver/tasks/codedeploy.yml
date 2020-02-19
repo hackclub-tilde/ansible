@@ -77,6 +77,14 @@
     group: root
     mode: 0644
 
+- name: Enable php for userdirs
+  copy:
+    src: ../files/etc/apache2/mods-available/php7.3.conf
+    dest: /etc/apache2/mods-available/php7.3.conf
+    owner: root
+    group: root
+    mode: 0644
+
 - name: Enabling ansible-pull units
   systemd:
     name: "{{ item }}"
