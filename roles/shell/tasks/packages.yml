@@ -179,6 +179,7 @@
       - openssl
       - p7zip-full
       - pandoc
+      - pwgen
       - pelican
       - pelican-doc
       - php-imagick
