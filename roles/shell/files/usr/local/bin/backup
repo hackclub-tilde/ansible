@@ -1,6 +1,24 @@
 #!/bin/bash
 
-tar -cvz --exclude ".nobackup"  --exclude "nobackup" --exclude "/home/irc/*"--exclude='/home/chuck/*' --exclude='/home/slip/*' --exclude='/home/angelok/*' --exclude='/home/usernameak/*' --exclude='/home/ubergeek/*' --exclude='/home/amcclure/*' --exclude='/home/fosslinux/*' --exclude='/home/zszoke/*' -f /var/backups/`date +%Y%m%d`.tgz /home/ /var/games/minetest-server/.minetest/ /var/lib/minecraft/paperclip/ /var/lib/bzflag/
+tar -cvz \
+ --exclude ".nobackup" \
+ --exclude "nobackup" \
+ --exclude "/home/irc/*" \
+ --exclude='/home/chuck/*' \
+ --exclude='/home/slip/*' \
+ --exclude='/home/angelok/*' \
+ --exclude='/home/usernameak/*' \
+ --exclude='/home/ubergeek/*' \
+ --exclude='/home/amcclure/*' \
+ --exclude='/home/fosslinux/*' \
+ --exclude='/home/zszoke/*' \
+ /home/ \
+ /var/games/minetest-server/.minetest/ \
+ /var/lib/minecraft/paperclip/ \
+ /var/lib/bzflag/ \
+ /var/spool/cron/ \
+ /var/spool/anacron/ \
+ -f /var/backups/`date +%Y%m%d`.tgz
 
 chown root:sudo /var/backups/$(date +%Y%m%d).tgz
 chmod 640 /var/backups/*.tgz
