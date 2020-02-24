@@ -10,7 +10,7 @@
 - include: minetest.yml
 - include: minecraft.yml
 - include: dovecot.yml
-- include: postfix.yml
+#- include: postfix.yml
 - include: iris.yml
 - include: gopher.yml
 - include: pb.yml
