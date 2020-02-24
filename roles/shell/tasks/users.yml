@@ -185,3 +185,4 @@
 - include: users/stelima.yml
 - include: users/gagrilli.yml
 - include: users/hlv.yml
+- include: users/baruchel.yml
