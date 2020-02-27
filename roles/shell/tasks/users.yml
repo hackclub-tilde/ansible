@@ -187,3 +187,4 @@
 - include: users/hlv.yml
 - include: users/baruchel.yml
 - include: users/tryffel.yml
+- include: users/fro.yml
