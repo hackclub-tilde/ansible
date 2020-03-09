@@ -185,6 +185,7 @@
       - php-imap
       - php-intl
       - php-mysql
+      - php-ps
       - php-pspell
       - php-recode
       - php-sqlite3
