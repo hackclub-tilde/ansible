@@ -1,0 +1,15 @@
+---
+- name: Setting up ramos
+  user:
+    name: ramos
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/ramos
+- authorized_key:
+    user: ramos
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDw0jte+jkHtj7IiC0R1ksCm+w94JyWwEWHfO5FA2e+t4ykS4K2zFXgTXdel5WiMvRhwSnxfpTFxXwVMFcgDr3JC6jy0n/cZZ+p2FIlNVOyhDI0ry8T/6gJxQhdlDNKXZak/VcoOqOUNEEX4L5lyfK+sjY6vKTR301Ly+blPVjf3xpRNWfaGlpOCmxKqtJVOaFJ7VSTX/H8x9FS9ChQZ8zgHv8He/hxgl9pWQlsXB2V1umpjV6r026/7m3LgU74LWKK4PkrmnypazT/3v/WXNGA6eF/07et179tnIRNWGZjd+b6+kbsGZOPZ9ScRTyTzCMSl1gg4uEfjiw3vjxZs3wR"
