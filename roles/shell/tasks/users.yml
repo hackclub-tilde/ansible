@@ -193,3 +193,4 @@
 - include: users/arten.yml
 - include: users/realvindic.yml
 - include: users/ramos.yml
+- include: users/sem.yml
