@@ -78,7 +78,7 @@
       - devscripts
       - dopewars
       - dos2unix
-      - dosemu
+#      - dosemu
       - dovecot-pop3d
       - dovecot-core
       - dovecot-imapd
