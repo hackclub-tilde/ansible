@@ -1,0 +1,15 @@
+---
+- name: Setting up roygbiv
+  user:
+    name: roygbiv
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/roygbiv
+- authorized_key:
+    user: roygbiv
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCgCrD7ZRvCFFa1iwThTWeGzNBAGWGtbmbYDKVx4laj78TtCk1sfjcPnDUmAYTBoFClK4Cf8chDma2QSr0nY4gefkXqnQcQzqrcjEtMQpiHr6eMh6a7vavaOe3DUlMAlf429Sf+0FfH0zMUdwHEOaFxZcrqvwRygCEx7kQGMXtfWHlQJ6E2pwSkbaO9fPBAx30gAmHwwNM3cQbUKVdeY5z7rUN88MVctWLIw2uNwTtYHtRINa7f0skM2pkrq9+81JUKLzhLmzBk2zQJa7u/Xq7otrGAnEwrQ/xziKwUYUr03XxMGu4r88J2+P4DHGzuKMKr3JjFh4ORH4n22j7qT4m/"
