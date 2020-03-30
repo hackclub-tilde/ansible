@@ -12,4 +12,4 @@
 - authorized_key:
     user: greek
     state: present
-    key: "ssh-ecdsa AAAAC3NzaC1lZDI1NTE5AAAAIDtsATgz5Fehd3BJXDKu+Ca/CWgVckYRNIOcbU1lUloy"
+    key: "ecdsa-sha2-nistp256 AAAAC3NzaC1lZDI1NTE5AAAAIDtsATgz5Fehd3BJXDKu+Ca/CWgVckYRNIOcbU1lUloy"
