@@ -1,0 +1,15 @@
+---
+- name: Setting up neotux
+  user:
+    name: neotux
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/neotux
+- authorized_key:
+    user: neotux
+    state: present
+    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBWFMHqGFVn7JesxDIbpEBpV5FfNCbpHfqO5kqEdLvwR neotux"
