@@ -100,7 +100,7 @@
 #- include: users/makassar.yml
 #- include: users/makmur.yml
 #- include: users/mandelbroth.yml
-#- include: users/marc.yml
+- include: users/marc.yml
 #- include: users/mks.yml
 - include: users/ml.yml
 #- include: users/mom.yml
