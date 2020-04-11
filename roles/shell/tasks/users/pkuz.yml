@@ -1,0 +1,15 @@
+---
+- name: Setting up pkuz
+  user:
+    name: pkuz
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/pkuz
+- authorized_key:
+    user: pkuz
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDOXXF1Jz8yCFEIjEh33cq6JppcKW1/LiM1oUPUBWxhOg6uRsROQy9PrelUe3lcWhRDopuhIhTs8BU89ZQ/dQ2KmIjbWBo8jSaMLQGrFYdr3RuAiGKqWuKzy/Pwvk/Xj7k9j/QYOW7EVQKenBiJrovUOlYRMFZ+G54McJuJWJLasn7gE+bstKO2z1w6J91R3AjvNSgVzhmXQwLefUSwwp/rrf9luClW0oCWPTymbqZzdrQ0gdfwfR6OxxjxNgkGRjduQkKEohrRvrE3aD5gbtC46qfHsian6VeBCOc+QrA2nTWuCf1eqWulFzvWuFyjmPo0jIeqt8EqWHTJQ23za4R3 pkuz"
