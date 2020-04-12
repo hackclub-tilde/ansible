@@ -1,0 +1,15 @@
+---
+- name: Setting up h3rz
+  user:
+    name: h3rz
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/h3rz
+- authorized_key:
+    user: h3rz
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDULB6qQeB6V6SlozjDSm+MvLPuOrnBkfHhZ3h6Y7W8w8vZpbmHViqaU2pTEGbQDM13HLC2OFtJXw7Mce43x1NMCkJj4zXpL8DjBXNnFk4HQ1wWUlpUKcdd4Dxo1FWsvi4VY9Ob4dvSk+rmDvhcT2rd4XOlgMokH/R9NEpBzOIyum0FybNU5FGQW17Jsyi1cO6zS6HoKejRzZ27UUK/uJLYzZDjtMv8axxRXUAwOtiZNmJSTFzKctNjQYb8j2rvlmK2MsBiqE694zvRFeX2coLvBBhnTyyWdGYuMD/peovGPBbi6yHlAhSx+qiqKo+XbKPW7GdK6DUt2FG8wQmn2+OV usuario@Herzogs"
