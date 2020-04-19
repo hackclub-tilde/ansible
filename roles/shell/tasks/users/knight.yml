@@ -1,0 +1,15 @@
+---
+- name: Setting up knight
+  user:
+    name: knight
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/knight
+- authorized_key:
+    user: knight
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAyLtTngxS3+MWZr9O1o97UDOMcAecFZwKFIoPUEGHYhj87ZeVim+kGqyNlOqupx4u/cCcQuqO9OfLDZTxluOZVoYHmDGkBswH9wxDIMt1oUQlrlL1ckNs0VKB33pAyUqn9q6zbXzIvhwVgJfg4zWF29TODrtdgdfGuX6JRle6Pbl823pk6ib6d+Ud74N+xqAP9LjVgkS4hm60C7/0NnAmsniuptSVgws8/h7ADxDgffSTO35omkEnBkzoWG4PsxQabcntE25R0R53cYxTsfcXiVt3Nmw5R8/5mmnrRU+/xUgs5Y8MHK1907HTd6njg2KUpp6RkovtYtmyc8pahqZp7w== rsa-key-20200419"
