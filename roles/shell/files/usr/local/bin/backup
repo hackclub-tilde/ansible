@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mysqldump --all-databases > /var/backups/all_databases.sql
+
 tar -cvz \
  --exclude ".nobackup" \
  --exclude "nobackup" \
@@ -18,9 +20,11 @@ tar -cvz \
  /var/lib/bzflag/ \
  /var/spool/cron/ \
  /var/spool/anacron/ \
+ /var/backups/all_databases.sql \
  -f /var/backups/`date +%Y%m%d`.tgz
 
 chown root:sudo /var/backups/$(date +%Y%m%d).tgz
 chmod 640 /var/backups/*.tgz
 
 find /var/backups -name "*.tgz" -mtime +3 -exec rm {} \;
+rm /var/backups/all_databases.sql
