@@ -204,6 +204,7 @@
       - python-pip
 #      - python-potr
       - python-twisted
+      - python-xmpp
       - python3
       - python3-flask
       - python3-pip
