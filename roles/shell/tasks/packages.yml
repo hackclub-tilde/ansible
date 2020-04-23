@@ -198,6 +198,7 @@
       - pngtools
       - postfix-policyd-spf-python
       - proot
+      - profanity
       - python
       - python-certbot-apache
       - python-flask
