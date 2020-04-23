@@ -197,6 +197,7 @@
       - php7.3-xml
       - pngtools
       - postfix-policyd-spf-python
+      - poezio
       - proot
       - profanity
       - python
