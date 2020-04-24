@@ -1,6 +1,6 @@
 #!/bin/bash
 # Mirror rsync jobs for ftp.thunix.net that run hourly
 
-rsync -rvltpHS --delete-excluded rsync://ftp.gnu.org/gnu/ /var/www/ftp.thunix.cf/gnu-ftp
-rsync -rvltpHS --delete-excluded rsync://ftp.gnu.org/alpha/ /var/www/ftp.thunix.cf/gnu-alpha
-rsync -rvltpHS --delete-excluded rsync://ftp.gnu.org/old-gnu/ /var/www/ftp.thunix.cf/gnu-old
+#rsync -rvltpHS --delete-excluded rsync://ftp.gnu.org/gnu/ /var/www/ftp.thunix.cf/gnu-ftp
+#rsync -rvltpHS --delete-excluded rsync://ftp.gnu.org/alpha/ /var/www/ftp.thunix.cf/gnu-alpha
+#rsync -rvltpHS --delete-excluded rsync://ftp.gnu.org/old-gnu/ /var/www/ftp.thunix.cf/gnu-old
