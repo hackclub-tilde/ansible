@@ -48,6 +48,15 @@
     src: ../files/etc/apache2/sites-available/staticadventures.netlib.re.conf
     dest: /etc/apache2/sites-available/staticadventures.netlib.re.conf
 
+- name: Give permissions for staticadventures.netlib.re to southerntofu
+  file:
+    path: /var/www/staticadventures.netlib.re
+    state: directory
+    owner: southerntofu
+    group: southerntofu
+    mode: 744
+    recurse: yes # Can be removed in the future, but for now all files still have old uid/gid
+
 - name: Deploy apache site conf for deb.thunix.net
   copy:
     src: ../files/etc/apache2/sites-available/deb.thunix.net.conf
