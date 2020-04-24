@@ -55,6 +55,7 @@
     owner: southerntofu
     group: southerntofu
     mode: 744
+    recurse: yes # Can be removed in the future, but for now all files still have old uid/gid
 
 - name: Deploy apache site conf for deb.thunix.net
   copy:
