@@ -1,0 +1,15 @@
+---
+- name: Setting up wilfredex
+  user:
+    name: wilfredex
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/wilfredex
+- authorized_key:
+    user: wilfredex
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAknSULPcQMJHsP3H4vlGVr7L4iS5jeNPfym2i9ZG40U5l8fpkiKdT/2q9CnNmhuWbc6Oibf5VOuZWoLj9PsKrHMUWDUPbrJXfZFJZXPfNfIPDU/yipIi61Uy/v5NF7kNlQlWvucjiTyjE+IfSp7aYvcaVvuf0A77FMza3qtsUYifswkXublRvNsAauy9+Zo2lwSBxcyMhaKrMB0i1YFxCGoocPAWaU2yQGYWilKpH22y82LThC0ZfMQzPz1jEhIyf2FECi8PLzsnfLceucxCBgbRLQ/YHZlf6pmJ/wALn1VFxzPRHnIlKW52FFKqW++ZhLcjkPLs70thmMU7DcqlAUQ== rsa-key-20200426"
