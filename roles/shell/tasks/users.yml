@@ -147,7 +147,7 @@
 #- include: users/stereo.yml
 - include: users/swann.yml
 #- include: users/syncore.yml
-- include: users/techemporium.yml
+#- include: users/techemporium.yml
 - include: users/thekingofbandit.yml
 #- include: users/tomjerr.yml
 - include: users/transfusion.yml
