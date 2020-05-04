@@ -73,8 +73,8 @@
 #- include: users/hexhaxtron.yml
 #- include: users/hijaben.yml
 - include: users/hitomi.yml
-- include: users/info.yml
-- include: users/infoTV.yml
+#- include: users/info.yml
+#- include: users/infoTV.yml
 #- include: users/init0.yml
 #- include: users/isaac.yml
 - include: users/jac98.yml
