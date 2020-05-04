@@ -78,3 +78,7 @@ milter_default_action = accept
 
 smtpd_milters = inet:localhost:12301
 non_smtpd_milters = inet:localhost:12301
+
+# message delivery requests that any client is allowed (50/hr)
+smtpd_client_auth_rate_limit = 50
+anvil_rate_time_unit = 60m
