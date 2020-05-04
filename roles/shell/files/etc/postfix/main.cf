@@ -11,8 +11,8 @@ readme_directory = no
 compatibility_level = 2
 
 # TLS parameters
-smtpd_tls_cert_file=/etc/letsencrypt/live/thunix.net-0001/fullchain.pem
-smtpd_tls_key_file=/etc/letsencrypt/live/thunix.net-0001/privkey.pem
+smtpd_tls_cert_file=/etc/letsencrypt/live/deb.thunix.net/fullchain.pem
+smtpd_tls_key_file=/etc/letsencrypt/live/deb.thunix.net/privkey.pem
 smtpd_use_tls=yes
 smtpd_tls_session_cache_database = btree:${data_directory}/smtpd_scache
 smtp_tls_session_cache_database = btree:${data_directory}/smtp_scache
@@ -76,8 +76,8 @@ policyd-spf_time_limit = 3600
 milter_protocol = 2
 milter_default_action = accept
 
-smtpd_milters = inet:localhost:12301
-non_smtpd_milters = inet:localhost:12301
+#smtpd_milters = inet:localhost:12301
+#non_smtpd_milters = inet:localhost:12301
 
 # message delivery requests that any client is allowed (50/hr)
 smtpd_client_auth_rate_limit = 50
