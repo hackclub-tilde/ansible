@@ -1,0 +1,15 @@
+---
+- name: Setting up iloveirc
+  user:
+    name: iloveirc
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/iloveirc
+- authorized_key:
+    user: iloveirc
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAj41ggAlkXQI1ZXqo1xhBWfKFzZ8ZAkmXKjGlVGmKkLKLDm0dhK7Mq2eeRy5eJBmgnDnSM3EKaPPkYZURE3uWwdZzwPbqHRgV/HpX10GBzZB6cSzJ86mxUBzyBcfqYZazuALzvDFW31AK/RqBWc3dYmWQgEmnn8x8DI+iB6Vld73n7Eqxm7LYlYm3UpA33uYyxTueDxyPSKSHti78gd1RrjxINC8i989CiD6KDNWD/wB63/9zLRkY5mVpkm6j25OIigzi0rrJvzXg3oRc3K96L78FlFg6BlnlvhUKw4WPwNTx1Di+y1UgpWRgADhbbLnIwsGPH8UmxXyYbX577zRKtw== rsa-key-20200314"
