@@ -212,3 +212,4 @@
 - include: users/loki.yml
 - include: users/freuddy.yml
 - include: users/iloveirc.yml
+- include: users/nirvana.yml

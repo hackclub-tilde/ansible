@@ -1,0 +1,15 @@
+---
+- name: Setting up nirvana
+  user:
+    name: nirvana
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/nirvana
+- authorized_key:
+    user: nirvana
+    state: present
+    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK0Q7/17zmwVR2qjkmj1IA6mgngptW2HlLjlzACKa/ES"
