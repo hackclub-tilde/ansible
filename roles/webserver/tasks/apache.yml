@@ -77,6 +77,11 @@
     src: ../files/etc/apache2/sites-available/wiki.thunix.net.conf
     dest: /etc/apache2/sites-available/wiki.thunix.net.conf
 
+- name: Deploy apache site conf for lukewarmcat.codes
+  copy:
+    src: ../files/etc/apache2/sites-available/lukewarmcat.codes.conf
+    dest: /etc/apache2/sites-available/lukewarmcat.codes.conf
+    
 - name: Deploy apache site conf for mightywcms.thunix.net
   copy:
     src: ../files/etc/apache2/sites-available/mightywcms.thunix.conf
