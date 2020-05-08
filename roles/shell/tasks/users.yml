@@ -214,3 +214,4 @@
 - include: users/iloveirc.yml
 - include: users/nirvana.yml
 - include: users/resultcek.yml
+- include: users/rohs.yml
