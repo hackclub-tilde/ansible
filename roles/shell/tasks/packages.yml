@@ -73,6 +73,7 @@
       - ca-certificates-mono
       - caca-utils
       - cmake
+      - cmark
       - context
       - cowsay
       - devscripts
