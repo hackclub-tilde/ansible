@@ -1,0 +1,15 @@
+---
+- name: Setting up gfunkmonk
+  user:
+    name: gfunkmonk
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/gfunkmonk
+- authorized_key:
+    user: gfunkmonk
+    state: present
+    key: "ssh-dss AAAAB3NzaC1kc3MAAACBAMyXdTj6AnP9EflMDxLPlFN/6vu4NA43TWBI3+PSJJ4GXMXLsasEpeCmy4BywR07EmfwyOs0FIJrzQu/Ag5uvAs0txx4WpXGSLJ7HJx6SHre0Uw4SRRaeREkLmHbyTX4mbSVwDZfywjbWGTQQBnJwIVy3qo+VwWAWkyQE3fPk14VAAAAFQDbIbdZPFVCoS8+FJv9U0SvMT+82QAAAIALhR1yz7QQpFxvEnKIZy8jksb0j4A6BxaDsG8HCaeczviTe38cJEL8HLc4Rv8eu+c/OVaavwcb/PBn0KuZHcm1jpqQMdw0dN4I12g01EfHbGAlzfuf/mHHkJTSzK4UfAK4EJ0qVmiKUEt52VcfXtTAAKW+KfPtrvxw65WxMpPLYQAAAIBBg3lviZpDsHYoPcfdYcbtCrs28Jg/75ia+VoQcdQ8+CG/hnpYrjFONGeHx8yjQJHEQefy+lltaIKQyRpAJ2GZ/66bhEcdaXZxzxUEiI7PfwHwGPQg6GiwF79pY2XSjBs1Ga3kkCqH8polX7eCLEn+76PqLm1P9ecRB54yjaDMQg== gfunkmonk@gfunkmonk-HP-Pavilion-17-Notebook-PC"
