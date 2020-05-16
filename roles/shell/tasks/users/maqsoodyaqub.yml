@@ -1,0 +1,15 @@
+---
+- name: Setting up maqsoodyaqub
+  user:
+    name: maqsoodyaqub
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/maqsoodyaqub
+- authorized_key:
+    user: maqsoodyaqub
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDDUCBaaCMfCbS2BOKfywsckHoR35IzxCVoKj+AeEOhI1EtUEn3+Asb50NKr74c6UpyELDs41GQPBwpFHGUdzEcySfWINOYNKCJTXC3j4cTqnvaojuTRS8c+ra/gUBENjBkbt+HThWBpVEAsStLGWnSXrxxOMA6sOp081mqIoAe+jpQiDvFkkOIZI8m/Cme67BAGXNM50yzs8cTsRl8Gwg58HS6X6OYqsiCnbEQzlTBYHzTYm52JO+dF4e9EtTcpOHbakSAg5mTc0x9QKQV9nZNC5EgefI+JP35FvMCg/7LoNb2am38rQMBEjDkceaOlpQaXb4hSNHq43xEjW5YSvEIn8xixs5LPggssgJDxChiBi1DJR9f1AidSY1K7OXN9E3FspbtuI2iB+uW6dcqnItICYZn4AWUHcR1EIcP8hQXt9rQWnajjh/oohS24pPoqM0lKurSOnNiXuPpQuhyqkEBA8Z1DSAk8H4Xopv05HbsEIL6WAw3SIVecpnks+I7O00= maqsood@pop-os"
