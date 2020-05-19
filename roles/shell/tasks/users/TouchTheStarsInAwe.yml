@@ -1,0 +1,15 @@
+---
+- name: Setting up TouchTheStarsInAwe
+  user:
+    name: TouchTheStarsInAwe
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/TouchTheStarsInAwe
+- authorized_key:
+    user: TouchTheStarsInAwe
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDHnr/1NU4bngJzb2WlXLvJqSl+CbUdoRIq2jCMJFRcJ+djmTMxka9MuLMyfmcB8DBkuO1Rzplyv3IE3/94ggs+n/XcO1FiB3GAyomeVqvza5hofWoVQvTU9Wsrs8F25JX8QOw66gqQoImimUHPVGvvT2gwuz8bNhgRSQMiU+M8rjiqd5dGv3dSOI41kOr9/n8a3sojwK8fnF0m1SILqa4QWQCURCcYX8Bc072tsDsUOT4pkzaYf+5TPz7PuKfRbg/EUTfsV1nKY3PK259Luqy3M9FNR+VBY0yS/mF8c2IC8994Ai/zZ3IkCezP5YYcBvUk/E/UrA3olMudFwtD/6PPLNrfZk+X1BrdK0yhP8Od5uTqRPnFnCw7GSNECImQMpZt1IFm7eB+H+r3v67hnhd8Ug3iwMzOYNJVz5xulN6C8bgOp5v+rRzA7OxOQaJUgSMa+nIqLPdbynDPVnhyLUJkx3USe/U1macOcqfv0+sc0qriAya7d93LJbOKFZFwgM0= madelyn@archlinux"
