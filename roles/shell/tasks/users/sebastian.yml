@@ -1,0 +1,15 @@
+---
+- name: Setting up sebastian
+  user:
+    name: sebastian
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/sebastian
+- authorized_key:
+    user: sebastian
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCmhIaSchIJLukzkQe2mHG2REeFy5I5mh99O9GS3M7qypKtIq9QNU7yscYk3uIryiQhzNPfJo9M9gurf/5QR5RE4IJbF5QQ8s/BSpaSPINfAgUpxlOvtISGkAU0SRL0+rO5d/WIaA7gLEa52l6viFLB3QnojAT6Jj/DPQMD4qLRcLksiToBkW5/dHQ/cv3QnWYd08FWa5qfhYu0mIJc9FbgkTBGoP2FcdllDWSIDuIBdaamLTbWvTFYhIxlv7CTmQWfMrtF7I2FkPFU2SZyzEbOOlNd+ldL5XXPAQm/87R1p4MJQ5lpdEt/6xXtVi+VVioNXomGMzZQJkbUcn17tpIQG4Ym0E/FqCo9MaInVWHN3lkmkzB4ox+BGsvBX7jBeH55VcW/V6KKlIWiHE9dJTZ81dIb6Lrvu4herzOjmwoT0lxomwI6U+VNrpWhM7ird8OArzFohv/jOvIyzQDxbnajLG1124uzSTTJiQK/kXli7MBOoYroHTdykYHnXsTdDVixzfSTBkzN4+8TkQ/2YlDrpF97c1m3blOauhM0ZWgI2Dv+OoKFXnwtsKmjgEod2+/SbihsauJ/K4FWCeGpoMy8rd8o5DGNjy2f5kuojwyoFvasgFdlfFr/b/echDPLWpvpOL/tf4vwsY3o5zzR4fGBXPIHPHUNrKnn5z/dsLSLew== sebastian@NotMyLaptop"
