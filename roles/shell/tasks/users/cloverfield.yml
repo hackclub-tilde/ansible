@@ -1,0 +1,15 @@
+---
+- name: Setting up cloverfield
+  user:
+    name: cloverfield
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/cloverfield
+- authorized_key:
+    user: cloverfield
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDOb683hx6TR8BX8zXUwT+DwhZiEoCgRnEmF6GyDAXMOG+9ay8L05ggSDN2AGkYqAqRnv90tro0I0vXgoXDcHIICL587nuI8X9tZ4tgPrdi/P9e8iNu8U/eyAhGmmIFBTh4eikgcSxvdrBa9cgg+GIUpkAp6/E/hmnh0OjbVKcItmjEx6s4b+8LpqKMid9JWNKcSveUVVEhr7Xei7DPF9RRrBDQJTB4QUGPW+IeeJgd+nJY04h1H6ED0VWCh/2sBA+7PxYQKxnrCifO4vdoUa2AMulFuwLvdQAc5uwvYYDKXmHgZLLZPPN2udm6B9O7JoLt8kne34r+cKfM/IHSd1bl phhai@ikigai"
