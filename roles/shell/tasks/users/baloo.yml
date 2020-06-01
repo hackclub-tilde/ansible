@@ -1,0 +1,15 @@
+---
+- name: Setting up baloo
+  user:
+    name: baloo
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/baloo
+- authorized_key:
+    user: baloo
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAhZJTUh0uAzZl4B2gL5M5QaeLSDh8fZMlCNZqv7LY7M4KxcsoZrMzXhHmH74n6/ZStaYMpXTrlHPvU7hgUG5HzmOb/osgAGVgPoTZV7xuC8RsbVFqXWFl15ihH++YLdDgDh1Oc7of4xIqPMdaYp6zAAJ9K2lnNPTqfVe8ovmaDx2VaqotnI6O0WSueTvGrtuERF5HJQLxiHduSh92ZEHeRzIy8k4VRNwUIz2VuhD+UzF5ZD4yKy+x3SC61AStVsrVvimgDPk64U2pkBtvSNzyl5wEAxmp4BjeBnNymhTRuyXOc0XaexgG5dJNiAxBOYYfQbSDe8XT1TskE4GlseuF8w== rsa-key-20200601"
