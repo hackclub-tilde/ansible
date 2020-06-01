@@ -1,2 +1,2 @@
 #!/bin/bash
-/usr/sbin/pflogsumm /var/log/mail.log | mail -s "Mail Report for `date +%Y/%m/%d`" postmaster@thunix.net
+/usr/sbin/pflogsumm -d today /var/log/mail.log | mail -s "Mail Report for `date +%Y/%m/%d`" postmaster@thunix.net
