@@ -228,3 +228,5 @@
 - include: users/lonely-wolf.yml
 - include: users/cloverfield.yml
 #- include: users/rozhik.yml
+- include: users/ComputerTech.yml
+- include: users/noteness.yml

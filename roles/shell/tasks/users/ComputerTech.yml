@@ -1,0 +1,15 @@
+---
+- name: Setting up ComputerTech
+  user:
+    name: ComputerTech
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/ComputerTech
+- authorized_key:
+    user: ComputerTech
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCopVHx5MpFgOQ5Hx6dxvWi5/q0IcCVRYZfY1i6P6VoTk+XHKr+upD0z9ihdw4eQV5qjPl8C1Ev4ErvsaSpejcA8QfGpWJMvQJurR3DkOvIQWqA4kOey9LHcFcaN7Qq997UWUd6xfCSAuZFQuUrhGVnHXA3RKwTiyJKVU03oUOodhviidCnKjV9DxQqQ1rEJn+qURwc4+dThTEeBUc1hqyaUru1glDBAjiU7TE/x+yyG48N2fChf6/Er/ELVZqu+ds3KSSC+0Lcr/7CCNfn25kdXTGztY8+KUW5QPXY4dz0mgkv7uK+wgghqEE4h1bAI/FfJnMR5hXYaZ60E0MB/WATYIVXxC3rcHk9pGdei8uUeoCMPSMxJRqC9qrJwwjGmy+mTCRAKcABGgISqUhdFOasvK2ySTGofY0LlyePJ/6Wi9O57+oISEpO2icTQVWw+LtRqjW5xC4HYb5DfUyOOp3v3cz7sCvXtbFI6MbbRhezE1VvltFywd1ea/0/jIy4ii4HQNMfVDNAEahr5xU2sBA8mNol6U6VzdjeMayAN8tNuVbkwGqojDbrU7RDO4DqmDzpi1LVvqfPE/LJijg0wwW8BI6xNQKzTk3vEdaQG8DfwIheXtafIyevKLdqIKI/hg6Ao9I/bNP1aC3QEm0azS+dZFm/c9W+xOtQzaU2Qeq/mQ== computertech@bitcoinshell"

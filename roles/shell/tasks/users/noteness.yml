@@ -1,0 +1,15 @@
+---
+- name: Setting up noteness
+  user:
+    name: noteness
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/noteness
+- authorized_key:
+    user: noteness
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAABEQAAAgEAqkTkoI9BJwe7OvpXRA8TkscbzMsCUfXu7IWIQMtCnHlLG5ZiTlER0UUKt3r1JNfx5700IV7NjNFLjJBFHMLJKrHNm/X/t6IU3lIpVds/P+9wTeDjCXxTdmh0vslLXwYenKIcBsvwVQxbMlDKkKxfWQyvAG/nLjqENeQRNCMGbbw+X+yhIipPJ9tPfTh4cddlN997XUkYMuRhpvhRzc1/M/wzE68qA5qB14YZC38ktr4+Dy7P4JnbR2YUrY14L5n3kzMJrTdxmd2pxdaWW4K1X3OfqN1S4CxXmf036+Pk/x+XjxabVbukHp9qDjB1aSl9QvjuG3cTKrts79LP51vVu38EyqIoH6Fxmp8gbpNyZWF9HBI8ADAjd6LTWp4Y4vuUAIkUZ0CbJHO9WBzDJZir2akQekdfRYrn9WlOtY/FL7UuAwJb8rJ57UAx/uMBt9WByhSBNm/MjxUQksi54Sh5J+QCd8G957ytzvVGFOVW3bO3BDnXw9UdzBV2MJXgt+f6G/Ec0m9njwGy27NiZzJlt39N3eFjoRYAsvMKS0Cq8CMAgXC6718iEQhwfJ0Jy28CbvVU5b3GYOECYg5S+Ej2uZiq/mZrpXFtSSB+waDWsKExiNwIGSsFKtlWff2q6q1hdiqBYCCTkqB5DehvfqIdQX6scAewsITPVqfMDnhv8aE="
