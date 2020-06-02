@@ -1,0 +1,15 @@
+---
+- name: Setting up sillyfanboy
+  user:
+    name: sillyfanboy
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/sillyfanboy
+- authorized_key:
+    user: sillyfanboy
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDASIow9WzG1crnUe7FpgotmtI3D8H2ZsxksXWuEP/bk8fjdXyqVnzepjkeqmrOzw2La3MFdddnoRfle51OS2Xrr7cbsMAS2P79ygcjj6CBbJU0Y+2XYukLUX9DmSQjYM11CUFCVCjal13hYdTb4NxVeLeSaGxruK5bEGDnc+Hdl+tt11RomxAsqWvBPXAnZR5dhNkZX6FNibFfxAPhbMhPobggmegOYKVuIObpx92D5+VFmjZXVCriDi0d/2H0yyNEZR7F3FLodET/YyWl0/DS64bUb5KXPtcwI/BLBFqSf2wO7wv8JIwRqCnScbvX57SyHkRnn6Oayf9AUivWbo2x patrick@Patricks-MacBook-Air.local"
