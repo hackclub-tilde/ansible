@@ -1,0 +1,15 @@
+---
+- name: Setting up gyges
+  user:
+    name: gyges
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/gyges
+- authorized_key:
+    user: gyges
+    state: present
+    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJA5drkgaXEptOZ4NhBOQEbxBviK1q30ngHSVURhllai 220A37@pm.me"
