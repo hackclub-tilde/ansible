@@ -1,52 +1,57 @@
-#This play configs apache for us
+# Configure apache2
 ---
+
+# Certbot
 - name: Add certbot cron job
   copy:
     src: ../files/certbot-renew
     dest: /etc/cron.weekly/certbot-renew
     owner: root
-    mode: 744
+    mode: 755
 
-#Sites
-- name: Deploy Apache2 Site Config default-ssl.conf
+# Sites
+- name: Deploy Apache2 site configs
   copy:
-    src: ../files/etc/apache2/sites-available/default-ssl.conf
-    dest: /etc/apache2/sites-available/default-ssl.conf
-
-- name: Deploy Apache2 Site Config thunix.cf.conf
-  copy:
-    src: ../files/etc/apache2/sites-available/thunix.cf.conf
-    dest: /etc/apache2/sites-available/thunix.cf.conf
-
-- name: Deploy Apache2 Site Config www.thunix.cf.conf
-  copy:
-    src: ../files/etc/apache2/sites-available/www.thunix.cf.conf
-    dest: /etc/apache2/sites-available/www.thunix.cf.conf
-
-- name: Deploy Apache2 Site Config ftp.thunix.cf.conf
-  copy:
-    src: ../files/etc/apache2/sites-available/ftp.thunix.cf.conf
-    dest: /etc/apache2/sites-available/ftp.thunix.cf.conf
-
-- name: Deploy Apache2 Site Config thunix.net.conf
-  copy:
-    src: ../files/etc/apache2/sites-available/thunix.net.conf
-    dest: /etc/apache2/sites-available/thunix.net.conf
-
-- name: Deploy Apache2 Site Config www.thunix.net.conf
-  copy:
-    src: ../files/etc/apache2/sites-available/www.thunix.net.conf
-    dest: /etc/apache2/sites-available/www.thunix.net.conf
-
-- name: Deploy apache2 site conf for ftp.thunix.net.conf
-  copy:
-    src: ../files/etc/apache2/sites-available/ftp.thunix.net.conf
-    dest: /etc/apache2/sites-available/ftp.thunix.net.conf
-
-- name: Deploy apache2 site conf for staticadventures.netlib.re
-  copy:
-    src: ../files/etc/apache2/sites-available/staticadventures.netlib.re.conf
-    dest: /etc/apache2/sites-available/staticadventures.netlib.re.conf
+    src: ../files/etc/apache2/sites-available/{{ item }}.conf
+    dest: /etc/apache2/sites-available/{{ item }}.conf
+  loop:
+    - default-ssl
+    - thunix.cf
+    - www.thunix.cf
+    - ftp.thunix.cf
+    - thunix.net
+    - www.thunix.net
+    - ftp.thunix.net
+    - staticadventures.netlib.re
+    - deb.thunix.net
+    - rpm.thunix.net
+    - stats.thunix.net
+    - wiki.thunix.net
+    - lukewarmcat.codes
+    - xerty.lukewarmcat.codes
+    - mightywcms.thunix.net
+      
+- name: Make Apache2 site configs live 
+  file:
+    src: /etc/apache2/sites-available/{{ item }}.conf
+    dest: /etc/apache2/sites-enabled/{{ item }}.conf
+    state: link
+  loop:
+    - default-ssl
+    - thunix.cf
+    - www.thunix.cf
+    - ftp.thunix.cf
+    - thunix.net
+    - www.thunix.net
+    - ftp.thunix.net
+    - staticadventures.netlib.re
+    - deb.thunix.net
+    - rpm.thunix.net
+    - stats.thunix.net
+    - wiki.thunix.net
+    - lukewarmcat.codes
+    - xerty.lukewarmcat.codes
+    - mightywcms.thunix.net
 
 - name: Give permissions for staticadventures.netlib.re to southerntofu
   file:
@@ -54,46 +59,4 @@
     state: directory
     owner: southerntofu
     group: southerntofu
-    mode: 744
     recurse: yes # Can be removed in the future, but for now all files still have old uid/gid
-
-- name: Deploy apache site conf for deb.thunix.net
-  copy:
-    src: ../files/etc/apache2/sites-available/deb.thunix.net.conf
-    dest: /etc/apache2/sites-available/deb.thunix.net.conf
-
-- name: Deploy apache site conf for rpm.thunix.net
-  copy:
-    src: ../files/etc/apache2/sites-available/rpm.thunix.net.conf
-    dest: /etc/apache2/sites-available/rpm.thunix.net.conf
-
-- name: Deploy apache site conf for stats.thunix.net
-  copy:
-    src: ../files/etc/apache2/sites-available/stats.thunix.net.conf
-    dest: /etc/apache2/sites-available/stats.thunix.net.conf
-
-- name: Deploy apache site conf for wiki.thunix.net
-  copy:
-    src: ../files/etc/apache2/sites-available/wiki.thunix.net.conf
-    dest: /etc/apache2/sites-available/wiki.thunix.net.conf
-
-- name: Deploy apache site conf for lukewarmcat.codes
-  copy:
-    src: ../files/etc/apache2/sites-available/lukewarmcat.codes.conf
-    dest: /etc/apache2/sites-available/lukewarmcat.codes.conf
-    
-- name: Deploy apache site conf for xerty.lukewarmcat.codes
-  copy:
-    src: ../files/etc/apache2/sites-available/lukewarmcat.codes-nodejs.conf
-    dest: /etc/apache2/sites-available/lukewarmcat.codes-nodejs.conf
-
-- name: Deploy apache site conf for mightywcms.thunix.net
-  copy:
-    src: ../files/etc/apache2/sites-available/mightywcms.thunix.conf
-    dest: /etc/apache2/sites-available/mightywcms.thunix.conf
-
-- name: Create the symbolic link for mightywcms.thunix.net
-  file:
-    src: /etc/apache2/sites-available/mightywcms.thunix.conf
-    dest: /etc/apache2/sites-enabled/mightywcms.thunix.conf
-    state: link
