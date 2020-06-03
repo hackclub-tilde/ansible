@@ -16,3 +16,11 @@
   apache2_module:
     name: rewrite
     state: present
+- name: proxy
+  apache2_module:
+    name: proxy
+    state: present
+- name: proxy_http 
+  apache2_module:
+    name: proxy_http
+    state: present
