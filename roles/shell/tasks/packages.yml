@@ -131,6 +131,7 @@
       - libtool
       - libtool-bin
       - linux-headers-amd64
+      - lolcat
       - lua5.3
       - lynx
       - make
