@@ -1,0 +1,15 @@
+---
+- name: Setting up stadham
+  user:
+    name: stadham
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/stadham
+- authorized_key:
+    user: stadham
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDxIFoOwfV5l40jqPgzA6IncNivQFjkUS/rHzEx8euioi9aOiGLoDTY7kN/TGOGmHgidHLCSceDLC3qDYAZ37/fzrtjkTnrFacxhr88LEhn7nZN+EuMOPnY2Yk3KdcWtLch0qb/sSgQKVMTf9th7AbfdVgY6Y/YBO9LR6iGUdsGYPbEVoSn6USqm/HbQYIq2mc2F3+6anvhQuI6jpoW1jKg5x11sJb+t0+upITKBOqUcpfLYWORiWisTTi5WW67i73XZqwDwq8m8N5s2q0Ouqipt27QuBj1JAo+ckIcGIzWqy49tuwR4YHS/LgeutLLCPJqn/NzRBsNRz5R4EFw6KYb randy.s@Mr-Stadham-5.local"
