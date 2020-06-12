@@ -1,0 +1,15 @@
+---
+- name: Setting up missk
+  user:
+    name: missk
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/missk
+- authorized_key:
+    user: missk
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCvsjrxlpAraxqqVIFvJv9vyDt6GVpYTUHZj2taSC4zYVie7HG7lDofITkNdkW7rIR0YV4l+5XmjIak9VhkwvCMiBVgtl1vyZb/DEZR4Mb6COHbg2IZgo9ajie+0s42OX/HHot3iCovtGhJK7TksvGPhg7JPw9i/VEbUyXBJ8mtc1U7SRnk8uYAfPDosSEAaSDQqVq7g4SFVBRS+1gmSd4vj0kvpaJYZVNd0NdApKUJme+DWgeFJedQ349lEDyfHJh6g5qVTuxXmQjb38c+TDmddvAoMXrPhP5bTce7gaD8OmHliX/FqrYthgFQ3exhH1qY9+QSknWEu0dw0ieIOkPF missk"
