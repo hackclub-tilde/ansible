@@ -1,0 +1,15 @@
+---
+- name: Setting up kuldar
+  user:
+    name: kuldar
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/kuldar
+- authorized_key:
+    user: kuldar
+    state: present
+    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPMxfEsl6GwmfM1NUnSErOQXY4Klw1e0mTzJxrHVdTNU kuldar@localhost"
