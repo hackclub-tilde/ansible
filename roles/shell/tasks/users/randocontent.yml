@@ -1,0 +1,15 @@
+---
+- name: Setting up randocontent
+  user:
+    name: randocontent
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/randocontent
+- authorized_key:
+    user: randocontent
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDKdDUMH+qn1pIVjtfhFFaBS3NkUwZJJtVDoBYImsD2mbca+nwlK7QTEtSXDh0U7QYDvG0JO0HO36utIABpi0SGjIzjaslSMy/0SNKjLY0QGdMc/QjamJ9WqIOEBp3kF++z87ddkJaZiwpV/Z0v2UcAQ0rNAJWxrJHtvNQjlUIWHQT2IiqUOI6zgTqZL1C038XwVfF9Dmwqlk9XezVUhaq67xUSmm/NpqtUs3ConYK7zyo04yNocblB7HWkJR99oDuDmpcciRRNbOVPbBgtb1VmWqgHpEzt+2YxVw7ZvNbUZDTcpct2NInTIdWrJTLlR7hlnomqn3Y93zgIM15IG1I6VREsl+EvjlNU7Z9hmcHjLpOlAmMcNGaAmHd5h1cQh07dX7JoQlc+V6XbMzMZXf/CSaSeV9z5cnPZXStW+VXWhcg1a9jDYM0cHswz+XdxwGzTds88iI6aS7w5pvEpDvrKiZkoWL7o4HWR+LeIE36fS9cweEkzzqZdP703KxmgeOU= rando"
