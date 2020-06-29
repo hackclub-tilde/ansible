@@ -1,0 +1,15 @@
+---
+- name: Setting up chris
+  user:
+    name: chris
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/chris
+- authorized_key:
+    user: chris
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDR5XPWKRlzSV/y9iLkn+MCW+fiDZpNy3Agvj4+dSOw/4k9kPMRftsgOdTIhbmbEhtNBk0vDUMdGXITZ71VN5G0+mkecW6ZC8qM5kB45SLjcthf9gpKPqfJGgwN3hLMQIRnsYHNZTOMdqnI2GNUt+JpeflpLAY8rn7KY27WPrdcpEHZ1qgv//R+xDGxROlJTOySPmVkkh+0SRmKQ36UuYzcLNYUKVD2f8hp8zdBgSXcMmTbCEf0+iunNZmGE2DvaMb2OwkyHmONLcj6CatBFecRFMYtyVDjtCF7pInxfYzuGiQnME6qKO9RFouxYJbeWzXlS2Hln9KuOcJz0MEzWaOhb5nnuJ3kOzSr4hfetJm0MIvuXxjeXbScvf0Am+dgmI5rCWsAsu18i+kjQNdBXL5+EFzebo8DmKOfV+1oc9v8EFAwUX6XRBNe9hOsZ/Nj7zxejeJTMZGVfLD2mhTnOnMqM2Ot+stDD0PzjTG4/a9OT1t7bNDkDfXNi/eznTXBhB0xHVJGeB8i39qLR2fCDSxAkqotIT7bR80yqS7CFYDheNWs8hDZ2Psqdzbq9/2BKM9eF/XIsz32K17d6kojHX/tbQB7maMlaMj7uJNJWDyRYy0jS6A0/o10QXBvRyx6gQL5HrYaNQ5YVYFy1C66EcuS9zP1iTm09f+UhPV5f7zLoQ== cmm@coretxt"

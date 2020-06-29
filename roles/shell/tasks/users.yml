@@ -243,3 +243,4 @@
 - include: users/kuldar.yml
 - include: users/igor.yml
 - include: users/randocontent.yml
+- include: users/chris.yml
