@@ -1,0 +1,15 @@
+---
+- name: Setting up Cropt0
+  user:
+    name: Cropt0
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/Cropt0
+- authorized_key:
+    user: Cropt0
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCiGhZqVuBZEfmElqwCEy3L0E7qhRsj4wJ351q8UdpHGDQ22D05sOizQquCWsO83roLLp5x8/Z2u1BtXfCxmIKcml9CxxBwGfPf0sQFbUlmpLcxYIvMFBKjUd3up9dEebRROkznU+1DFcQoJbeaVRP0mBpg9g0lgJYODEdN1sI3pSM5BOPtHwU8l4l23bTK/iofOK9hIvUCEVZWgjioJtEExydnK2KFhQtan/mb/ILoaQgjW4yXwOLOAswpg2eSDdFSGLfLaASsYo2pn2kXXt/MyIHa3doyywO1k8ViXCXig5r52J+Wvb+yQXrJa5FX8fh6Vpa1ryAMqZwThEskP4zP kowal@DESKTOP-17Q6I0F"
