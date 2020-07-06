@@ -1,0 +1,15 @@
+---
+- name: Setting up Kymonlucky
+  user:
+    name: Kymonlucky
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/Kymonlucky
+- authorized_key:
+    user: Kymonlucky
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDC42QRg2dUzEpItKbn6o7Aw2WpfEkE+CJTK0XvnXFcpnzsRdLsBP/xjiiN8+tl17wv15CyOqWOY/dhW5rbHQ8Tdfirk9flcGZaKksSr+GRYXpmZEemELoNB0x9Gj5D59fXuSORNakSqrEifMsTfejvZJwG+w2boCPB5lH/VvAweK4AjleePuZ6wrqf1Ot+620ijL2+GpLDJXjzCD1SRwL4M9eVAzmGmKI/xlOTiREV26z+PDMJxU6EUSUpimZ56wZCJ6YKr8d4hIBxc70foZFa7v1EZ56Ez1NlqtAs/Y38qaKL9EU2xS3L0j0MKDV4b0RIc6qgpFHltusoevggml4B root@localhost"
