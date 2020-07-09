@@ -174,7 +174,7 @@
       - neomutt
       - newsbeuter
       - newsboat
-      - oident
+      - oidentd
       - openbsd-inetd
       - opendkim
       - openssl
