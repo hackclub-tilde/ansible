@@ -103,7 +103,7 @@
 #      - gnome-icon-theme-extras
       - htop
       - hugo
-      - ident2
+#      - ident2
       - inkscape
       - imagemagick
       - irssi
@@ -174,6 +174,7 @@
       - neomutt
       - newsbeuter
       - newsboat
+      - oident
       - openbsd-inetd
       - opendkim
       - openssl
