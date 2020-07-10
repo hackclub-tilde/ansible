@@ -1,0 +1,15 @@
+---
+- name: Setting up core
+  user:
+    name: core
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/core
+- authorized_key:
+    user: core
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDv22iVeJ1DlIfj670ARRT3iEGdH9gN1CKM2cjQp0hYxLJ4BwxsyiSSqTb0TxpRABkIW8tRFm/cEBnD/f2//fcJ2NOem+RV0c90TamuslODXmklRKJ7qGWJkrEXJ4dl8cRvoFBlvcippuIT+0N9XWb1xO0MSBUie59FN+osSwOLV/D21K9JzoS8yzKtbxxQI+9N7BZlEmknp4QMcFtZ+SzEN7Q+EnH7YBfq5dEaAq3nhQ/vnuirwupmJ1GS+0Fsg14oe1xjfJom8ZWuw/FEFzJGpZFkh8HETiHtS6DihBqn3PL6kTnvNX+W7RY08chIMNdjwu8BsOJGjcD7jsqWIV2J user@debian"
