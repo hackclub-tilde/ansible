@@ -1,0 +1,15 @@
+---
+- name: Setting up Loial
+  user:
+    name: Loial
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/Loial
+- authorized_key:
+    user: Loial
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDYUBK7u/akGkpUGqM3+siczY+STES6ggw6XAJgY8UOCKzXeUPe5yES/AD6yiXKzW8PWFEg+tLvkASdGSvz2eEk70klYo1n7FLDzJRwbHmXakTHB62xbQYw4mJdeLX5ZnsrwsfTKxwHxqXdxX2G1+coJ7pt+u3Q9dqF2YMtQnBxwfPMWLqsfXZYT3DodxAm0kHxR5VzV3j4bxXeB8oR4tdofRBwlatvV5bjBvu9ZD1WvpW7pXSxmlGOOHR8xdU/AnnDYSZVlJwPVx/AdpMlVXwGrYpTK1C5Nz+THVsnBNCMya2HlvsPp4WBW4qonyp6q3M12T9MqjCqAfLa6/PwWcx/ herman"
