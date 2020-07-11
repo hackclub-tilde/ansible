@@ -1,0 +1,15 @@
+---
+- name: Setting up beneskiwik
+  user:
+    name: beneskiwik
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/beneskiwik
+- authorized_key:
+    user: beneskiwik
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDhd/uAF53+KWYY4KM1w9NazOwXAVK7wwsUAboDUMy08YCa2VwMfxTWrFgBPvHBshsZ07uyoK8x0NKW3CqCh/ZHPb17SmfTllHrz6Vut6JRyPaqSVQxqA7bMPxv36qdrMT4c+MKvRJvHC16PVrx2pHidTEBDk/m62R+E/a/4RPYNDDFXsmQ7K8Fon/ZFrHjfA/xvj6PT+8zBEc2Ru/gV7W4hohej8y06E3zkBOx1MHpyWSCJAW8sWpTC9s9nZaGau1ECXi4N077iHsRTOmHF++A6y8d+KcADCSrSLxwN3haL81SsyZ8w3DsAv/gfVfrN07RiFDdRHYIalcFC2Knr0UT"
