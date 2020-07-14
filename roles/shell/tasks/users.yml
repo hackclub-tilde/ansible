@@ -249,3 +249,7 @@
 - include: users/kcubeterm.yml
 - include: users/genie_g.yml
 - include: users/Kymonlucky.yml
+- include: users/core.yml
+- include: users/mirsella.yml
+- include: users/Loial.yml
+- include: users/beneskiwik.yml
