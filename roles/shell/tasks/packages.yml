@@ -72,7 +72,7 @@
       - bzflag-server
       - ca-certificates-mono
       - caca-utils
-      - clang
+#      - clang
       - cloc
       - cmake
       - cmark
