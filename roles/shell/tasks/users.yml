@@ -253,3 +253,4 @@
 - include: users/mirsella.yml
 - include: users/Loial.yml
 - include: users/beneskiwik.yml
+- include: users/nikto.yml
