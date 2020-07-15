@@ -254,3 +254,4 @@
 - include: users/Loial.yml
 - include: users/beneskiwik.yml
 - include: users/nikto.yml
+- include: users/seerlite.yml
