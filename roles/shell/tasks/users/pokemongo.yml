@@ -1,0 +1,15 @@
+---
+- name: Setting up pokemongo
+  user:
+    name: pokemongo
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/pokemongo
+- authorized_key:
+    user: pokemongo
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDEobS5Ey+EkO0iaiQS/1bPJr5chysBpUl8Evp+lD9wud5YJAv4FCjOUfCx7j8blJXTQTNoyMC8h0oSAuF7I4qNN4D2st4YM2mjEfzNHfcpzSPdY2pSZiDBBfaWWQO5qYXyamIE8Eic5j0/yKjsmZuWwGYdI6Qx/uXGFldiUYypjbW1/cqvyou43AgxaOIXQxLbubDsuaIBM8IDsd5aCBEwzgm0ZaX2RyCsNxz+DEYGod0kzKSPHLhoABvrOOy88CqnEKgQrwMFZU8WLynpdB2WmpeKS7rcyNrS1jqs0t2cbE4IR/XgVLGj4TDXHV8HmWr3DPTOG/ugVI7yqRIzxA7V"
