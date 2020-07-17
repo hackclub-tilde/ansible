@@ -255,3 +255,4 @@
 - include: users/beneskiwik.yml
 - include: users/nikto.yml
 - include: users/seerlite.yml
+- include: users/nikita.yml
