@@ -1,0 +1,15 @@
+---
+- name: Setting up prashantch
+  user:
+    name: prashantch
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/prashantch
+- authorized_key:
+    user: prashantch
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC/dFbUzaWCYYhV0W0GkKFI+uGrLHpXuf9/8/1M787YGX25uQZPzHuitzmMBi3GloH+Mi3ZFw0Kg/Pfn+9UXYn0XaXDVpp4rFSiWzvIeu168maa96oFCwTDNyFnm9SOIimoqB+EhVxOs7qRUDJM11M+9K6NUXzob0TQau/s7TFK7wl2LHSlmBFH88gif3KVzYLwLT5eV0+Ib4YcRyR4+HJs+5NVI4oU80wVLwkjRHwWAJ8v04PjLEvOyCFsZCsCHCP8lE2w+Md+UNHU43LrqU9saLSh4ggJnW/wO2DqpgF9v9UrWQCQm04DlJVrTCHtSaJYGmS0gfS83b/P5Dqb1/Kl"
