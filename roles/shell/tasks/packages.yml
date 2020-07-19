@@ -24,7 +24,7 @@
 
 - name: Add weechat repo
   apt_repository: 
-    repo: 'deb https://weechat.org/debian buster main' 
+    repo: 'deb https://weechat.org/debian bullseye main' 
     state: present
     filename: weechat
     update_cache: yes
@@ -43,15 +43,15 @@
     
 - name: Add debian contrib
   apt_repository:
-    repo: 'deb http://ftp.de.debian.org/debian stable main contrib'
+    repo: 'deb http://ftp.de.debian.org/debian bullseye main contrib'
     state: present
     update_cache: yes
 
-- name: Add mono-project repo
-  apt_repository:
-    repo: 'deb https://download.mono-project.com/repo/debian stable-buster main' 
-    state: present
-    update_cache: yes
+#- name: Add mono-project repo
+#  apt_repository:
+#    repo: 'deb https://download.mono-project.com/repo/debian bullseye main' 
+#    state: present
+#    update_cache: yes
 
 - name: Install baseline packages
   apt: 
@@ -72,7 +72,7 @@
       - bzflag-server
       - ca-certificates-mono
       - caca-utils
-#      - clang
+      - clang
       - cloc
       - cmake
       - cmark
@@ -194,13 +194,13 @@
       - php-mysql
       - php-ps
       - php-pspell
-      - php-recode
+#      - php-recode
       - php-sqlite3
       - php-tidy
       - php-xmlrpc
-      - php7.3-xsl
-      - php7.3-curl
-      - php7.3-xml
+#      - php7.3-xsl
+#      - php7.3-curl
+#      - php7.3-xml
       - pngtools
       - postfix-policyd-spf-python
       - poezio
@@ -209,7 +209,7 @@
       - python
       - python-certbot-apache
       - python-flask
-      - python-pip
+#      - python-pip
 #      - python-potr
       - python-twisted
       - python3

@@ -42,9 +42,9 @@
       - python-jinja2
       - python-kerberos
       - python-markupsafe
-      - python-netaddr
+#      - python-netaddr
       - python-paramiko
-      - python-pip
+#      - python-pip
       - python-pymysql
       - python-selinux
       - python-xmltodict

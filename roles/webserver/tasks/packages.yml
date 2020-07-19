@@ -7,14 +7,14 @@
 
 - name: Add tor project repo
   apt_repository:
-    repo: 'deb https://deb.torproject.org/torproject.org buster main'
+    repo: 'deb https://deb.torproject.org/torproject.org bullseye main'
     state: present
     filename: tor
     update_cache: yes
 
 - name: Add tor project repo
   apt_repository:
-    repo: 'deb-src https://deb.torproject.org/torproject.org buster main'
+    repo: 'deb-src https://deb.torproject.org/torproject.org bullseye main'
     state: present
     filename: torsrc
     update_cache: yes
@@ -27,7 +27,7 @@
   vars:
     packages:
       - apache2
-      - createrepo
+#      - createrepo
       - dpkg-dev
 #      - gophernicus
       - mariadb-client
@@ -43,11 +43,11 @@
       - php-intl
       - php-mysql
       - php-pspell
-      - php-recode
+#      - php-recode
       - php-sqlite3
       - php-tidy
       - php-xmlrpc
-      - php7.3-xsl
+#      - php7.3-xsl
       - tor
       - torsocks
-      - yum-utils
+#      - yum-utils
