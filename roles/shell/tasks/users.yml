@@ -241,7 +241,7 @@
 - include: users/farooqkz.yml
 - include: users/hellspawn.yml
 - include: users/kuldar.yml
-- include: users/igor.yml
+#- include: users/igor.yml
 - include: users/randocontent.yml
 - include: users/chris.yml
 - include: users/Cropt0.yml
