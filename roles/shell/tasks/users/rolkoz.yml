@@ -1,0 +1,15 @@
+---
+- name: Setting up rolkoz
+  user:
+    name: rolkoz
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/rolkoz
+- authorized_key:
+    user: rolkoz
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEApMDMYvuzB3Xpc3hNycOqR6RYEChTUILB0y1ezHeVv7uyVhL6EW8ZrdNPa3H+5O842KcTZxfFWS4hGp/f5pLFfcoZY5Ny77nULBU8yv6P9/4er4QKrAAA7aMy3/+Hk+fRSZpFYsfIYiHBJM+700UjJDAllwp0U4OvUHgO41v7DqyNCvzFIvGIrXL/o7aVhxZfg8cPMitiQaVexhDEkk6YqzNWEkkQoX6tPx5Z/xZy0/i7ca8RU07bSo1Hj1VO/mVtDacvlMcGbDwAcUiWyBp3x6lgnLSU/JMTa3fI1scpFzs8NpMbXCHDjVGBBHe4BWnAhfC8RP15XhySugsG1qrDaQ== rsa-key-20200802"
