@@ -1,0 +1,15 @@
+---
+- name: Setting up Index
+  user:
+    name: Index
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/Index
+- authorized_key:
+    user: Index
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC3VcsIDO9+sdSNEJBzwsXAbYn5DPNQrIlhQZVNkpV8A/EKgAJ/zgFu/UsE4QOZ0acRN7BEM/R6UyIyPUfUcPhRjRZK3GXqlaCyUgKvw1xEtNcNmu3TCDf+hVlka+H2al1/Z2h2QFRl/qOmrUqAJAERwClXd0s7TCJVbZXnPB1X7yZ9tvxSLwwpBPcclK2nrB47sT5kAQelWlZw8EPlEfdht8G6uEb5+JE3I1aOhbfBIp5dq7LUPcLHLSOc27ZAb5Ln1ylGqBXFEmEeid2/7tbmBdqcfpEcaclJjBnh0bBfdTCowAC+9iayhpbGitv6Krao23a/eIMvMmsJjgEGmTbkHeUzzKQHMmqoiIo1+XZYtOH5RRzWH2acLUtoNIyGXG6/v6RN8Ivm310FdzOVqkg0drIYIgTV1U4wPnPtzbqbfGgKBfT6b/zLJbBLOBA5x8AtfN/ydhaGbSYfD9DG2Sw7CwRsukMKC3pL8nrrurhZVeeGHKqIaeppdkYmRGRM5Uc= dawid@MacBook-Air-Dawid.local"
