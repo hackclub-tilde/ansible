@@ -1,0 +1,15 @@
+---
+- name: Setting up Xiboon
+  user:
+    name: Xiboon
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/Xiboon
+- authorized_key:
+    user: Xiboon
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDNUH59YNMZgVWeAMHJztPSjG8B29o4pw7Y1PpEa6ap/OeZUNx85N+BgJktvaduOLC45FJirVGhE/gAvse482ZD5U2dn+3LU3v0ZF8Mihtfb+j1PuqvNbP4AyaeZ4Utfknz9t04YhMJP8FQ34Zj5d5+swZIlwv66so9xucm9qH9LVoZ0QOZ2ES/0UMQ4MLghFgMAwau+E/iFox0CjuFnwIx+iZMJcaBP6iT0JpxxkjoqHHYnfgHzEoTAiZ7kWVRY7AKUVZaGJjm9Bs3MSgO9I65DPu4LCPnSdpwoeBHW11qvYY6ETWX7Xcy81fv54D5rYKSGSx+4HNhQXzwRzY7zDY7"
