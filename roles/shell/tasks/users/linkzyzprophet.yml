@@ -1,0 +1,15 @@
+---
+- name: Setting up linkzyzprophet
+  user:
+    name: linkzyzprophet
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/linkzyzprophet
+- authorized_key:
+    user: linkzyzprophet
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAxJYvIstr6/94lAE/JLGggfc/witODuWr27EhYjaTHut9ZHNDUBDPeYmSGQCkRKK8lD/e9X+/XX85M4GO7qKAgFv6iQAvX/ypk1JeFwNjg4l0RJi3apkEo9KyeyyaLw5XDKrxsJuN1f5cEFTc/FPH7kA6aLCPn3Ppk2VV41ElvxuaIyzxYrPEgEHV2TpMu/wu6KtTpEpq65vYbSGOgvJlllhj+qTQTSDlcduWpROqQmu0VOmaeZNETrToxk94r3Pyr9wV++jsBTVI0VOmcgpiPLV1D0wK+UhLETwFwtN8d48WaAgjhE2u6VEc6UwP12Vl6aMPxcPbAycLm8CB2Shs9w== rsa-key-20200811"
