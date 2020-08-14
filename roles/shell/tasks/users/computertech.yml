@@ -1,0 +1,15 @@
+---
+- name: Setting up computertech
+  user:
+    name: computertech
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/computertech
+- authorized_key:
+    user: computertech
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAlywR+GXWaNMO/jPcGj8Rv+xHhNHW62IX9y1eH1TV8x1S4auEAX4iPyXjqiNJH6NQuaxm+wyxMMjwaYyZkRoqDF28aI8RUqjnBBsZ7pkdLUGfu5KR2t/fu05ABMM40AI4wyBoO7QwsNr1/17iEcZD7p/kOP3IJlfMno/+bXQkGcB+fI9PtAgfZK3/UFFgggcnvFBrHGf79XmfisPblMy76BDhvXlPU1q/ecW2RYfZ7dnnGHhVH1EhddD2ibM0oNoqtyRmYnq6++gfvh3RM4VJf6IfCfErO3hOJ3bmaD/VhMvgH6ddf7HsIMOV9vgiDo3o6hPbsGEsw/ffU5KeqgSFow=="
