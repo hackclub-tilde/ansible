@@ -1,0 +1,15 @@
+---
+- name: Setting up logan3303
+  user:
+    name: logan3303
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/logan3303
+- authorized_key:
+    user: logan3303
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC6TyXbjJK6ZFoBZCHWnx9Su1hKCmXPfyc+sIeLgi6OMdTInKT8k2iu+e22mHvVHPVaDlwX+NzqqFw1xwiVM48D4v6cPLuUsq6TghZ4n5pnigCh42rBOVPx48YppSHEdiNm3dOHMr4Sv9SlU32mpCl1LqjfRII1ayIspxOLUQc2ULpl7i+ePveDbbSlvhnz3iEmfk8geT2TThHMKuDHLjnzki8Yw6184Yh75ni3v2o8ltaUhz42nggo0AF1mierNkFLf7ROrgS3o/KIN5e1zc4tiGHpJarwtfqIqCbNNR0RVj1Gw4w9DO+Q/z1MOhs8zbOpJtX46J7dIHsZPEziK9JN7tYKzvxNEVzez4qCdv7KhdiX5F2GvWoSag0tNG0rl5wWL5egPiXVo+Rd6Pkcpta6QFoenJB5xaNgywa03bmFoPazoUaRbF3JqoINlDpabIbMTOGclVJwOykb8ac6Hqw134hiojHlqIY8OnM96Wte/hp1ehPaFyrZhoV7/eWqXyZWR7bJoc71nuuVL5R1+g7joG+vfjMVj5zMBRmdnN+tEb1t+BIcqIVVZzH2USDVI0Mx8mwna0/9SVWlxwum3tLpRkUn6aWUIcEH4wtMNLQ02SHjtQgiy8nm3giB1yB6PfNmyzUr6YSlPv5bW53hUHM1thlO/DdZuT+PHpRX8V3ruQ=="
