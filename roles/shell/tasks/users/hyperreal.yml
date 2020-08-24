@@ -1,0 +1,15 @@
+---
+- name: Setting up hyperreal
+  user:
+    name: hyperreal
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/hyperreal
+- authorized_key:
+    user: hyperreal
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCiTlsMT4NotOaxgsxdHAuX8pzgL1CQxjdmwUZw7bTlIuezX44Txa/ayMSzzdY9XEvG8ttZPVLVFqjFigYZjaXlbPcS2HOTwCjry7SfrIWd7xroPl+TmOZiVBhmLOiu2/eO5w7w0qQVEG4MS9DAk5Aq6/gEnhWYtuPc9ACU9XVUjGCTqzJWdg3ZIoDVe/3FlSYO4X7tAswaCzr0xrjdmae0OgHk6wfuiGHF6vOpzptYvjeBfddJLnI6dz74R496O0SczHNLI2cQTE47fvuqL8Hx7sEAU5RRdgQ0kj4tfiaOOPZ3JZqkrlx4MIoroLSx/yCvZoG8C9pmI4nuj8VRtyhWWFWXK/hEgx83SeeJaaH9Qv3aHgX3p4JtzeaOXzQAfbm7iIB0VGulSZ7AGVtmb36ous1IdtFaSwSPJSlnezrS7ldkoCv7+Wv3DLmycdsk9TAYFJOFYb0r2PdcDL7hhhtQlXKkOej5E72eJ9EgmgOxYfRaWcUmfB19cf3zlEnT5t0= jas@episteme"
