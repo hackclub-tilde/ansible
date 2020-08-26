@@ -1,0 +1,15 @@
+---
+- name: Setting up raven
+  user:
+    name: raven
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/raven
+- authorized_key:
+    user: raven
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC8Cfu3K/ZAiQkh+th8Uoz73CrVLLcgVMEo1eB7asu4BPx/sWJQYRSCg30v99rmjznRvO33S0E6GSGFPvT6KKmNzWdPxEYE7wFUwqVFxQDie+bWensUj8cnOCqCZyG2LC9Qj6eY7ETRvUDooBVpg5urkzG6wFTpH7yyHqRZpHs3rc+fee2FZjY+0q+lGlUO/uSX3vGM/lNv30dYZb1MbHA/kzYLHbhe8718C1YHuaX1cK4IW1VwEH4ad0F8ftVGgAKSkpgdjOS82EjP0nR3SPgXJ4sob4s+6r3Q/h49iPV4oQdZrhkIjc3pBZdlA8p37EdPPE4SlzOM0gwgUx0Muls06n3+joqLxXDQOJ/jscQTG0TqDmGF+29ZEfLV4s7aj2e6AQ81Y2RNXsKSMMP66yZlonB7YPDcidoY5gIOO+aZ3WnhDl7aQjTzRi9d6CYCSZnWuothS7Y6POWZmCKU8x/3/LIxFNAwuJSZ7LMmLBs5048/qkuxmQ2n4lrNgd5UxgyCUJuM53VnUgzhbugvIo0kCjgpqN1TcT5fBzCxYQ00qguqH0j60veyajZW7bDbZdFD2+wLR/RO0zjQH869XDAKQ/F+YiboZQp+XahtjeIfBRKS5ve3fxMBGE2DkFxoKogSuKAsgfmcpB6Xam/ndNLGuA4GxsQ6UFzzHElpiL1sJQ=="
