@@ -1,0 +1,15 @@
+---
+- name: Setting up tomo
+  user:
+    name: tomo
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/tomo
+- authorized_key:
+    user: tomo
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDHAX5/IZ9EOnbs3/Byy6kba/2cFQzC08EcNRJrfF9PjJPefjCpZgroNDcNfaoaV4r/wgcjM3uCZEbgGFfq30EwwiSlsVMh+3EDRHA4gRGB5dXDkN9ZdkNCe91vwPoiJkG01sNnJ6T6gOBc82frUY0eSJGPtKvuJUkza0xWS3Jo7616Xl2BpTM9rEmkVKlwpfr4n52IUYXKi/kBExRrom/j0nXavmZm5LH+PQ/d8GODejINhiPcWrqfX6LCoba+OgeT0TpAJNkiPJx+/ZHBkwzmsTALVNKqlkyfeI7hR6dz3OgGvS3Bm+NsDgFbU/oPa9pXVZE9+jJq6D+4McB0S0MpZOI3Hml5iMmSXmMZNwew920aiH6aO2WIJj/J+h4HwSt8ag7rikWab5P0ryuL2ymizuvgYeuARd6Yr7vW/o5Bum8XNkgvNRt/JCGQQ+gldLcvAbX29FrnOAEKxok3P8ARQprlghpVIN0X4eDfFBvIKNJq9MAC5UxLtycVxd/q7B/kMFSZb5RZg26cHPiDFS78zBG/w5ByP+H8xhRfvhGLoZihodAtz5PcxgJZDHY6IfotoP0F19OH1009/1KmIIeX2VBnmnUbrXCW0VmMn1D/FipwVpdkVcb2Nl61jbBN4PhJhrRsJAJqxekRU6bTOMw5KkDrTo+eGYY3W6fvunE9KQ=="
