@@ -1,0 +1,15 @@
+---
+- name: Setting up arthureroberer
+  user:
+    name: arthureroberer
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/arthureroberer
+- authorized_key:
+    user: arthureroberer
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDWZf6XtAkQZfdYhK7jXppQeqRrkB72mELZLz+GYDEdsD4IikHmb0j63+rAxmI+svbxi4zD+W8PkNLDO5PInC7YaIPKP8yZqxvQgdSoqZAPPgj21ERb2i/pJepCZn3k3nVL5ItMcl7tC/u0kU6tJ6LHNYHdKBbZlNJJ6NZm+gt/RvJS6deCCG8D2JoxoaKQNkazuCgAs7WQPobZE90xWRLnRhTQ9Wiu2CanzK/79dYAcMmhx7PHIyTWyklGAsX4vvoSLzVZGN3X+iC6moQ0yd2X/KkyZtjMI8VMGaplAAfnUuIgSkkUxyv1acbvq51vNrEiUlVzKvX1Ud41Jo4cC0G+N/ZqK9mjYDEqUMtJOC//MbQEbWUyijbZv/WIJbbdSGLpT117omC0aZVhtTjalY7N58PKRlWCgEgUIDdk9M5IDlZhnPvQ2ppUtGOFf9Rdp7j1/zvvcCnadXgdfuFeuc2Ns3DjygshohhVEumvtUH/uKz3jBqDBM16kAQPYc0MmaE= arthur@arthur-computer"
