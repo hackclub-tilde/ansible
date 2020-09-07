@@ -49,6 +49,10 @@ smtpd_sasl_path = private/auth
 smtpd_sasl_auth_enable = yes
 smtpd_sasl_security_options = noanonymous
 smtpd_sasl_local_domain = $myhostname
+
+# Don't accept mail from domains that don't exist.
+smtpd_sender_restrictions = reject_unknown_sender_domain
+
 #Allow ONLY authenticated users to send email
 smtpd_recipient_restrictions =
  permit_mynetworks,
