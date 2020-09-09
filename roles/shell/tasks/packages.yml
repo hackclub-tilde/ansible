@@ -140,6 +140,7 @@
       - mercurial
       - mc
       - mc-data
+      - micro
       - midori
       - minetest-data
 #      - minetest-mod-advspawning
