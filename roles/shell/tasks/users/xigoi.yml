@@ -1,0 +1,15 @@
+---
+- name: Setting up xigoi
+  user:
+    name: xigoi
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/xigoi
+- authorized_key:
+    user: xigoi
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCYBowd7OKK9FfVJS6yBd0tUEwggiNETJigQaVeijDqe8tCXSt4Ab+Zt0Qz2kox2xggg8OMbEh7ickL+yVS9CU59zOepJnPv0dB6/b6dRbPandRdu/La+p5aZNaQbbpollatGjtASaoEad+zLyUcMPmHQNSVBcoSbAKN0AGV8ROvDPiHvQ8g0p8VQJrVLVV0w0zokDq5ny0bzfddDrXN6bLA1mB8XeWTd92XD9OB2gJ88r3SsZqWPf0rlIezuK9jd9oBmVcnnNhAgjGmSGPHTWBBNPg7oXTtyECoLyCSm10eTvje2NL5gmIsxWO0gEtVcyXrHQNCBf4N3RG1AC/yEqh4VphfefBzSns4knC/CEGCrWL2Px36A3WiYckDOKFeXD9sTeJIeXAfYF8frGF2kIz5kSRMaVuaILsfmwamxTiwAXxQ3RjRh4z6aoKh3GDUKEysfdsj0/R8Tds7CHgXzD1/lB7wYs/b5LuzhjJoM+5sD/g4c9WODvPRRA4+l32Hgla3Tzjyd9DUpawFd3iZQ3dbKEnQCsnokqqJ+Re1qAVjO11q5qwTHAmTvV346PX80ZQtcR/4SLBt8fVUdyMKBXjbzehcx9OfNCMFOnb5F4eM5Mr4vIai5cYRA4HtIlhSFsxgl7cFkHfEchfCT2cJKPz7j+FCFZAytCkm3ugoUDipQ=="
