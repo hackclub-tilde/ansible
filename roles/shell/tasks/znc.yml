@@ -57,4 +57,4 @@
     dest: /etc/letsencrypt/renewal-hooks/update-znc.pem
     owner: root
     group: root
-    mode: 755
+    mode: 0755
