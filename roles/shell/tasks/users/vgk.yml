@@ -1,5 +1,5 @@
 ---
-- name: Setting up vgk 
+- name: Setting up vgk
   user:
     name: vgk
     groups: tilde
@@ -12,4 +12,4 @@
 - authorized_key:
     user: vgk
     state: present
-    key: "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBAeeIoSAdzpBzC/ZHphm5IIVYU2yHaONSvrMUm9xqn+jGnbK9iJaAENCvZIFI22AbIwwKb5tpDjKTdtkWHRZ7WU= ~vgk"
+    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMF2F2ayjAH3sNNL0ja9w2vycForCSVb1brLWSuSQheq ~vgk"
