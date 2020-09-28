@@ -1,0 +1,15 @@
+---
+- name: Setting up GreenEyedFury
+  user:
+    name: GreenEyedFury
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/GreenEyedFury
+- authorized_key:
+    user: GreenEyedFury
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC8qnzP0Vowhlt9edpKgb9clGKvtjtcA6I43eDys0xuU3WImZ0wApEAYGskxfJPSQ/1qqfENl214QwBzOEcw6tGyzDl2LpMmUidJi2wwGSp/RCRka0wS2MdmGxo7f6E57p63n+keiAsVMk4prJAsbTF9cq5zgUyWaVy1EDB4uFNR4Hu1/tvSwfDIYUIXJHJZek5DFKuPmD1aenpnJaQrxG/CykT1edvvxM0lYFeDCi+D+Rn3DAmPP+VjBW0DrIxmBnFzHDMHgMqua7r5GxonxXUIlpb1zucRVWHcCZqMbGC1XeLDusrKJCXxna6t/QEJ9LV6rhpsme+NA2zgWYlOmZbmzwX0VlfU1CrUKkiQTsxZOU+YjnOTggwlY76bQLvF75OzVYFsnXW2CznBDI+UPBpMpK5+7H1Bxt0TXWSNxwHUErQKrUJ6dHgwEcaTj17AjUKj/F+1Xl97o/OChKTw9+hkp204x91VDwRv9sNNhfhjRwhwgd8o/l9BXBE33bLHDs= madelyn@archlinux"
