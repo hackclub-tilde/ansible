@@ -1,0 +1,15 @@
+---
+- name: Setting up angelmage
+  user:
+    name: angelmage
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/angelmage
+- authorized_key:
+    user: angelmage
+    state: present
+    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDCmzdCEZOG+hrvR+6UK6eLuHYkpz1rXgwa7l54VViCt ed25519-key-20201001"
