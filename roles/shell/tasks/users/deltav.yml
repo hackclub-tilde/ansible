@@ -1,0 +1,15 @@
+---
+- name: Setting up deltav
+  user:
+    name: deltav
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/deltav
+- authorized_key:
+    user: deltav
+    state: present
+    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOYMN1x/+IQFDzae0fU+C+MmOMWTxr+oLxnhnrRwkW29 arch"
