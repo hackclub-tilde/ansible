@@ -281,3 +281,4 @@
 - include: users/deltav.yml
 - include: users/famubu.yml
 - include: users/riolo.yml
+- include: users/catman.yml
