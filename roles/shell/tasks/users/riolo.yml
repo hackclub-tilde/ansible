@@ -1,0 +1,15 @@
+---
+- name: Setting up riolo
+  user:
+    name: riolo
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/riolo
+- authorized_key:
+    user: riolo
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDDrPQN9BeifH8Sgr+sH+wFKZMe067g6Bp8YwXpg0m24arxRxsW6Cmk/wPAgqxxVT5y38xoWpnbKYk8tdWqPrfH6+k0pUCH3WacD2KXBcoUZL+yjdJ7RkoXCb/x1ooBTUQbpftuajilaFpQbBQw1qmVER63HB3TNsE9tVpA4i4IVDAzBDpmO9LbpuHS/IMuIy5hYc+GyOKG4F501a60A7MDM0AgAr2eR5qoefx5rZtfTpScQ0VOxoOMwxt9s7E3yiX/6rblWWkJStR+Ke/X0cLdwuxyztaFd5wA0J/e1L41gC+vh6KKbfuGFjnnSu2a1dF/uT7Y/ssyAGLF2Zbcj9NyTos/adpMMv1Tf8dcldGgmaJIL+k06w5307WfaTNyYAP8+OfMzrw8QoOkbj+GCmvJ4o4Pe4Ts0UF0qYIkwVVculKW2UbRKAZeBYdTXSaRHnhe95JKNRxy1ZttoDq/3nG80aY02VTyuUTijGp3acveUaHor5wK4msxNcl9JCToBjk="
