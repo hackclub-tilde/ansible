@@ -1,0 +1,15 @@
+---
+- name: Setting up famubu
+  user:
+    name: famubu
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/famubu
+- authorized_key:
+    user: famubu
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDHLZ9gq40oOQKoV3CbQwLaTWQfV+PyMgCHf+VoUOJRPSxj24jeO1i/1FUE9UtuOGaqAXFgrqyEARtpFDZt6nwzopVKUd47kGtaaz/A8Y2L/C4AHZVmSfC6FXV6GIVeEQ80xXdC1AmDBHfW3EgjBkKi84Ks188Wnun+3q70iUj9+8pO8nI7hXW/Kf6vaSCFnitLargyXGm5H3033uNJRE7D84BLrKkm8X6vc5RGO9NnjoKLjERiNPva0Ozx28V0izNw42ER97VwrH1QZiLx9Ia5FCBHFacPmdbkShRCQf0fPZ1KJ+k0rILs654vTI+Bm9/Kh4Aib1zJ1lRxSxA1yYOv famubu@famubu-HP-Notebook"
