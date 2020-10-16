@@ -255,7 +255,7 @@
 - include: users/beneskiwik.yml
 - include: users/nikto.yml
 - include: users/seerlite.yml
-- include: users/nikita.yml
+#- include: users/nikita.yml
 - include: users/pokemongo.yml
 - include: users/prashantch.yml
 - include: users/Xiboon.yml
