@@ -1,0 +1,15 @@
+---
+- name: Setting up genvara
+  user:
+    name: genvara
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/genvara
+- authorized_key:
+    user: genvara
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDCAmzAkSYUsTvi4FfEIBkaXmEZsbadoJu6VKgto+DMbpPI2ARfjHpUFN498k3IXRjDjPHalz2j/W+EBnD8NXkdgYTjhFD72DIyRsrHMIoA6YUP8pMScInQYW0AZjm6r+pO0jXBJShzdZB9jxGlN1lEcd5YWyegt3ux8yujBnDGhnj/itb2E3eunAPIDaN5HZt6g3TSUzdJKjsFWp0XxchpZfLMuxbsvFhwp6mipgD3XirfUIBZbhx/4Z7QfnT9TVXfFaS7hV3XurMXt9jq0W5p4OWJp+ehwoffQKKI65lMJrkmxgNb51rQeZGAi9dB1fAmycboARCd1NGca+/uba30KpPAGLr4GN+QKNwNrF7BHOnOLlkYCHVAFrVpKOMJUyvYLPJ6HoF1C615vOrLErX3gxu7iH1JHb1uUbLJhSDEHml9biFnCe37/cAgFzhAk5Peh5aiKVxTSSguUOcFK/EaKxb5cIQbBAx+1iuAZkYvwVK6U3Btl8LQrwMomBSePyoatnZCbwWCcaltRUqjSClY6joyJi5wzDG4cbOfLjf9DNKblrvMnmqTFj3XnCESKZnJhgN8nf+zjKcJ7Ve/dIqkUUH89vb9MoLJs4tGFEZEcaaTOxovWPoGElpyZZuwucbg0IIHnaQK2CJ/IAM8vETrtEc/qWbjWA60fFF+E2XC7Q== issam@DESKTOP-BFP6NT6"
