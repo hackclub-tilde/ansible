@@ -1,6 +1,5 @@
 ---
-- name: Setting up thefunkyspaw
-  user:
+- user:
     name: thefunkyspaw
     groups: tilde
     state: present
