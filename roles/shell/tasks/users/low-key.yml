@@ -1,0 +1,15 @@
+---
+- name: Setting up low-key
+  user:
+    name: low-key
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/low-key
+- authorized_key:
+    user: low-key
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC08Iy/TZvvPHPuBbvLUtah9bf9aJkglAXho6OR5bKiOBN+ry/v6O0dXU0hL++SqvQH4ILSoyz4w88gyFTgaz4odiKvAmrftaaUTfmFMzk/wThKeivQQ9zMLkYLDrUuFkfzqQsvCVEGHnD+B98Z7w8cPS9Z8+T7+bgfp/IM8hMlTTGvK9+QiM4wlOWZhgUQEEicDPvx3yk+Fe7jhm6NUDr7d5BCHjjZqSikXYQmPVULWiQQ1yw1KX86FVRsnsOxA8i/23D9IfWx5OVI2DEY69+vdS2avZnlLl1a3BIHvPOmpGwVKK7j5ZuoS9xYhgVo34Z8lGxUVT+bnjksNGL8w4jokGAZAhWThtXSc/JwNdIeSu0w/WgHT8Qi7yAhfCDEHKj5y5AeUcmnwPSy0kmr0ta7+flvH55zp7sWjM76P0Ysk+LAkm5VxcfyaLDXLuCgWoLv/PkGK48iAZDqiYhArq3aLG6tkRI4rIfs53zTTY/LdKCQh5X7toT/+xcsVnk5wQdKAgrzqHtVdptlm/8qrm+fy/JtQKJvpcZpgkzgBP9NXN4M+F8pBCrjg3VlXLxvBwX/svLuUMlM2qSRgjVT7BfVJvBo0HJ9XxWxxqF/NV1IqAY3ZKGUPCCBxoUCDoZIj8BYvP59okpHIpim/8jWjJgUZomXNt1GY8wWUQrW8x9ehQ=="
