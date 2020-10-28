@@ -1,0 +1,15 @@
+---
+- name: Setting up uberius
+  user:
+    name: uberius
+    groups: tilde
+    state: present
+    skeleton: /etc/skel
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: /home/uberius
+- authorized_key:
+    user: uberius
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCeAMn0sdZYgCc57Wo55CVRbWeTrfY9+5nu4RWqLYPz4IH8mxFmAj85XzefcdgAS1P//Sf4t0R3AvGZwCcouKdLXEU4YNoZCIdDWAHy7NQMvQbiqS8p5kwr9eQgY6+eT6l8D0Zw2UaoeOu8U2omq52MTSJotHHghHEceKtEgnz1iGOT9R3f7LLFCMwbLIsHWYx250xhkUMy+Ch45Xk0HuxyVw5AJfOwWj8Q2evn02pnRX2uB8e21gojaE7+wn1dk7hLPSUIiaL84nLqsc5fom9Y3RZ9T+zTjezd0r2y5zf4q3GMPMeZgXEP5Y22AnaWS7PSpfngJ9lnouxNoXoLKtyULb0iU0Q4uTtAmlRUcyQvaiUyMfj136bkNdS2W0nLziMumVT3fbaButh4qNUvDHqxEAwxLPErq/4puFvJGJ13cf+w0StqpgUC83SsY4cFT4s/LxMyuhgMqYvZwZS5x6c2L+Sin9oQQag00UdtQsEiLzywlHm2L5P8GztgiDv2+zPYSgIQYzT1PWkYWf/e2GiHojdoGHY/CFUh3KEsd9znnED+2wsu0DmQOK6XHYO3Ncyvslh3XRg3O6NOLBRu+UW8xrOJ1SW2NRClQwjKHKZiR18Dm310XPrF/9iVFFsUvz4V9yENJEK9QPTMWeo4m46BXXcurCTuFC7JjtkSAe8Fyw== thunix"
