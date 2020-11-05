@@ -62,14 +62,14 @@
     packages:
       - alpine
       
-      - analog
+#      - analog
       - autoconf2.13
       - bison
       - bsdgames
       - build-essential
       - byobu
       - bzip2
-      - bzflag-server
+#?      - bzflag-server
       - ca-certificates-mono
       - caca-utils
       - clang
@@ -78,34 +78,34 @@
       - cmark
       - context
       - cowsay
-      - devscripts
-      - dopewars
+#      - devscripts
+#?      - dopewars
       - dos2unix
 #      - dosemu
-      - dovecot-pop3d
-      - dovecot-core
-      - dovecot-imapd
-      - eggdrop
+#?      - dovecot-pop3d
+#?      - dovecot-core
+#?      - dovecot-imapd
+#?      - eggdrop
       - elinks
       - emacs
       - ffmpeg
       - finch
       - finger
-      - fingerd
+#?      - fingerd
       - fish
       - flex
       - fortune
       - frotz
      
       - golang
-      - gopher
+#?      - gopher
       - htop
       - hugo
 #      - ident2
       
       - imagemagick
       - irssi
-      - isync
+#?      - isync
      
       - ksh
       - jq
@@ -131,7 +131,7 @@
       - libtool
       - libtool-bin
       - linux-headers-amd64
-      - lolcat
+#?      - lolcat
       - lua5.3
       - lynx
       - make
@@ -139,12 +139,11 @@
       - mc
       - mc-data
       - micro
-      - midori
       - mkdocs
       - mkdocs-doc
       - mkdocs-bootstrap
 #      - mkdocs-bootswatch
-      - mono-apache-server
+#?      - mono-apache-server
       - mono-complete
       - mono-dbg
       - mono-devel
@@ -157,19 +156,19 @@
 #      - nbsdgames
       - neofetch
       - neomutt
-      - newsbeuter
+#      - newsbeuter
       - newsboat
-      - oidentd
-      - openbsd-inetd
-      - opendkim
+#?      - oidentd
+#?      - openbsd-inetd
+#      - opendkim
       - openssl
       - p7zip-full
       - pandoc
-      - pwgen
+#      - pwgen
       - pelican
       - pelican-doc
       - pngtools
-      - postfix-policyd-spf-python
+#      - postfix-policyd-spf-python
       - poezio
       - proot
       - profanity
@@ -191,17 +190,16 @@
       - ruby-paint
       - ruby-trollop
       - rustc
-      - sat-xmpp-primitivus
+#?      - sat-xmpp-primitivus
       - scala
       - scala-doc
       - scala-library
       - screen
       - sipcalc
-      - staticsite
-      - stow
-      - talk
-      - talkd
-      - tango-icon-theme
+#?      - staticsite
+#?      - stow
+#?      - talk
+#?      - talkd
       - tcl
       - tcl-dev
       - tcl-tls
@@ -211,13 +209,13 @@
       - texinfo
       - tdom
       - telnet
-      - telegram-cli
-      - todotxt-cli
+#      - telegram-cli
+#      - todotxt-cli
       - unrar-free
-      - uuid
+#      - uuid
       - vim
-      - vrms
-      - w3m-img
+#      - vrms
+#?      - w3m-img
       - weechat
       - weechat-lua
       - weechat-php
@@ -226,13 +224,8 @@
       - weechat-scripts
       - weechat-tcl
       - whois
-      - wordgrinder-ncurses
-      - x11vnc
-      - xdm
-      - xfce4
-      - xfce4-goodies
-      - task-xfce-desktop
-      - zandronum-server
+#      - wordgrinder-ncurses
+#      - zandronum-server
       - zsh
 
 #Install python packages, when it's the latest      
