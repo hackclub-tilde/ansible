@@ -3,16 +3,14 @@
 
 - include: packages.yml
 - include: users.yml
-- include: apache2-mods.yml
+
 - include: ufw.yml
-- include: znc.yml
+
 - include: bzflag.yml
-- include: minetest.yml
-- include: minecraft.yml
 - include: dovecot.yml
 - include: postfix.yml
 - include: iris.yml
 - include: gopher.yml
-- include: pb.yml
+
 - include: botany.yml
-- include: vnc.yml
+
