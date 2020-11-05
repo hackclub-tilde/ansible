@@ -61,7 +61,7 @@
   vars:
     packages:
       - alpine
-      - adwaita-icon-theme
+      
       - analog
       - autoconf2.13
       - bison
@@ -96,24 +96,22 @@
       - flex
       - fortune
       - frotz
-      - gitweb
+     
       - golang
       - gopher
-      - gnome-icon-theme
-#      - gnome-icon-theme-extras
       - htop
       - hugo
 #      - ident2
-      - inkscape
+      
       - imagemagick
       - irssi
       - isync
-      - jekyll
+     
       - ksh
       - jq
       - lbzip2
       - lftp
-      - libapache2-mod-php
+    
       - libarchive-dev
       - libc-dev
       - libc++-dev
@@ -142,20 +140,6 @@
       - mc-data
       - micro
       - midori
-      - minetest-data
-#      - minetest-mod-advspawning
-#      - minetest-mod-animalmaterials
-#      - minetest-mod-animals
-      - minetest-mod-maidroid
-      - minetest-mod-mesecons
-#      - minetest-mod-mobf-core
-#      - minetest-mod-mobf-trap
-      - minetest-mod-moreblocks
-      - minetest-mod-moreores
-      - minetest-mod-nether
-      - minetest-mod-pipeworks
-      - minetest-mod-torches
-      - minetest-server
       - mkdocs
       - mkdocs-doc
       - mkdocs-bootstrap
@@ -166,7 +150,7 @@
       - mono-devel
       - mono-xsp4
       - moon-buggy
-      - mosh
+  
       - mutt
 #      - mysql-client
       - nasm
@@ -184,24 +168,6 @@
       - pwgen
       - pelican
       - pelican-doc
-      - php-imagick
-      - php-memcache
-      - php-pear
-      - php
-      - php-curl
-      - php-gd
-      - php-imap
-      - php-intl
-      - php-mysql
-      - php-ps
-      - php-pspell
-#      - php-recode
-      - php-sqlite3
-      - php-tidy
-      - php-xmlrpc
-#      - php7.3-xsl
-#      - php7.3-curl
-#      - php7.3-xml
       - pngtools
       - postfix-policyd-spf-python
       - poezio
@@ -220,9 +186,6 @@
       - python3-twisted
       - python3-potr
       - python3-venv
-      - qemu
-      - qemu-efi
-      - qemu-system
       - racket
       - ranger
       - ruby-paint
@@ -270,11 +233,6 @@
       - xfce4-goodies
       - task-xfce-desktop
       - zandronum-server
-      - znc
-      - znc-dev
-      - znc-perl
-      - znc-python
-      - znc-tcl
       - zsh
 
 #Install python packages, when it's the latest      
