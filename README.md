@@ -2,6 +2,8 @@
 
 Clone repo, then execute playbook as follows:
 
+Based on thunix/ansible
+
 ```/usr/local/bin/ansible-playbook -i /var/tilde/ansible/hosts /var/tilde/ansible/site.yml```
 
 ## Intro
