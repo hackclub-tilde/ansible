@@ -1,8 +1,8 @@
-# Thunix Ansible Playbook
+# Ansible Playbook
 
 Clone repo, then execute playbook as follows:
 
-```/usr/local/bin/ansible-playbook -i /var/thunix/hosts /var/thunix/site.yml```
+```/usr/local/bin/ansible-playbook -i /var/tilde/ansible/hosts /var/tilde/ansible/site.yml```
 
 ## Intro
 If you're wondering what this repo is, it's a set of files (YAML files) that are executed by a package known as ["Ansible"](https://en.wikipedia.org/wiki/Ansible_(software)).
