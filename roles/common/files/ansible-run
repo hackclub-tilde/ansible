@@ -8,7 +8,7 @@ else
 	touch $RUNNING
 	cd /var/tilde/ansible
 	/usr/bin/git pull
-	/usr/local/bin/ansible-playbook -i /var/tilde/ansible/hosts /var/tilde/ansible/site.yml -u root
+	/usr/local/bin/ansible-playbook -i /var/tilde/ansible/hosts_local /var/tilde/ansible/site.yml -u root
 	touch /dev/shm/ansible-hook-last-run
 	rm $RUNNING
 	exit 0
