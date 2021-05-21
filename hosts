@@ -1,0 +1,12 @@
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
+
+[common]
+45.55.63.96
+
+[shell]
+45.55.63.96
+
+[webserver]
+45.55.63.96
+

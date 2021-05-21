@@ -14,7 +14,7 @@
 - name: Install baseline packages
   apt: 
     name: "{{ packages }}"
-    state: present
+    state: latest
     update_cache: yes
   vars:
     packages:
@@ -31,10 +31,6 @@
       - man
       - members
       - pflogsumm
-      - python
-      - python-certbot-apache
-      - python-pip
-      - python-yaml
       - python3-flask
       - python3-flask-restful
       - python3-flask-api

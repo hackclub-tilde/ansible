@@ -5,8 +5,7 @@
 - include: users.yml
 
 - include: ufw.yml
-- include: znc.yml
-- include: bzflag.yml
+#- include: bzflag.yml
 #- include: minetest.yml
 #- include: minecraft.yml
 #- include: dovecot.yml
