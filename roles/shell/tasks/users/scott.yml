@@ -5,6 +5,7 @@
     groups: tilde,sudo
     state: present
     shell: /usr/bin/fish
+    skeleton: /etc/skel
     system: no
     createhome: yes
     home: /home/swl
