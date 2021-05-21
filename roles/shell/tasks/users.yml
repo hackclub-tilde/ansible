@@ -9,10 +9,5 @@
     state: present
     
 # Service accounts
-- include: users/bzflag.yml
-- include: users/cherry.yml
-- include: users/minecraft.yml
-- include: users/znc.yml
-
 # Normal Users
 - include: users/muirrum.yml

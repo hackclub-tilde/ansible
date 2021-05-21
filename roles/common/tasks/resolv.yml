@@ -1,6 +1,6 @@
 # This will set our resolvers up, to the .tilde tld name servers.
 ---
-- name: Set .tilde systems resolvers
+- name: Set system resolvers
   copy:
     src: ../files/resolv.conf
     dest: /etc/resolv.conf

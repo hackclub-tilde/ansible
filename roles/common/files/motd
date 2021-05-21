@@ -1,36 +1,3 @@
-.___________. __    __   __    __  .__   __.  __  ___   ___ 
-|           ||  |  |  | |  |  |  | |  \ |  | |  | \  \ /  / 
-`---|  |----`|  |__|  | |  |  |  | |   \|  | |  |  \  V  /  
-    |  |     |   __   | |  |  |  | |  . `  | |  |   >   <   
-    |  |     |  |  |  | |  `--'  | |  |\   | |  |  /  .  \  
-    |__|     |__|  |__|  \______/  |__| \__| |__| /__/ \__\
+Testing for Hack Club Tildeserver
 
-https://www.thunix.net                         EST DEC 2018
------------------------------------------------------------
-brought to you by:
-                  naglfar
-     ubergeek     fosslinux
------------------------------------------------------------
-For system document type 'man thunix'.
------------------------------------------------------------
-Some available commands:
-* chat - Jump into thunix chat
-* dcss - Dungeon Crawl Server
-* lynx - web browser
-* mutt - email
-* iris - terminal based forum
-* wiki - browse the Thunix wiki via the command line
------------------------------------------------------------
-To modify the thunix.net website, propose a PR here:
-https://tildegit.org/thunix/www
-
-To modify the system config, propose a PR here:
-https://tildegit.org/thunix/ansible
-
-To request a package, or something to be configured, open
-an issue here: https://tildegit.org/thunix/ansible/issues
------------------------------------------------------------
-Enjoy your stay!
-
-*** END OF LINE.
-
+Based on Thunix Ansible

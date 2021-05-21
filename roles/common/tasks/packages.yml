@@ -7,15 +7,9 @@
     update_cache: yes
   vars:
     packages:
-      - ansible
       - python3
       - python3-apt
       - gpg
-
-- name: Add Thunix Repo
-  apt_key:
-    url: http://deb.thunix.net/release.key
-    state: present
 
 - name: Install baseline packages
   apt: 
@@ -25,6 +19,7 @@
   vars:
     packages:
       - apt-transport-https
+      - ca-certificates
       - aptitude
       - cron
       - debhelper
@@ -38,16 +33,7 @@
       - pflogsumm
       - python
       - python-certbot-apache
-      - python-httplib2
-      - python-jinja2
-      - python-kerberos
-      - python-markupsafe
-#      - python-netaddr
-      - python-paramiko
-#      - python-pip
-      - python-pymysql
-      - python-selinux
-      - python-xmltodict
+      - python-pip
       - python-yaml
       - python3-flask
       - python3-flask-restful
@@ -64,3 +50,4 @@
 - name: Install ansible
   pip:
     name: ansible
+    state: latest

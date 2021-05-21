@@ -7,6 +7,6 @@
 - include: sshd.yml
 - include: motd.yml
 - include: ansible-pull.yml
-- include: manpage.yml
+#- include: manpage.yml
 - include: monitoring.yml
 - include: scripts.yml

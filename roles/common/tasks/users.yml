@@ -1,8 +1,8 @@
 # This creates our users on the system
 ---
-#- group:
-#    name: sudo
-#    state: present
+- group:
+    name: sudo
+    state: present
 
 - name: Allow 'sudo' group to have passwordless sudo
   lineinfile:

@@ -61,15 +61,15 @@
   vars:
     packages:
       - alpine
-      - adwaita-icon-theme
-      - analog
+      
+#      - analog
       - autoconf2.13
       - bison
       - bsdgames
       - build-essential
       - byobu
       - bzip2
-      - bzflag-server
+#?      - bzflag-server
       - ca-certificates-mono
       - caca-utils
       - clang
@@ -78,42 +78,40 @@
       - cmark
       - context
       - cowsay
-      - devscripts
-      - dopewars
+#      - devscripts
+#?      - dopewars
       - dos2unix
 #      - dosemu
-      - dovecot-pop3d
-      - dovecot-core
-      - dovecot-imapd
-      - eggdrop
+#?      - dovecot-pop3d
+#?      - dovecot-core
+#?      - dovecot-imapd
+#?      - eggdrop
       - elinks
       - emacs
       - ffmpeg
       - finch
       - finger
-      - fingerd
+#?      - fingerd
       - fish
       - flex
       - fortune
       - frotz
-      - gitweb
+     
       - golang
-      - gopher
-      - gnome-icon-theme
-#      - gnome-icon-theme-extras
+#?      - gopher
       - htop
       - hugo
 #      - ident2
-      - inkscape
+      
       - imagemagick
       - irssi
-      - isync
-      - jekyll
+#?      - isync
+     
       - ksh
       - jq
       - lbzip2
       - lftp
-      - libapache2-mod-php
+    
       - libarchive-dev
       - libc-dev
       - libc++-dev
@@ -133,7 +131,7 @@
       - libtool
       - libtool-bin
       - linux-headers-amd64
-      - lolcat
+#?      - lolcat
       - lua5.3
       - lynx
       - make
@@ -141,69 +139,51 @@
       - mc
       - mc-data
       - micro
-      - midori
-      - minetest-data
+#      - midori
+#      - minetest-data
 #      - minetest-mod-advspawning
 #      - minetest-mod-animalmaterials
 #      - minetest-mod-animals
-      - minetest-mod-maidroid
-      - minetest-mod-mesecons
+#      - minetest-mod-maidroid
+#      - minetest-mod-mesecons
 #      - minetest-mod-mobf-core
 #      - minetest-mod-mobf-trap
-      - minetest-mod-moreblocks
-      - minetest-mod-moreores
-      - minetest-mod-nether
-      - minetest-mod-pipeworks
-      - minetest-mod-torches
-      - minetest-server
+#      - minetest-mod-moreblocks
+#      - minetest-mod-moreores
+#      - minetest-mod-nether
+#      - minetest-mod-pipeworks
+#      - minetest-mod-torches
+#      - minetest-server
       - mkdocs
       - mkdocs-doc
       - mkdocs-bootstrap
 #      - mkdocs-bootswatch
-      - mono-apache-server
+#?      - mono-apache-server
       - mono-complete
       - mono-dbg
       - mono-devel
       - mono-xsp4
       - moon-buggy
-      - mosh
+  
       - mutt
 #      - mysql-client
       - nasm
 #      - nbsdgames
       - neofetch
       - neomutt
-      - newsbeuter
+#      - newsbeuter
       - newsboat
-      - oidentd
-      - openbsd-inetd
-      - opendkim
+#?      - oidentd
+#?      - openbsd-inetd
+#      - opendkim
       - openssl
       - p7zip-full
       - pandoc
-      - pwgen
+#      - pwgen
       - pelican
       - pelican-doc
-      - php-imagick
-      - php-memcache
-      - php-pear
-      - php
-      - php-curl
-      - php-gd
-      - php-imap
-      - php-intl
-      - php-mysql
-      - php-ps
-      - php-pspell
-#      - php-recode
-      - php-sqlite3
-      - php-tidy
-      - php-xmlrpc
-#      - php7.3-xsl
-#      - php7.3-curl
-#      - php7.3-xml
       - pngtools
-      - postfix-policyd-spf-python
+#      - postfix-policyd-spf-python
       - poezio
       - proot
       - profanity
@@ -220,25 +200,21 @@
       - python3-twisted
       - python3-potr
       - python3-venv
-      - qemu
-      - qemu-efi
-      - qemu-system
       - racket
       - ranger
       - ruby-paint
       - ruby-trollop
       - rustc
-      - sat-xmpp-primitivus
+#?      - sat-xmpp-primitivus
       - scala
       - scala-doc
       - scala-library
       - screen
       - sipcalc
-      - staticsite
-      - stow
-      - talk
-      - talkd
-      - tango-icon-theme
+#?      - staticsite
+#?      - stow
+#?      - talk
+#?      - talkd
       - tcl
       - tcl-dev
       - tcl-tls
@@ -248,13 +224,13 @@
       - texinfo
       - tdom
       - telnet
-      - telegram-cli
-      - todotxt-cli
+#      - telegram-cli
+#      - todotxt-cli
       - unrar-free
-      - uuid
+#      - uuid
       - vim
-      - vrms
-      - w3m-img
+#      - vrms
+#?      - w3m-img
       - weechat
       - weechat-lua
       - weechat-php
@@ -263,13 +239,13 @@
       - weechat-scripts
       - weechat-tcl
       - whois
-      - wordgrinder-ncurses
-      - x11vnc
-      - xdm
-      - xfce4
-      - xfce4-goodies
-      - task-xfce-desktop
-      - zandronum-server
+#      - wordgrinder-ncurses
+#      - zandronum-server
+#      - x11vnc
+#      - xdm
+#      - xfce4
+#      - xfce4-goodies
+#      - task-xfce-desktop
       - znc
       - znc-dev
       - znc-perl
