@@ -16,10 +16,10 @@
   roles:
     - shell
 
-- name: Web server configuration
-  hosts: webserver
-  become: yes
-  become_method: sudo
+#- name: Web server configuration
+#  hosts: webserver
+#  become: yes
+#  become_method: sudo
 
-  roles:
-    - webserver
+#  roles:
+#    - webserver

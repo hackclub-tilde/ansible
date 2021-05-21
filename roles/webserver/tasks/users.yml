@@ -5,20 +5,11 @@
     state: present
 
 - user:
-    name: ubergeek
-    groups: sudo
+    name: muirrum
+    groups: sudo,tilde
     state: present
     skeleton: /etc/skel
     shell: /bin/bash
     system: no
     createhome: yes
     home: /home/ubergeek
-
-- authorized_key:
-    user: ubergeek
-    state: present
-    key: "ssh-dss AAAAB3NzaC1kc3MAAACBAIBSqyxUGJOtsY+ri6SWRl7SyLO0dTK0uiTVWhzt/nzNGZsmvfSteasQGOrMpEgrnWDCm7XahH/AUg5IgSDmU7gKWITZVUqZGk8zZbqmx/qQuNqnte6J3vQvQK7M6qShVpnrLFdoEyrXjljAqGVVV4nyB0n+GBBJ1WlJN/eyJt3lAAAAFQDKpycDN2+ga6d53bYyReVVoOFcgwAAAIB4a4GPZsmJJc9bSnHU5j2pt6ThMS3yud//K46TGNF9vX5EXVrWk9XZc/iPwiXOnHfTu2uoVJiJkhJEM3SQY0YO0DoEqoCfwdZ+SisQeLDat/mvNduXO2PdVoKodXftwr1dq1HMD+0Wi+b17G1E/Gfx76ECfA3mBFvdsu8Wgo+I4wAAAIAy3QFkmetRKi/XjSMiiyJa1jxKiNyTO97eU2kLFyQE7LMQ6agDACPk3yfMdUgH7tvjfOBH5Tsp3wS+nvx1I7M5w08z88F9NBrp8Z2Ni2nACLtbY5q5oFr0a7ZnD+6LbWksK8NcTAquBnxf4FzXJ+knDfAg8Oya0sqR95VV5xoVTw== ubergeek@ubergeeks-MacBook-Pro.local"
-- authorized_key:
-    user: ubergeek
-    state: present
-    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCdgDD3UMyI9NdtVGuuDS1Rqfw6YoJsctAhWgGP+0w6MX5Od0B3km6C/BaMe/ZY7vA861wjoeHFdZ69nOYsdDqysCLxZCAfGBjzYM2mS4UiuV3tnZA7C/Zd+dGUfuA64iQ1SJ3FcehGezgI9zJU2JSWfhzHO2gx7fdZ9lhCEDU3qkiXy6HFzd+B0+tlEXBSkUk4g47ZLuaKxPrqeug5xGLwjlMjTSYSyhODdjvYQNkaD4ynyggdq21T0CWA5abH4nol+NPy5HChYH7wkA0qQ23GeUrUfdWmzZxua6SBVEGC0cFiLLt0ZPCf2foob7Nse6W3ISy85uBKO4QNO5Nwl+zz ubergeek@yourtilde.com"
