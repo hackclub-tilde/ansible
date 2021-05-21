@@ -11,3 +11,4 @@
 # Service accounts
 # Normal Users
 - include: users/muirrum.yml
+- include: user/scott.yml

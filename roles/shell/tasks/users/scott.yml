@@ -1,0 +1,16 @@
+---
+- name: Scott user account
+  user:
+    name: swl
+    groups: tilde,sudo
+    state: present
+    shell: /usr/bin/fish
+    skeleton: /etc/skel
+    system: no
+    createhome: yes
+    home: /home/swl
+- authorized_key:
+    user: muirrum
+    state: present
+    key: "sk-ecdsa-sha2-nistp256@openssh.com AAAAInNrLWVjZHNhLXNoYTItbmlzdHAyNTZAb3BlbnNzaC5jb20AAAAIbmlzdHAyNTYAAABBBHPDuIYymodbRyNLyBj2lhyzkmoZDgQRmEdmAItCWa5+jMis5tw1c5wmZaFARr/RouHn12WkybbMSWlCOnRwLRcAAAAEc3NoOg== Solokey"
+
